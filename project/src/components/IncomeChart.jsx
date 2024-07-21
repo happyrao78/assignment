@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement,
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, ArcElement, LineElement, Title, Tooltip, Legend);
 
-const ChartComponent = () => {
+const IncomeChart = () => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -23,23 +23,22 @@ const ChartComponent = () => {
           return;
         }
 
-        const aggregatedData = data.reduce((acc, item) => {
-          const label = item.type;
-          const value = parseFloat(item.amount);
+        const incomeData = data.filter(item => item.type === 'Expense');
 
-          if (acc[label]) {
-            acc[label] += value;
+        const aggregatedIncomeData = incomeData.reduce((acc, item) => {
+          const category = item.category;
+          const amount = parseFloat(item.amount);
+
+          if (acc[category]) {
+            acc[category] += amount;
           } else {
-            acc[label] = value;
+            acc[category] = amount;
           }
           return acc;
         }, {});
 
-        // const labels = data.map(item => item.type);
-        // const labels = ["Expenses", "Income"];
-        // const values = data.map(item => item.amount);
-        const labels = Object.keys(aggregatedData);
-        const values = Object.values(aggregatedData);
+        const labels = Object.keys(aggregatedIncomeData);
+        const values = Object.values(aggregatedIncomeData);
 
         console.log("Processed labels:", labels);
         console.log("Processed values:", values);
@@ -76,7 +75,7 @@ const ChartComponent = () => {
 
   return (
     <div>
-      <h2>My Chart</h2>
+      <h2>Income Chart</h2>
       <div style={{ width: '100%', height: '600px' }}>
         <Pie 
           data={chartData} 
@@ -97,4 +96,4 @@ const ChartComponent = () => {
   );
 };
 
-export default ChartComponent;
+export default IncomeChart;
