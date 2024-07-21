@@ -23,7 +23,7 @@ const IncomeChart = () => {
           return;
         }
 
-        const incomeData = data.filter(item => item.type === 'Expense');
+        const incomeData = data.filter(item => item.type === 'Income');
 
         const aggregatedIncomeData = incomeData.reduce((acc, item) => {
           const category = item.category;
