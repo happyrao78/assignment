@@ -1,0 +1,10 @@
+dateTime,amount,type,category,title,currency,note
+2024-06-16 06:27:23,2122.55,Expense,Healthcare,Rent,EUR,Transaction related to Healthcare
+2023-08-07 02:52:46,2654.26,Expense,Shopping,Dining Out,JPY,Transaction related to Shopping
+2024-01-17 09:30:41,1565.53,Expense,Travel,Insurance,JPY,Transaction related to Travel
+2023-09-08 14:54:28,3219.42,Income,Investment,Rental Income,USD,Transaction related to Investment
+2024-03-29 01:16:00,24.56,Expense,Entertainment,Education,JPY,Transaction related to Entertainment
+2023-12-12 20:52:47,440.6,Expense,Food,Insurance,EUR,Transaction related to Food
+2024-07-11 12:02:27,2424.58,Expense,Education,Pet Care,USD,Transaction related to Education
+2024-01-20 05:34:06,593.15,Expense,Entertainment,Clothing,EUR,Transaction related to Entertainment
+2024-07-17 22:56:43,1366.7,Expense,Travel,Rent,INR,Transaction related to Travel

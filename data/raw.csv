@@ -1,0 +1,1001 @@
+dateTime,amount,type,category,title,currency,note
+2024-06-16 06:27:23,2122.55,Expense,Healthcare,Rent,EUR,Transaction related to Healthcare
+2023-08-07 02:52:46,2654.26,Expense,Shopping,Dining Out,JPY,Transaction related to Shopping
+2024-01-17 09:30:41,1565.53,Expense,Travel,Insurance,JPY,Transaction related to Travel
+2023-09-08 14:54:28,3219.42,Income,Investment,Rental Income,USD,Transaction related to Investment
+2024-03-29 01:16:00,24.56,Expense,Entertainment,Education,JPY,Transaction related to Entertainment
+2023-12-12 20:52:47,440.6,Expense,Food,Insurance,EUR,Transaction related to Food
+2024-07-11 12:02:27,2424.58,Expense,Education,Pet Care,USD,Transaction related to Education
+2024-01-20 05:34:06,593.15,Expense,Entertainment,Clothing,EUR,Transaction related to Entertainment
+2024-07-17 22:56:43,1366.7,Expense,Travel,Rent,INR,Transaction related to Travel
+2024-03-01 11:05:28,136.07,Expense,Travel,Clothing,GBP,Transaction related to Travel
+2023-12-01 08:36:26,4908.38,Expense,Shopping,Dining Out,GBP,Transaction related to Shopping
+2024-05-01 21:26:23,1081.4,Expense,Education,Utilities,EUR,Transaction related to Education
+2024-03-13 20:14:39,3491.5,Expense,Education,Fitness,GBP,Transaction related to Education
+2024-01-15 06:03:50,1189.41,Expense,Travel,Pet Care,USD,Transaction related to Travel
+2023-12-29 16:36:12,3312.08,Expense,Healthcare,Education,EUR,Transaction related to Healthcare
+2024-02-05 20:07:42,2343.95,Expense,Healthcare,Childcare,GBP,Transaction related to Healthcare
+2024-01-18 04:27:18,32.67,Expense,Transportation,Household Supplies,INR,Transaction related to Transportation
+2024-03-04 18:07:17,4045.12,Expense,Rent,Miscellaneous,USD,Transaction related to Rent
+2023-09-25 00:29:58,4904.23,Expense,Healthcare,Entertainment,INR,Transaction related to Healthcare
+2024-03-03 17:14:30,2397.95,Expense,Shopping,Gifts,EUR,Transaction related to Shopping
+2023-11-30 04:28:03,2385.64,Expense,Food,Entertainment,EUR,Transaction related to Food
+2024-04-04 17:42:56,4250.06,Expense,Utilities,Subscriptions,USD,Transaction related to Utilities
+2023-10-31 06:25:06,43.12,Expense,Transportation,Miscellaneous,INR,Transaction related to Transportation
+2023-11-13 20:12:08,914.71,Expense,Shopping,Gifts,INR,Transaction related to Shopping
+2024-05-01 04:28:40,3023.65,Income,Bonus,Dividends,EUR,Transaction related to Bonus
+2024-06-04 18:25:53,4373.61,Expense,Food,Groceries,INR,Transaction related to Food
+2023-12-03 04:19:10,4341.64,Expense,Shopping,Gifts,INR,Transaction related to Shopping
+2023-12-07 22:31:48,3762.05,Expense,Travel,Childcare,JPY,Transaction related to Travel
+2023-11-05 00:22:40,3301.59,Expense,Food,Transportation,GBP,Transaction related to Food
+2023-11-05 08:22:41,2938.13,Expense,Shopping,Personal Care,USD,Transaction related to Shopping
+2023-10-30 10:13:07,194.04,Expense,Food,Transportation,JPY,Transaction related to Food
+2023-11-22 07:31:55,2279.45,Expense,Entertainment,Debt Payments,INR,Transaction related to Entertainment
+2023-11-09 17:04:49,262.16,Expense,Rent,Rent,INR,Transaction related to Rent
+2024-07-20 01:09:11,1869.51,Expense,Travel,Fitness,GBP,Transaction related to Travel
+2024-04-20 11:04:39,74.8,Expense,Utilities,Clothing,USD,Transaction related to Utilities
+2024-03-27 15:25:22,1488.37,Expense,Healthcare,Gifts,GBP,Transaction related to Healthcare
+2023-07-23 17:33:21,4072.89,Expense,Entertainment,Transportation,INR,Transaction related to Entertainment
+2024-03-20 05:10:47,648.58,Expense,Healthcare,Miscellaneous,JPY,Transaction related to Healthcare
+2024-06-28 22:58:55,718.22,Expense,Travel,Household Supplies,EUR,Transaction related to Travel
+2024-04-02 03:45:24,642.56,Expense,Food,Entertainment,JPY,Transaction related to Food
+2024-03-11 04:56:23,4047.11,Expense,Food,Gifts,USD,Transaction related to Food
+2024-05-21 23:11:00,733.93,Expense,Shopping,Groceries,USD,Transaction related to Shopping
+2023-07-22 21:19:53,993.59,Expense,Utilities,Travel,USD,Transaction related to Utilities
+2024-04-15 01:14:22,2812.2,Expense,Food,Groceries,INR,Transaction related to Food
+2024-06-03 10:24:02,2132.41,Income,Salary,Freelance Income,JPY,Transaction related to Salary
+2024-05-02 10:55:20,4337.78,Expense,Transportation,Travel,EUR,Transaction related to Transportation
+2024-06-06 08:57:44,1580,Expense,Food,Debt Payments,GBP,Transaction related to Food
+2024-05-01 03:00:16,1075.59,Expense,Entertainment,Insurance,USD,Transaction related to Entertainment
+2023-08-18 13:11:23,2380.12,Expense,Travel,Rent,JPY,Transaction related to Travel
+2024-04-30 01:01:14,549.96,Expense,Travel,Gifts,GBP,Transaction related to Travel
+2024-02-27 19:05:50,4968.97,Expense,Utilities,Subscriptions,INR,Transaction related to Utilities
+2023-12-22 18:11:33,4934.46,Expense,Utilities,Transportation,USD,Transaction related to Utilities
+2023-10-24 15:55:02,4108.03,Expense,Shopping,Dining Out,GBP,Transaction related to Shopping
+2024-04-06 10:57:46,920.78,Expense,Transportation,Miscellaneous,INR,Transaction related to Transportation
+2023-10-16 09:46:09,594.5,Expense,Shopping,Miscellaneous,EUR,Transaction related to Shopping
+2024-05-30 21:53:19,4914.28,Expense,Healthcare,Pet Care,INR,Transaction related to Healthcare
+2023-09-02 23:47:36,1061.73,Expense,Rent,Clothing,GBP,Transaction related to Rent
+2023-09-26 15:33:36,325.91,Expense,Education,Household Supplies,JPY,Transaction related to Education
+2024-06-24 08:54:26,3178.76,Expense,Rent,Transportation,EUR,Transaction related to Rent
+2023-10-09 21:40:41,2097.39,Income,Investment,Business Income,INR,Transaction related to Investment
+2023-10-11 20:13:06,48.14,Income,Freelance,Business Income,GBP,Transaction related to Freelance
+2024-07-07 20:27:07,1466.99,Expense,Travel,Healthcare,JPY,Transaction related to Travel
+2024-04-27 12:12:37,3202.46,Expense,Food,Dining Out,EUR,Transaction related to Food
+2024-02-12 15:26:49,3116.93,Expense,Transportation,Dining Out,EUR,Transaction related to Transportation
+2024-02-28 18:47:36,1137.08,Expense,Entertainment,Rent,EUR,Transaction related to Entertainment
+2024-07-08 21:53:43,1556.85,Expense,Rent,Utilities,INR,Transaction related to Rent
+2023-11-22 12:38:13,4871.6,Expense,Utilities,Clothing,INR,Transaction related to Utilities
+2024-03-07 21:22:11,3683.47,Expense,Healthcare,Travel,INR,Transaction related to Healthcare
+2023-10-28 22:27:12,3748.99,Income,Investment,Salary,GBP,Transaction related to Investment
+2023-08-04 03:40:53,809.19,Expense,Food,Groceries,GBP,Transaction related to Food
+2024-06-15 09:53:32,4900.21,Expense,Healthcare,Fitness,JPY,Transaction related to Healthcare
+2023-09-25 11:39:37,4021.62,Expense,Transportation,Subscriptions,JPY,Transaction related to Transportation
+2023-07-29 17:41:45,1989.89,Expense,Utilities,Rent,EUR,Transaction related to Utilities
+2024-03-31 19:09:50,2060.83,Expense,Education,Groceries,JPY,Transaction related to Education
+2024-01-02 04:12:42,1583.47,Expense,Shopping,Gifts,JPY,Transaction related to Shopping
+2023-09-24 23:37:11,3244.93,Expense,Utilities,Subscriptions,GBP,Transaction related to Utilities
+2023-08-10 14:25:52,3891.16,Income,Gift,Capital Gains,JPY,Transaction related to Gift
+2023-09-17 02:45:20,2839.91,Expense,Transportation,Travel,EUR,Transaction related to Transportation
+2024-07-07 17:49:05,4661.36,Expense,Entertainment,Transportation,JPY,Transaction related to Entertainment
+2023-08-31 13:22:04,1052.86,Expense,Shopping,Groceries,GBP,Transaction related to Shopping
+2024-05-17 01:26:38,371.61,Expense,Rent,Education,JPY,Transaction related to Rent
+2024-05-30 02:36:26,3231.58,Expense,Food,Childcare,JPY,Transaction related to Food
+2023-08-31 06:10:41,1949.02,Expense,Food,Debt Payments,EUR,Transaction related to Food
+2023-10-05 17:49:43,3753.24,Expense,Food,Dining Out,INR,Transaction related to Food
+2024-01-31 00:03:35,2443.28,Expense,Food,Debt Payments,INR,Transaction related to Food
+2024-02-01 05:29:46,674.35,Expense,Education,Clothing,GBP,Transaction related to Education
+2024-05-27 15:19:10,1309.61,Expense,Transportation,Utilities,EUR,Transaction related to Transportation
+2024-07-12 12:44:15,1523.68,Expense,Healthcare,Gifts,USD,Transaction related to Healthcare
+2024-01-12 19:09:48,1567.06,Expense,Healthcare,Utilities,INR,Transaction related to Healthcare
+2024-03-11 11:28:09,3912.08,Expense,Rent,Transportation,INR,Transaction related to Rent
+2024-05-24 17:03:12,1439.81,Expense,Shopping,Transportation,INR,Transaction related to Shopping
+2023-10-22 08:57:19,2448.89,Expense,Healthcare,Clothing,GBP,Transaction related to Healthcare
+2024-05-02 00:02:49,710.34,Expense,Food,Entertainment,JPY,Transaction related to Food
+2024-02-20 20:36:56,3448.36,Expense,Entertainment,Rent,GBP,Transaction related to Entertainment
+2023-09-16 19:20:29,4830.76,Expense,Travel,Household Supplies,GBP,Transaction related to Travel
+2024-01-02 00:25:53,3832.35,Expense,Food,Transportation,EUR,Transaction related to Food
+2023-09-12 20:18:31,3829.06,Expense,Education,Healthcare,GBP,Transaction related to Education
+2024-03-16 07:41:08,3761.07,Income,Gift,Bonuses,JPY,Transaction related to Gift
+2024-02-25 20:01:37,3105.5,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-04-19 23:48:04,635.11,Expense,Transportation,Utilities,JPY,Transaction related to Transportation
+2024-03-06 10:51:37,4726.32,Expense,Rent,Entertainment,EUR,Transaction related to Rent
+2023-08-23 15:24:02,3583.69,Expense,Utilities,Childcare,GBP,Transaction related to Utilities
+2023-08-15 20:19:15,3774.65,Expense,Rent,Insurance,USD,Transaction related to Rent
+2024-07-03 03:57:34,4363.69,Expense,Rent,Debt Payments,EUR,Transaction related to Rent
+2024-01-01 23:10:34,3594.38,Expense,Entertainment,Insurance,INR,Transaction related to Entertainment
+2023-12-05 07:23:40,4488.01,Expense,Rent,Rent,EUR,Transaction related to Rent
+2023-10-20 22:14:22,3690.85,Expense,Food,Gifts,USD,Transaction related to Food
+2023-09-10 17:33:25,3207.79,Expense,Education,Childcare,USD,Transaction related to Education
+2024-03-30 14:23:57,2167.9,Expense,Entertainment,Personal Care,INR,Transaction related to Entertainment
+2023-10-15 20:21:32,713.6,Expense,Shopping,Miscellaneous,INR,Transaction related to Shopping
+2023-09-10 02:31:35,3666.73,Income,Gift,Rental Income,EUR,Transaction related to Gift
+2024-01-11 18:58:04,3444.88,Expense,Travel,Entertainment,GBP,Transaction related to Travel
+2023-10-31 15:30:09,3593.35,Expense,Travel,Education,USD,Transaction related to Travel
+2023-08-16 04:28:34,3634.22,Expense,Travel,Utilities,INR,Transaction related to Travel
+2024-03-16 04:18:54,4049.62,Expense,Healthcare,Entertainment,INR,Transaction related to Healthcare
+2023-11-06 16:31:15,3555.23,Expense,Entertainment,Subscriptions,JPY,Transaction related to Entertainment
+2024-02-17 22:59:03,1547.97,Expense,Entertainment,Utilities,GBP,Transaction related to Entertainment
+2023-08-13 04:15:42,4422.84,Expense,Food,Fitness,JPY,Transaction related to Food
+2023-08-17 17:49:18,680.56,Expense,Shopping,Dining Out,GBP,Transaction related to Shopping
+2023-09-04 22:12:09,4329.41,Expense,Shopping,Clothing,USD,Transaction related to Shopping
+2023-08-01 02:04:16,3927.4,Expense,Rent,Debt Payments,INR,Transaction related to Rent
+2024-03-20 04:04:42,4492.72,Expense,Rent,Fitness,INR,Transaction related to Rent
+2024-02-19 18:48:35,527.69,Expense,Healthcare,Transportation,GBP,Transaction related to Healthcare
+2024-07-08 06:09:57,779.49,Expense,Rent,Utilities,INR,Transaction related to Rent
+2024-06-19 13:03:34,3760.42,Income,Freelance,Business Income,EUR,Transaction related to Freelance
+2024-06-02 03:59:21,17.52,Expense,Entertainment,Household Supplies,GBP,Transaction related to Entertainment
+2023-08-08 08:57:03,1378.03,Expense,Rent,Groceries,EUR,Transaction related to Rent
+2024-03-31 14:29:26,3098.74,Expense,Entertainment,Subscriptions,INR,Transaction related to Entertainment
+2024-04-22 17:23:51,2613,Expense,Rent,Utilities,INR,Transaction related to Rent
+2024-06-05 00:37:52,457.79,Expense,Education,Debt Payments,EUR,Transaction related to Education
+2024-02-22 20:00:18,2094.11,Expense,Rent,Fitness,USD,Transaction related to Rent
+2023-08-21 11:26:02,2131.24,Expense,Utilities,Clothing,GBP,Transaction related to Utilities
+2024-07-15 20:44:04,1871.3,Expense,Entertainment,Groceries,INR,Transaction related to Entertainment
+2023-11-17 19:12:28,2700.01,Expense,Transportation,Education,GBP,Transaction related to Transportation
+2024-03-28 05:34:29,717.51,Expense,Rent,Groceries,USD,Transaction related to Rent
+2024-01-29 06:40:49,3403.01,Expense,Transportation,Rent,USD,Transaction related to Transportation
+2024-01-11 05:00:25,4471.56,Expense,Travel,Gifts,GBP,Transaction related to Travel
+2023-08-07 02:24:52,897.67,Income,Salary,Freelance Income,GBP,Transaction related to Salary
+2024-01-22 16:59:02,1509.19,Expense,Healthcare,Miscellaneous,INR,Transaction related to Healthcare
+2024-05-24 14:01:41,1493.54,Expense,Rent,Childcare,GBP,Transaction related to Rent
+2023-09-05 12:01:26,3406.9,Expense,Utilities,Travel,INR,Transaction related to Utilities
+2024-04-22 02:47:18,3446.77,Expense,Food,Personal Care,USD,Transaction related to Food
+2023-12-15 03:37:56,1162.2,Expense,Education,Travel,EUR,Transaction related to Education
+2024-01-19 22:30:10,1102.96,Expense,Education,Education,JPY,Transaction related to Education
+2023-09-29 23:12:16,2848.41,Expense,Travel,Personal Care,EUR,Transaction related to Travel
+2023-07-21 18:08:08,562.14,Income,Bonus,Interest Income,USD,Transaction related to Bonus
+2023-09-23 00:13:06,2327.89,Expense,Food,Miscellaneous,EUR,Transaction related to Food
+2023-08-20 11:23:45,3780.67,Expense,Rent,Clothing,GBP,Transaction related to Rent
+2023-09-09 15:20:46,960.68,Expense,Rent,Miscellaneous,USD,Transaction related to Rent
+2023-08-12 15:47:26,1380.79,Expense,Shopping,Education,JPY,Transaction related to Shopping
+2024-05-19 11:12:01,1189.84,Expense,Education,Household Supplies,EUR,Transaction related to Education
+2024-01-04 02:50:30,1175.24,Expense,Food,Education,INR,Transaction related to Food
+2024-06-26 16:45:10,26.01,Expense,Rent,Utilities,GBP,Transaction related to Rent
+2024-06-11 17:56:05,1551.55,Expense,Travel,Education,JPY,Transaction related to Travel
+2024-06-02 15:25:11,4288.94,Expense,Healthcare,Miscellaneous,USD,Transaction related to Healthcare
+2024-02-11 23:27:22,2061.77,Expense,Healthcare,Rent,USD,Transaction related to Healthcare
+2023-11-26 10:47:23,2182.06,Expense,Rent,Education,USD,Transaction related to Rent
+2023-11-18 19:45:07,4929.53,Expense,Rent,Rent,GBP,Transaction related to Rent
+2024-07-01 11:13:41,823.27,Expense,Rent,Subscriptions,USD,Transaction related to Rent
+2023-12-05 11:29:47,1929.51,Income,Gift,Salary,EUR,Transaction related to Gift
+2024-01-02 06:56:34,4311.77,Expense,Shopping,Personal Care,GBP,Transaction related to Shopping
+2024-03-29 08:48:41,264.35,Expense,Utilities,Education,GBP,Transaction related to Utilities
+2023-11-15 15:05:34,2108.49,Expense,Travel,Utilities,GBP,Transaction related to Travel
+2023-11-03 08:33:55,4949.29,Expense,Transportation,Fitness,EUR,Transaction related to Transportation
+2023-10-14 22:14:05,1371.89,Expense,Utilities,Household Supplies,INR,Transaction related to Utilities
+2024-04-01 03:54:17,3188.42,Expense,Travel,Travel,EUR,Transaction related to Travel
+2024-05-04 00:03:20,2288.17,Expense,Utilities,Education,JPY,Transaction related to Utilities
+2023-09-01 22:28:41,4701.58,Expense,Education,Gifts,GBP,Transaction related to Education
+2024-03-16 19:51:43,2421.55,Expense,Shopping,Debt Payments,USD,Transaction related to Shopping
+2024-05-18 12:45:51,1468.62,Income,Gift,Business Income,INR,Transaction related to Gift
+2024-07-15 14:03:07,3845.98,Expense,Transportation,Household Supplies,JPY,Transaction related to Transportation
+2024-03-10 23:57:36,1864.95,Expense,Education,Subscriptions,USD,Transaction related to Education
+2024-02-02 08:23:43,4820.4,Income,Gift,Interest Income,INR,Transaction related to Gift
+2024-01-08 16:39:31,2354.46,Expense,Utilities,Household Supplies,USD,Transaction related to Utilities
+2023-09-29 11:25:49,4458.56,Income,Bonus,Business Income,EUR,Transaction related to Bonus
+2023-09-09 11:29:06,370.41,Expense,Transportation,Miscellaneous,JPY,Transaction related to Transportation
+2024-07-11 21:42:42,3585.12,Expense,Rent,Travel,GBP,Transaction related to Rent
+2024-01-20 12:46:14,2218.15,Expense,Education,Healthcare,GBP,Transaction related to Education
+2023-12-03 15:08:56,4459.8,Expense,Shopping,Debt Payments,JPY,Transaction related to Shopping
+2023-12-19 19:41:34,2337.11,Income,Freelance,Business Income,GBP,Transaction related to Freelance
+2024-04-30 09:07:56,911.06,Expense,Rent,Dining Out,EUR,Transaction related to Rent
+2024-04-30 04:20:28,361.58,Expense,Food,Miscellaneous,INR,Transaction related to Food
+2023-12-22 23:56:43,1724.98,Expense,Shopping,Childcare,USD,Transaction related to Shopping
+2024-02-17 10:35:02,2750.94,Expense,Entertainment,Entertainment,INR,Transaction related to Entertainment
+2023-12-10 09:12:45,1201.88,Expense,Education,Debt Payments,JPY,Transaction related to Education
+2023-07-23 01:42:41,65.95,Expense,Healthcare,Childcare,EUR,Transaction related to Healthcare
+2024-05-20 08:05:57,2068.77,Expense,Travel,Pet Care,EUR,Transaction related to Travel
+2023-12-12 22:23:13,2458.72,Expense,Utilities,Subscriptions,EUR,Transaction related to Utilities
+2024-06-22 19:07:39,2150.89,Expense,Travel,Education,USD,Transaction related to Travel
+2023-08-12 03:15:52,2624.99,Expense,Food,Travel,USD,Transaction related to Food
+2024-01-30 10:15:21,1680.64,Expense,Entertainment,Utilities,GBP,Transaction related to Entertainment
+2024-04-11 17:39:54,3817.21,Expense,Travel,Childcare,INR,Transaction related to Travel
+2024-06-07 19:48:22,4621.57,Expense,Healthcare,Utilities,GBP,Transaction related to Healthcare
+2024-07-19 03:01:59,2461.59,Expense,Education,Debt Payments,USD,Transaction related to Education
+2023-08-12 02:38:34,2319.6,Expense,Transportation,Entertainment,EUR,Transaction related to Transportation
+2023-11-16 08:27:28,2510.43,Expense,Utilities,Miscellaneous,JPY,Transaction related to Utilities
+2023-10-10 18:10:32,184.92,Expense,Rent,Rent,INR,Transaction related to Rent
+2023-08-11 06:52:15,2724.65,Expense,Travel,Subscriptions,GBP,Transaction related to Travel
+2023-12-21 18:00:28,113.94,Expense,Food,Subscriptions,USD,Transaction related to Food
+2024-04-07 00:41:27,1195.96,Income,Freelance,Pension,EUR,Transaction related to Freelance
+2024-07-05 15:57:21,1609,Expense,Utilities,Household Supplies,EUR,Transaction related to Utilities
+2023-10-25 02:20:57,1505.81,Expense,Transportation,Entertainment,GBP,Transaction related to Transportation
+2023-08-12 22:26:53,821.53,Income,Investment,Pension,GBP,Transaction related to Investment
+2023-12-29 16:28:35,4931.58,Expense,Food,Pet Care,JPY,Transaction related to Food
+2024-01-18 07:41:07,1034.16,Expense,Rent,Miscellaneous,USD,Transaction related to Rent
+2023-11-30 21:12:28,3252.01,Expense,Healthcare,Transportation,INR,Transaction related to Healthcare
+2023-12-03 13:19:26,1716.37,Expense,Utilities,Education,JPY,Transaction related to Utilities
+2024-07-01 17:17:36,3403.53,Expense,Healthcare,Pet Care,JPY,Transaction related to Healthcare
+2024-03-14 07:20:41,1590.99,Expense,Travel,Subscriptions,USD,Transaction related to Travel
+2023-09-23 05:11:22,3357.06,Expense,Rent,Healthcare,USD,Transaction related to Rent
+2023-12-08 10:51:05,3137.97,Expense,Rent,Groceries,USD,Transaction related to Rent
+2023-09-18 00:01:27,92.82,Expense,Food,Personal Care,EUR,Transaction related to Food
+2023-08-12 07:02:17,3521.83,Expense,Utilities,Pet Care,GBP,Transaction related to Utilities
+2023-12-07 06:02:10,3929.57,Expense,Travel,Clothing,GBP,Transaction related to Travel
+2024-06-17 10:55:04,2644.83,Expense,Utilities,Healthcare,EUR,Transaction related to Utilities
+2023-11-20 23:29:26,1646.66,Expense,Education,Miscellaneous,USD,Transaction related to Education
+2024-03-28 17:58:53,3580.18,Expense,Rent,Subscriptions,EUR,Transaction related to Rent
+2024-04-16 08:37:41,4740.57,Expense,Healthcare,Rent,EUR,Transaction related to Healthcare
+2024-02-09 06:57:09,4661.96,Expense,Shopping,Debt Payments,INR,Transaction related to Shopping
+2023-12-27 20:36:58,1521.85,Expense,Food,Debt Payments,EUR,Transaction related to Food
+2024-01-06 16:28:27,3216.56,Expense,Food,Pet Care,EUR,Transaction related to Food
+2024-01-16 17:56:48,4063.89,Expense,Food,Household Supplies,INR,Transaction related to Food
+2024-02-08 04:07:01,3007.83,Expense,Rent,Rent,JPY,Transaction related to Rent
+2024-02-24 19:05:39,3525.3,Expense,Healthcare,Household Supplies,GBP,Transaction related to Healthcare
+2024-02-14 15:24:15,3335.72,Expense,Transportation,Gifts,GBP,Transaction related to Transportation
+2023-09-17 03:31:05,1113.01,Expense,Transportation,Debt Payments,JPY,Transaction related to Transportation
+2023-09-04 17:19:23,4351.48,Expense,Healthcare,Subscriptions,USD,Transaction related to Healthcare
+2023-11-29 14:15:00,4206.98,Expense,Healthcare,Household Supplies,INR,Transaction related to Healthcare
+2023-10-12 10:23:16,525.59,Expense,Education,Gifts,EUR,Transaction related to Education
+2024-07-09 03:55:30,1567.8,Expense,Entertainment,Pet Care,INR,Transaction related to Entertainment
+2023-10-20 01:07:31,3809.99,Expense,Education,Clothing,USD,Transaction related to Education
+2024-02-23 21:36:46,4020.44,Expense,Education,Household Supplies,INR,Transaction related to Education
+2024-06-03 17:27:48,803.85,Expense,Education,Household Supplies,GBP,Transaction related to Education
+2023-11-04 23:16:21,4644.49,Expense,Travel,Transportation,INR,Transaction related to Travel
+2024-07-16 19:45:41,4259.91,Expense,Utilities,Subscriptions,EUR,Transaction related to Utilities
+2024-04-20 13:06:17,1373.38,Expense,Entertainment,Insurance,INR,Transaction related to Entertainment
+2024-01-20 04:11:33,159.19,Expense,Education,Insurance,GBP,Transaction related to Education
+2024-04-29 08:38:01,2802.69,Income,Freelance,Salary,USD,Transaction related to Freelance
+2023-11-27 19:43:07,1789.71,Expense,Utilities,Subscriptions,USD,Transaction related to Utilities
+2024-05-19 13:42:45,2106.74,Expense,Travel,Entertainment,GBP,Transaction related to Travel
+2023-10-06 02:22:32,4152.57,Expense,Rent,Subscriptions,JPY,Transaction related to Rent
+2024-02-27 03:00:34,2745.76,Expense,Education,Transportation,JPY,Transaction related to Education
+2024-04-05 20:28:59,3614.15,Expense,Rent,Childcare,INR,Transaction related to Rent
+2023-08-07 21:34:13,4431.9,Expense,Transportation,Entertainment,USD,Transaction related to Transportation
+2024-06-12 13:36:54,2309.52,Expense,Rent,Childcare,EUR,Transaction related to Rent
+2023-08-23 04:29:27,4626.41,Expense,Transportation,Utilities,JPY,Transaction related to Transportation
+2023-09-03 01:04:28,3362.52,Expense,Entertainment,Dining Out,USD,Transaction related to Entertainment
+2023-07-29 00:47:19,158.23,Expense,Education,Subscriptions,USD,Transaction related to Education
+2024-05-26 12:14:35,1854.51,Expense,Rent,Clothing,EUR,Transaction related to Rent
+2023-12-03 18:40:40,169.56,Expense,Shopping,Clothing,INR,Transaction related to Shopping
+2023-10-10 11:17:09,1528.42,Expense,Travel,Rent,GBP,Transaction related to Travel
+2023-09-13 20:46:17,605.23,Expense,Utilities,Personal Care,GBP,Transaction related to Utilities
+2023-11-10 05:00:41,4954.27,Expense,Healthcare,Household Supplies,USD,Transaction related to Healthcare
+2024-02-22 01:07:30,736.33,Expense,Transportation,Transportation,GBP,Transaction related to Transportation
+2024-04-17 21:35:21,2533.47,Expense,Rent,Fitness,INR,Transaction related to Rent
+2023-12-21 17:06:25,2459.73,Income,Gift,Bonuses,USD,Transaction related to Gift
+2023-11-15 01:23:39,2904.9,Income,Investment,Dividends,INR,Transaction related to Investment
+2023-10-10 19:44:09,4293.14,Expense,Entertainment,Dining Out,EUR,Transaction related to Entertainment
+2023-12-12 15:12:46,4510.11,Expense,Travel,Childcare,GBP,Transaction related to Travel
+2023-12-28 07:41:27,1576.14,Expense,Shopping,Miscellaneous,USD,Transaction related to Shopping
+2023-10-16 21:28:11,85.6,Expense,Food,Clothing,INR,Transaction related to Food
+2024-03-16 19:43:21,320.77,Expense,Food,Personal Care,JPY,Transaction related to Food
+2024-06-28 14:43:25,3803.24,Expense,Education,Travel,USD,Transaction related to Education
+2023-09-22 13:35:15,3585.93,Expense,Healthcare,Dining Out,INR,Transaction related to Healthcare
+2024-03-22 21:15:43,4446.38,Expense,Transportation,Personal Care,USD,Transaction related to Transportation
+2024-03-19 05:25:48,3921.69,Expense,Healthcare,Subscriptions,GBP,Transaction related to Healthcare
+2024-05-01 12:49:24,163.01,Expense,Rent,Miscellaneous,EUR,Transaction related to Rent
+2024-02-29 08:09:13,3788.41,Income,Gift,Bonuses,JPY,Transaction related to Gift
+2024-07-20 03:59:40,4612.89,Expense,Transportation,Dining Out,EUR,Transaction related to Transportation
+2023-12-30 21:38:41,557.68,Expense,Travel,Dining Out,INR,Transaction related to Travel
+2024-06-23 10:20:13,4517.19,Expense,Education,Insurance,JPY,Transaction related to Education
+2023-08-09 14:08:17,295.12,Expense,Utilities,Childcare,EUR,Transaction related to Utilities
+2023-10-26 11:07:39,1124.51,Expense,Rent,Subscriptions,GBP,Transaction related to Rent
+2023-09-17 16:44:01,1245.75,Expense,Transportation,Education,GBP,Transaction related to Transportation
+2023-11-07 01:41:41,1153.72,Expense,Entertainment,Subscriptions,USD,Transaction related to Entertainment
+2023-08-22 05:21:50,4764.44,Expense,Food,Debt Payments,JPY,Transaction related to Food
+2024-04-26 00:01:35,2758.23,Expense,Rent,Gifts,JPY,Transaction related to Rent
+2023-10-06 13:05:01,1370.33,Expense,Shopping,Household Supplies,INR,Transaction related to Shopping
+2024-03-25 14:10:13,1922.72,Expense,Travel,Dining Out,EUR,Transaction related to Travel
+2023-08-15 13:44:42,3011.33,Expense,Shopping,Entertainment,INR,Transaction related to Shopping
+2023-08-10 14:28:51,1408.43,Income,Salary,Pension,EUR,Transaction related to Salary
+2024-07-06 04:25:39,3257.56,Expense,Healthcare,Rent,GBP,Transaction related to Healthcare
+2023-12-05 14:15:26,2182.11,Expense,Utilities,Debt Payments,GBP,Transaction related to Utilities
+2023-12-01 06:44:26,3933.08,Expense,Rent,Debt Payments,USD,Transaction related to Rent
+2023-12-30 23:00:33,610.27,Expense,Travel,Gifts,GBP,Transaction related to Travel
+2024-06-07 16:48:03,4320.56,Expense,Rent,Dining Out,JPY,Transaction related to Rent
+2023-08-30 14:06:02,4827.38,Expense,Healthcare,Travel,USD,Transaction related to Healthcare
+2024-04-25 19:46:42,2304.59,Expense,Travel,Travel,EUR,Transaction related to Travel
+2024-06-14 23:09:54,1165.96,Expense,Healthcare,Miscellaneous,EUR,Transaction related to Healthcare
+2024-02-04 14:42:33,540.29,Expense,Transportation,Entertainment,JPY,Transaction related to Transportation
+2024-06-02 10:47:22,4281.91,Expense,Travel,Household Supplies,JPY,Transaction related to Travel
+2024-04-06 17:48:55,222.25,Expense,Healthcare,Childcare,GBP,Transaction related to Healthcare
+2023-12-10 01:52:42,1772.51,Expense,Travel,Utilities,USD,Transaction related to Travel
+2023-08-27 04:37:06,839.04,Expense,Rent,Rent,EUR,Transaction related to Rent
+2023-11-07 23:12:27,4184.06,Expense,Healthcare,Pet Care,GBP,Transaction related to Healthcare
+2024-05-26 12:06:38,3553.78,Expense,Travel,Subscriptions,JPY,Transaction related to Travel
+2023-11-19 17:02:28,982.08,Expense,Food,Travel,INR,Transaction related to Food
+2024-01-23 00:38:49,1525.5,Expense,Rent,Household Supplies,EUR,Transaction related to Rent
+2024-04-29 19:04:12,322.12,Expense,Education,Fitness,INR,Transaction related to Education
+2024-02-10 10:51:14,4693.92,Expense,Transportation,Utilities,GBP,Transaction related to Transportation
+2024-02-11 21:30:53,1791,Expense,Utilities,Personal Care,USD,Transaction related to Utilities
+2023-08-23 04:22:01,122.14,Expense,Education,Childcare,GBP,Transaction related to Education
+2023-12-18 03:55:38,4435.04,Expense,Rent,Gifts,INR,Transaction related to Rent
+2024-06-10 04:02:03,4751.13,Expense,Rent,Dining Out,EUR,Transaction related to Rent
+2024-06-02 14:41:37,4137.33,Income,Salary,Pension,GBP,Transaction related to Salary
+2024-03-07 04:22:51,4720.35,Expense,Rent,Utilities,USD,Transaction related to Rent
+2023-10-28 03:40:28,3005.24,Expense,Travel,Gifts,EUR,Transaction related to Travel
+2024-05-07 10:40:26,3516.68,Expense,Healthcare,Miscellaneous,JPY,Transaction related to Healthcare
+2024-05-30 04:14:22,1624.74,Expense,Entertainment,Transportation,GBP,Transaction related to Entertainment
+2024-06-06 14:05:39,1239.35,Expense,Entertainment,Fitness,INR,Transaction related to Entertainment
+2024-02-13 04:22:03,2017.08,Expense,Food,Healthcare,EUR,Transaction related to Food
+2024-02-19 06:21:33,2585.56,Expense,Entertainment,Entertainment,GBP,Transaction related to Entertainment
+2023-08-05 18:22:53,3132.62,Expense,Food,Pet Care,GBP,Transaction related to Food
+2023-08-13 22:16:10,898.15,Expense,Education,Insurance,JPY,Transaction related to Education
+2023-08-31 23:21:50,2681.38,Expense,Utilities,Gifts,EUR,Transaction related to Utilities
+2024-02-21 06:01:45,3633.35,Expense,Healthcare,Healthcare,GBP,Transaction related to Healthcare
+2024-07-17 01:34:16,3875.13,Expense,Rent,Insurance,USD,Transaction related to Rent
+2024-05-14 23:14:53,2359.5,Expense,Travel,Education,INR,Transaction related to Travel
+2023-12-25 09:51:51,1942.17,Income,Salary,Business Income,INR,Transaction related to Salary
+2023-10-31 00:01:37,3895.76,Expense,Food,Debt Payments,EUR,Transaction related to Food
+2024-07-20 14:47:37,3726.9,Expense,Healthcare,Education,GBP,Transaction related to Healthcare
+2024-04-06 11:25:51,3174.34,Income,Freelance,Freelance Income,EUR,Transaction related to Freelance
+2024-01-02 16:29:47,1326.19,Income,Bonus,Interest Income,EUR,Transaction related to Bonus
+2024-05-22 07:36:28,3567.68,Expense,Transportation,Utilities,EUR,Transaction related to Transportation
+2024-06-25 06:51:05,2807.61,Income,Bonus,Rental Income,USD,Transaction related to Bonus
+2023-08-30 13:23:51,673.44,Expense,Rent,Utilities,JPY,Transaction related to Rent
+2023-10-10 06:49:17,3766.96,Expense,Education,Rent,EUR,Transaction related to Education
+2024-05-19 16:38:53,2373.79,Expense,Food,Gifts,GBP,Transaction related to Food
+2023-11-09 08:24:05,3742.99,Expense,Rent,Transportation,GBP,Transaction related to Rent
+2024-05-09 06:12:24,4193.69,Expense,Healthcare,Dining Out,USD,Transaction related to Healthcare
+2023-08-29 05:27:19,2785.57,Expense,Food,Travel,INR,Transaction related to Food
+2024-04-07 05:58:47,3748.18,Expense,Rent,Debt Payments,GBP,Transaction related to Rent
+2024-07-13 17:33:43,1278.87,Expense,Rent,Personal Care,GBP,Transaction related to Rent
+2024-04-23 11:51:25,969.52,Expense,Food,Healthcare,USD,Transaction related to Food
+2024-02-29 13:02:06,3065.23,Expense,Rent,Rent,EUR,Transaction related to Rent
+2024-07-01 10:31:15,4037.16,Expense,Education,Personal Care,INR,Transaction related to Education
+2024-03-13 08:16:33,3409.16,Expense,Travel,Clothing,GBP,Transaction related to Travel
+2024-07-06 09:49:40,2011.07,Expense,Travel,Travel,GBP,Transaction related to Travel
+2024-01-21 15:52:59,4126.33,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-06-11 14:41:24,2217.22,Expense,Travel,Transportation,GBP,Transaction related to Travel
+2024-04-22 14:13:19,4640.95,Expense,Utilities,Clothing,JPY,Transaction related to Utilities
+2023-12-29 20:32:00,2361.26,Expense,Utilities,Insurance,GBP,Transaction related to Utilities
+2024-04-06 16:08:05,2839.24,Expense,Food,Childcare,JPY,Transaction related to Food
+2024-06-14 05:34:43,299.4,Expense,Utilities,Fitness,USD,Transaction related to Utilities
+2023-11-24 08:40:22,4572.92,Expense,Travel,Clothing,GBP,Transaction related to Travel
+2024-03-28 21:58:06,1723.61,Expense,Utilities,Education,EUR,Transaction related to Utilities
+2024-05-10 10:15:02,1875.11,Expense,Shopping,Transportation,INR,Transaction related to Shopping
+2023-10-01 14:29:36,3352.17,Expense,Rent,Fitness,GBP,Transaction related to Rent
+2023-10-29 13:33:36,4423.29,Expense,Transportation,Utilities,GBP,Transaction related to Transportation
+2023-10-28 02:56:49,3217.59,Expense,Entertainment,Healthcare,GBP,Transaction related to Entertainment
+2024-02-21 16:43:20,3653.43,Income,Bonus,Rental Income,USD,Transaction related to Bonus
+2024-04-10 00:08:15,2677.59,Expense,Travel,Groceries,USD,Transaction related to Travel
+2024-05-05 11:59:02,2941.59,Income,Gift,Pension,USD,Transaction related to Gift
+2023-10-04 14:37:01,4684.53,Income,Freelance,Capital Gains,USD,Transaction related to Freelance
+2023-10-26 13:26:57,1622.18,Expense,Entertainment,Personal Care,INR,Transaction related to Entertainment
+2023-09-16 20:16:15,4223.87,Expense,Food,Pet Care,EUR,Transaction related to Food
+2024-02-01 08:10:08,1177.69,Expense,Entertainment,Miscellaneous,JPY,Transaction related to Entertainment
+2023-12-22 05:48:53,722.68,Expense,Food,Groceries,GBP,Transaction related to Food
+2023-09-15 18:56:34,3940.55,Expense,Utilities,Dining Out,INR,Transaction related to Utilities
+2023-12-14 18:24:25,3302.34,Expense,Travel,Clothing,GBP,Transaction related to Travel
+2024-05-01 16:53:48,769.54,Expense,Education,Clothing,INR,Transaction related to Education
+2024-03-11 00:17:08,1156.03,Expense,Healthcare,Education,EUR,Transaction related to Healthcare
+2023-07-25 13:21:59,75.63,Expense,Rent,Healthcare,EUR,Transaction related to Rent
+2024-04-07 05:44:10,3262.77,Expense,Utilities,Education,JPY,Transaction related to Utilities
+2024-03-27 18:52:11,2003.17,Expense,Transportation,Debt Payments,GBP,Transaction related to Transportation
+2024-07-13 10:38:58,1596.08,Expense,Shopping,Rent,INR,Transaction related to Shopping
+2023-08-25 14:52:55,3853.9,Expense,Food,Dining Out,USD,Transaction related to Food
+2024-05-13 00:29:54,3564.06,Expense,Education,Gifts,JPY,Transaction related to Education
+2023-11-16 15:50:40,1071.71,Expense,Transportation,Dining Out,JPY,Transaction related to Transportation
+2023-10-25 09:20:48,1126.68,Expense,Transportation,Fitness,EUR,Transaction related to Transportation
+2024-06-11 16:24:27,627.78,Expense,Shopping,Insurance,USD,Transaction related to Shopping
+2024-02-26 11:50:44,1597.5,Expense,Food,Healthcare,EUR,Transaction related to Food
+2024-05-26 18:16:34,4322.18,Expense,Travel,Gifts,INR,Transaction related to Travel
+2024-02-29 14:14:02,628.73,Expense,Healthcare,Insurance,USD,Transaction related to Healthcare
+2023-09-19 21:33:56,2459.47,Expense,Travel,Groceries,USD,Transaction related to Travel
+2024-01-29 03:51:43,4222.92,Expense,Rent,Clothing,GBP,Transaction related to Rent
+2023-09-03 01:17:47,1405.66,Expense,Rent,Entertainment,GBP,Transaction related to Rent
+2023-09-16 17:33:43,2049.72,Expense,Food,Travel,USD,Transaction related to Food
+2024-04-16 00:21:46,2309.28,Expense,Travel,Childcare,EUR,Transaction related to Travel
+2024-05-06 01:41:00,3252.32,Expense,Travel,Pet Care,JPY,Transaction related to Travel
+2024-07-12 05:15:19,568.32,Income,Freelance,Pension,JPY,Transaction related to Freelance
+2023-12-25 01:13:53,4062.03,Expense,Utilities,Clothing,JPY,Transaction related to Utilities
+2024-04-24 21:57:38,4909.42,Expense,Entertainment,Groceries,JPY,Transaction related to Entertainment
+2023-08-27 12:22:28,4658.4,Expense,Travel,Insurance,USD,Transaction related to Travel
+2023-11-16 17:13:16,1055.71,Expense,Transportation,Personal Care,INR,Transaction related to Transportation
+2023-09-15 00:07:49,4063.24,Expense,Education,Household Supplies,EUR,Transaction related to Education
+2023-12-26 01:51:59,278.85,Expense,Education,Subscriptions,JPY,Transaction related to Education
+2023-08-29 22:46:22,932.3,Income,Investment,Freelance Income,USD,Transaction related to Investment
+2023-10-13 11:33:43,2574.9,Income,Freelance,Interest Income,INR,Transaction related to Freelance
+2024-03-30 04:34:03,3983.32,Expense,Healthcare,Household Supplies,JPY,Transaction related to Healthcare
+2024-06-28 15:08:21,4984.71,Expense,Food,Education,GBP,Transaction related to Food
+2024-02-04 03:06:37,1055.22,Expense,Transportation,Utilities,INR,Transaction related to Transportation
+2023-12-04 14:32:37,2427.75,Expense,Transportation,Education,USD,Transaction related to Transportation
+2023-11-06 04:28:41,4860.46,Expense,Entertainment,Clothing,USD,Transaction related to Entertainment
+2023-10-11 15:30:53,4441.35,Income,Investment,Pension,USD,Transaction related to Investment
+2024-07-06 00:52:39,4033.08,Expense,Transportation,Pet Care,USD,Transaction related to Transportation
+2024-01-02 22:45:27,2522.52,Expense,Transportation,Subscriptions,INR,Transaction related to Transportation
+2024-04-23 08:48:42,3084.68,Expense,Utilities,Dining Out,GBP,Transaction related to Utilities
+2023-11-15 19:42:50,4306.39,Expense,Education,Utilities,USD,Transaction related to Education
+2023-08-14 00:04:32,4521.22,Expense,Shopping,Healthcare,EUR,Transaction related to Shopping
+2024-03-22 23:02:38,306.64,Expense,Healthcare,Pet Care,EUR,Transaction related to Healthcare
+2023-08-22 20:52:54,1095.89,Expense,Entertainment,Subscriptions,JPY,Transaction related to Entertainment
+2023-08-09 00:04:24,4833.2,Expense,Travel,Miscellaneous,USD,Transaction related to Travel
+2024-05-20 08:13:18,3275.38,Expense,Education,Rent,INR,Transaction related to Education
+2023-08-13 18:34:06,896.79,Expense,Travel,Healthcare,EUR,Transaction related to Travel
+2024-02-27 12:10:51,1806.9,Income,Bonus,Business Income,EUR,Transaction related to Bonus
+2023-12-30 16:46:57,1316.08,Expense,Transportation,Dining Out,INR,Transaction related to Transportation
+2023-08-27 23:06:44,1405.59,Expense,Food,Personal Care,EUR,Transaction related to Food
+2024-06-17 21:21:01,1324.8,Income,Gift,Social Security,GBP,Transaction related to Gift
+2023-10-02 09:41:12,292.59,Expense,Rent,Education,USD,Transaction related to Rent
+2024-07-01 02:11:04,4484.45,Expense,Travel,Dining Out,INR,Transaction related to Travel
+2023-09-13 00:04:06,574.16,Expense,Food,Pet Care,JPY,Transaction related to Food
+2023-10-19 18:01:14,3551.41,Expense,Rent,Travel,USD,Transaction related to Rent
+2023-08-04 05:25:33,3998.56,Expense,Transportation,Childcare,EUR,Transaction related to Transportation
+2023-07-30 06:14:37,3480.61,Expense,Education,Healthcare,USD,Transaction related to Education
+2023-12-08 04:32:14,2834.06,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-04-07 11:48:23,2822.5,Expense,Entertainment,Childcare,GBP,Transaction related to Entertainment
+2024-05-13 14:20:36,3174.78,Expense,Rent,Insurance,GBP,Transaction related to Rent
+2023-08-19 23:35:50,4155.17,Expense,Utilities,Healthcare,INR,Transaction related to Utilities
+2023-10-11 14:12:53,4958.12,Expense,Healthcare,Entertainment,USD,Transaction related to Healthcare
+2023-12-13 13:50:37,4497.9,Expense,Healthcare,Gifts,JPY,Transaction related to Healthcare
+2024-03-02 22:22:40,97.12,Expense,Travel,Household Supplies,INR,Transaction related to Travel
+2023-09-25 23:23:43,3550.93,Expense,Utilities,Dining Out,INR,Transaction related to Utilities
+2024-01-27 08:04:28,710.75,Expense,Shopping,Clothing,GBP,Transaction related to Shopping
+2023-11-03 00:17:03,2141.31,Expense,Entertainment,Personal Care,INR,Transaction related to Entertainment
+2024-02-04 07:04:52,1192.86,Expense,Education,Debt Payments,INR,Transaction related to Education
+2024-05-22 13:35:45,2198.44,Expense,Education,Clothing,EUR,Transaction related to Education
+2023-10-29 06:59:03,1472.38,Expense,Rent,Clothing,EUR,Transaction related to Rent
+2024-02-27 04:57:16,4359.29,Expense,Education,Household Supplies,INR,Transaction related to Education
+2023-08-26 11:40:09,774.55,Expense,Shopping,Rent,JPY,Transaction related to Shopping
+2023-09-10 19:49:00,4261.78,Expense,Shopping,Insurance,INR,Transaction related to Shopping
+2024-01-18 02:36:23,1135.76,Income,Salary,Rental Income,JPY,Transaction related to Salary
+2024-05-25 08:05:40,4494.73,Expense,Education,Entertainment,EUR,Transaction related to Education
+2024-04-30 02:11:36,1971.14,Expense,Utilities,Entertainment,INR,Transaction related to Utilities
+2023-08-29 02:07:50,3468.52,Expense,Rent,Rent,EUR,Transaction related to Rent
+2024-03-11 16:59:04,816.63,Expense,Shopping,Fitness,INR,Transaction related to Shopping
+2024-04-05 13:28:21,2613.18,Expense,Rent,Travel,EUR,Transaction related to Rent
+2023-12-11 07:24:59,2662.02,Expense,Entertainment,Fitness,INR,Transaction related to Entertainment
+2024-02-22 18:02:31,1368.18,Expense,Food,Transportation,GBP,Transaction related to Food
+2024-05-20 23:45:28,2307.85,Expense,Shopping,Rent,USD,Transaction related to Shopping
+2024-06-30 17:34:51,3277.78,Expense,Food,Miscellaneous,JPY,Transaction related to Food
+2023-09-23 08:58:41,675.87,Expense,Shopping,Rent,INR,Transaction related to Shopping
+2023-12-02 21:48:39,4868.97,Expense,Rent,Transportation,EUR,Transaction related to Rent
+2023-10-01 00:25:40,4275.63,Expense,Education,Miscellaneous,JPY,Transaction related to Education
+2023-12-16 19:46:28,4787.98,Expense,Shopping,Healthcare,EUR,Transaction related to Shopping
+2023-08-30 23:05:25,4590.91,Expense,Rent,Groceries,GBP,Transaction related to Rent
+2023-09-14 03:52:02,2101.45,Expense,Food,Miscellaneous,INR,Transaction related to Food
+2024-06-23 13:02:34,4823.03,Income,Salary,Capital Gains,JPY,Transaction related to Salary
+2023-12-22 21:23:22,987.25,Expense,Shopping,Groceries,EUR,Transaction related to Shopping
+2023-08-08 15:24:41,3209.55,Expense,Shopping,Personal Care,GBP,Transaction related to Shopping
+2023-09-29 05:09:47,1184.34,Expense,Education,Travel,USD,Transaction related to Education
+2024-07-19 03:03:56,414.85,Expense,Education,Personal Care,EUR,Transaction related to Education
+2024-02-13 16:50:53,186.3,Expense,Entertainment,Household Supplies,GBP,Transaction related to Entertainment
+2023-11-10 05:39:23,4943.76,Expense,Shopping,Pet Care,USD,Transaction related to Shopping
+2023-12-08 20:11:08,3947.6,Income,Investment,Social Security,GBP,Transaction related to Investment
+2023-07-29 08:21:14,1625.92,Expense,Shopping,Household Supplies,USD,Transaction related to Shopping
+2024-01-20 19:25:13,2779.69,Expense,Education,Personal Care,USD,Transaction related to Education
+2024-05-05 06:39:32,4003.13,Expense,Utilities,Personal Care,GBP,Transaction related to Utilities
+2023-11-30 10:39:52,4983.39,Expense,Rent,Pet Care,INR,Transaction related to Rent
+2023-11-06 21:25:17,4699.54,Income,Salary,Freelance Income,JPY,Transaction related to Salary
+2023-11-10 03:20:54,2992.03,Expense,Utilities,Utilities,USD,Transaction related to Utilities
+2024-06-24 04:10:13,2623.06,Expense,Travel,Gifts,EUR,Transaction related to Travel
+2024-07-02 19:39:49,1734.67,Expense,Food,Clothing,USD,Transaction related to Food
+2023-10-22 05:00:09,2132.44,Expense,Transportation,Travel,GBP,Transaction related to Transportation
+2023-10-05 03:56:24,4946.53,Income,Salary,Salary,JPY,Transaction related to Salary
+2024-06-23 10:08:31,413.15,Expense,Transportation,Childcare,GBP,Transaction related to Transportation
+2023-12-15 02:46:47,3521.8,Expense,Education,Transportation,INR,Transaction related to Education
+2023-08-08 00:48:58,3753.28,Expense,Travel,Travel,JPY,Transaction related to Travel
+2024-07-08 06:40:18,2513.55,Expense,Food,Childcare,JPY,Transaction related to Food
+2024-02-01 05:31:35,4794.28,Expense,Travel,Travel,GBP,Transaction related to Travel
+2023-12-17 10:59:48,741.09,Expense,Shopping,Debt Payments,GBP,Transaction related to Shopping
+2024-02-17 13:49:21,518.14,Expense,Travel,Transportation,INR,Transaction related to Travel
+2024-02-15 23:15:00,4006.12,Income,Freelance,Freelance Income,INR,Transaction related to Freelance
+2024-05-21 01:26:45,2475.74,Expense,Education,Insurance,GBP,Transaction related to Education
+2024-06-12 19:28:20,4312.79,Expense,Entertainment,Rent,JPY,Transaction related to Entertainment
+2023-10-11 15:24:07,275.66,Expense,Rent,Subscriptions,USD,Transaction related to Rent
+2023-11-01 04:39:24,4448.65,Expense,Food,Debt Payments,INR,Transaction related to Food
+2024-04-18 01:24:09,1346.99,Expense,Food,Personal Care,EUR,Transaction related to Food
+2024-05-26 13:17:19,2279.25,Expense,Shopping,Dining Out,JPY,Transaction related to Shopping
+2024-01-02 19:39:49,2965.99,Expense,Utilities,Personal Care,USD,Transaction related to Utilities
+2024-03-31 00:47:50,1634.86,Expense,Education,Childcare,JPY,Transaction related to Education
+2024-04-09 03:20:01,3598.91,Expense,Entertainment,Pet Care,GBP,Transaction related to Entertainment
+2024-03-28 14:38:22,1998.66,Expense,Food,Groceries,GBP,Transaction related to Food
+2024-03-07 15:42:10,311.1,Expense,Utilities,Healthcare,JPY,Transaction related to Utilities
+2023-08-08 14:15:25,1128.93,Expense,Entertainment,Subscriptions,GBP,Transaction related to Entertainment
+2024-06-02 13:39:00,2181.18,Expense,Utilities,Subscriptions,JPY,Transaction related to Utilities
+2024-05-30 12:16:47,1876.06,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-03-22 09:10:37,804.44,Expense,Utilities,Fitness,INR,Transaction related to Utilities
+2023-09-25 03:10:29,2958.21,Expense,Shopping,Childcare,USD,Transaction related to Shopping
+2024-03-22 19:52:23,2408.26,Income,Investment,Bonuses,INR,Transaction related to Investment
+2024-03-27 09:40:12,3980.83,Expense,Education,Childcare,GBP,Transaction related to Education
+2023-08-12 21:09:48,3300.51,Expense,Shopping,Childcare,EUR,Transaction related to Shopping
+2024-07-17 05:18:59,132.94,Expense,Healthcare,Fitness,USD,Transaction related to Healthcare
+2024-04-11 04:12:29,687.9,Expense,Education,Education,JPY,Transaction related to Education
+2023-08-30 03:58:03,1410.79,Expense,Healthcare,Gifts,GBP,Transaction related to Healthcare
+2023-10-23 06:06:12,2938.81,Expense,Shopping,Rent,JPY,Transaction related to Shopping
+2024-02-29 06:14:44,1926.96,Expense,Entertainment,Childcare,EUR,Transaction related to Entertainment
+2023-12-24 22:36:08,4839.15,Expense,Utilities,Groceries,EUR,Transaction related to Utilities
+2024-01-16 23:45:26,1271.74,Expense,Rent,Entertainment,INR,Transaction related to Rent
+2023-12-31 07:44:58,4408.22,Expense,Rent,Entertainment,JPY,Transaction related to Rent
+2023-12-11 11:54:50,2052.76,Expense,Utilities,Healthcare,EUR,Transaction related to Utilities
+2024-07-02 21:24:31,547.41,Expense,Rent,Entertainment,USD,Transaction related to Rent
+2024-02-22 13:13:46,1158.82,Expense,Food,Household Supplies,INR,Transaction related to Food
+2023-10-15 17:10:03,2580.26,Expense,Healthcare,Utilities,JPY,Transaction related to Healthcare
+2023-08-07 01:40:27,1971.49,Expense,Entertainment,Childcare,USD,Transaction related to Entertainment
+2023-12-03 00:57:52,4732.23,Expense,Healthcare,Dining Out,INR,Transaction related to Healthcare
+2024-04-22 14:57:47,3905,Expense,Food,Transportation,INR,Transaction related to Food
+2024-03-09 19:14:22,4912.4,Expense,Education,Education,GBP,Transaction related to Education
+2023-10-12 16:04:49,3034.45,Expense,Utilities,Dining Out,USD,Transaction related to Utilities
+2024-05-12 16:24:32,3466.22,Expense,Education,Transportation,EUR,Transaction related to Education
+2023-10-15 04:05:25,3875.79,Expense,Travel,Rent,JPY,Transaction related to Travel
+2023-11-12 01:06:35,4123.92,Expense,Utilities,Rent,USD,Transaction related to Utilities
+2024-02-13 23:01:40,1103.79,Expense,Travel,Travel,INR,Transaction related to Travel
+2023-11-24 21:49:21,3137.77,Expense,Utilities,Groceries,GBP,Transaction related to Utilities
+2024-06-04 22:08:02,851.95,Expense,Rent,Childcare,EUR,Transaction related to Rent
+2023-11-25 01:13:23,1706.24,Expense,Healthcare,Miscellaneous,USD,Transaction related to Healthcare
+2024-07-01 06:26:30,1712.26,Expense,Healthcare,Groceries,JPY,Transaction related to Healthcare
+2024-04-27 01:32:40,4042.66,Expense,Entertainment,Dining Out,JPY,Transaction related to Entertainment
+2023-11-12 20:21:16,2117.69,Expense,Food,Personal Care,JPY,Transaction related to Food
+2024-01-25 08:44:44,3143.96,Expense,Rent,Personal Care,USD,Transaction related to Rent
+2023-10-26 06:57:39,3710.76,Expense,Rent,Fitness,USD,Transaction related to Rent
+2023-10-03 03:48:38,707.34,Expense,Education,Entertainment,INR,Transaction related to Education
+2023-11-27 06:46:40,2600.79,Income,Salary,Dividends,JPY,Transaction related to Salary
+2024-07-06 18:22:07,2159.63,Income,Gift,Social Security,GBP,Transaction related to Gift
+2024-02-15 08:10:56,1908.53,Expense,Healthcare,Pet Care,INR,Transaction related to Healthcare
+2024-02-14 22:24:32,3873.79,Expense,Healthcare,Household Supplies,INR,Transaction related to Healthcare
+2023-12-25 02:07:56,1400.22,Expense,Food,Travel,JPY,Transaction related to Food
+2024-05-13 11:07:09,2518.77,Expense,Food,Groceries,INR,Transaction related to Food
+2023-12-19 14:59:38,1341.99,Expense,Shopping,Debt Payments,GBP,Transaction related to Shopping
+2024-03-25 15:03:33,302.91,Expense,Rent,Clothing,EUR,Transaction related to Rent
+2023-12-24 13:29:57,3866.42,Expense,Entertainment,Gifts,EUR,Transaction related to Entertainment
+2024-03-30 13:00:28,3880.59,Expense,Education,Insurance,GBP,Transaction related to Education
+2023-07-28 02:52:19,2803.71,Expense,Rent,Travel,USD,Transaction related to Rent
+2024-05-13 11:10:55,3290.04,Income,Salary,Bonuses,GBP,Transaction related to Salary
+2024-03-31 18:34:05,490.72,Expense,Healthcare,Utilities,USD,Transaction related to Healthcare
+2023-08-08 16:44:54,1756.47,Expense,Entertainment,Groceries,USD,Transaction related to Entertainment
+2024-02-11 09:08:01,539.46,Expense,Entertainment,Transportation,USD,Transaction related to Entertainment
+2024-07-17 08:40:20,1028.17,Income,Investment,Pension,GBP,Transaction related to Investment
+2023-11-02 04:23:22,825.69,Expense,Travel,Insurance,GBP,Transaction related to Travel
+2024-04-11 22:12:44,650.83,Expense,Utilities,Transportation,INR,Transaction related to Utilities
+2023-08-05 05:16:29,494.97,Expense,Healthcare,Childcare,JPY,Transaction related to Healthcare
+2024-03-16 09:43:23,4621.81,Expense,Utilities,Subscriptions,EUR,Transaction related to Utilities
+2023-07-25 17:12:30,2586.46,Income,Bonus,Interest Income,GBP,Transaction related to Bonus
+2023-12-27 12:56:12,25.34,Expense,Rent,Childcare,GBP,Transaction related to Rent
+2024-02-08 00:26:12,711.75,Expense,Transportation,Subscriptions,GBP,Transaction related to Transportation
+2023-11-02 09:50:09,2442.12,Expense,Rent,Education,GBP,Transaction related to Rent
+2023-12-18 04:44:23,1791.48,Income,Freelance,Pension,EUR,Transaction related to Freelance
+2024-03-08 23:28:39,2242.27,Expense,Travel,Debt Payments,INR,Transaction related to Travel
+2024-05-30 23:10:35,3211.98,Income,Salary,Bonuses,INR,Transaction related to Salary
+2023-12-05 12:06:54,4124.04,Expense,Food,Subscriptions,USD,Transaction related to Food
+2023-10-11 03:31:01,84.78,Expense,Rent,Travel,EUR,Transaction related to Rent
+2024-02-13 14:15:19,3231.37,Expense,Rent,Fitness,JPY,Transaction related to Rent
+2023-11-29 11:18:50,2502.63,Expense,Shopping,Education,EUR,Transaction related to Shopping
+2024-03-12 11:42:23,2335.54,Expense,Healthcare,Fitness,USD,Transaction related to Healthcare
+2023-08-26 08:49:00,603.64,Expense,Education,Transportation,JPY,Transaction related to Education
+2024-07-06 17:24:30,3495.23,Expense,Healthcare,Household Supplies,USD,Transaction related to Healthcare
+2024-07-12 07:27:25,1634.45,Expense,Travel,Clothing,EUR,Transaction related to Travel
+2023-08-08 17:30:45,458.71,Expense,Entertainment,Personal Care,INR,Transaction related to Entertainment
+2023-10-20 01:33:10,1274.57,Income,Freelance,Freelance Income,USD,Transaction related to Freelance
+2024-03-15 01:42:27,999.3,Expense,Utilities,Household Supplies,EUR,Transaction related to Utilities
+2024-07-06 15:40:02,458.75,Expense,Travel,Healthcare,EUR,Transaction related to Travel
+2024-06-02 07:45:16,1877.48,Expense,Shopping,Pet Care,JPY,Transaction related to Shopping
+2023-10-03 08:38:56,655.62,Expense,Food,Utilities,USD,Transaction related to Food
+2024-03-16 07:38:50,3157.34,Expense,Rent,Clothing,JPY,Transaction related to Rent
+2023-09-17 01:29:35,3468.08,Expense,Food,Utilities,GBP,Transaction related to Food
+2023-09-30 08:27:08,453.58,Expense,Travel,Dining Out,INR,Transaction related to Travel
+2024-02-16 05:18:17,183.54,Income,Investment,Bonuses,USD,Transaction related to Investment
+2024-04-10 05:58:45,2070.12,Expense,Shopping,Healthcare,INR,Transaction related to Shopping
+2024-01-18 13:58:29,3389.4,Expense,Utilities,Pet Care,USD,Transaction related to Utilities
+2023-09-09 09:08:09,1407.8,Expense,Healthcare,Pet Care,JPY,Transaction related to Healthcare
+2024-04-04 04:44:15,1268.58,Expense,Utilities,Subscriptions,USD,Transaction related to Utilities
+2023-08-15 08:07:04,192.14,Expense,Food,Groceries,USD,Transaction related to Food
+2024-01-25 18:17:11,3172.71,Expense,Entertainment,Rent,INR,Transaction related to Entertainment
+2024-05-29 17:33:12,535.53,Expense,Transportation,Utilities,JPY,Transaction related to Transportation
+2023-10-06 13:00:14,3859.57,Expense,Entertainment,Rent,INR,Transaction related to Entertainment
+2024-06-04 09:22:49,1536.51,Expense,Entertainment,Transportation,EUR,Transaction related to Entertainment
+2024-02-27 17:17:24,2429.46,Expense,Transportation,Fitness,USD,Transaction related to Transportation
+2023-11-05 01:41:29,1024.25,Expense,Shopping,Transportation,JPY,Transaction related to Shopping
+2023-09-28 12:54:14,2891.26,Expense,Entertainment,Fitness,INR,Transaction related to Entertainment
+2024-07-03 11:35:48,3169.75,Expense,Transportation,Clothing,USD,Transaction related to Transportation
+2024-05-01 23:31:45,4196.81,Expense,Education,Childcare,JPY,Transaction related to Education
+2023-08-25 12:39:58,2841.74,Expense,Food,Travel,INR,Transaction related to Food
+2024-06-19 23:14:37,1861.39,Expense,Travel,Utilities,INR,Transaction related to Travel
+2023-10-07 09:16:54,3243.25,Expense,Utilities,Debt Payments,JPY,Transaction related to Utilities
+2023-10-01 06:25:25,1508.17,Expense,Transportation,Utilities,JPY,Transaction related to Transportation
+2024-02-21 05:35:04,849.03,Expense,Food,Education,JPY,Transaction related to Food
+2024-05-10 20:42:57,4703.08,Expense,Transportation,Rent,USD,Transaction related to Transportation
+2024-02-27 23:58:50,1530.02,Expense,Transportation,Clothing,JPY,Transaction related to Transportation
+2023-10-29 03:11:44,1995.59,Expense,Food,Pet Care,INR,Transaction related to Food
+2023-09-07 00:07:50,2850.08,Expense,Shopping,Travel,INR,Transaction related to Shopping
+2024-05-25 14:33:06,1311.83,Expense,Transportation,Healthcare,USD,Transaction related to Transportation
+2024-05-12 09:54:41,3098.73,Expense,Healthcare,Utilities,INR,Transaction related to Healthcare
+2024-05-13 11:29:47,3352.44,Expense,Healthcare,Rent,EUR,Transaction related to Healthcare
+2023-12-15 13:42:23,103.51,Expense,Utilities,Rent,USD,Transaction related to Utilities
+2023-08-17 11:27:22,599.06,Expense,Healthcare,Fitness,INR,Transaction related to Healthcare
+2023-11-15 07:48:00,3430.84,Expense,Travel,Travel,GBP,Transaction related to Travel
+2024-01-04 10:28:18,1111.98,Expense,Healthcare,Fitness,GBP,Transaction related to Healthcare
+2024-06-23 00:49:28,713.16,Expense,Shopping,Gifts,JPY,Transaction related to Shopping
+2024-04-04 05:27:04,2147.58,Expense,Food,Fitness,JPY,Transaction related to Food
+2024-02-08 09:55:06,3005.87,Expense,Education,Childcare,INR,Transaction related to Education
+2023-07-21 14:29:07,2589.89,Expense,Entertainment,Pet Care,JPY,Transaction related to Entertainment
+2023-10-03 18:31:05,350.09,Expense,Healthcare,Travel,GBP,Transaction related to Healthcare
+2023-10-23 10:08:09,4629.12,Expense,Healthcare,Education,GBP,Transaction related to Healthcare
+2024-06-14 18:06:40,2425.65,Expense,Travel,Gifts,EUR,Transaction related to Travel
+2024-03-14 11:55:18,4786.34,Expense,Healthcare,Clothing,GBP,Transaction related to Healthcare
+2024-07-08 08:54:00,1474.21,Expense,Transportation,Household Supplies,JPY,Transaction related to Transportation
+2023-12-06 21:43:48,578.13,Expense,Travel,Utilities,EUR,Transaction related to Travel
+2023-08-29 06:25:58,103.57,Expense,Entertainment,Clothing,GBP,Transaction related to Entertainment
+2023-11-30 20:01:32,260.32,Expense,Shopping,Education,GBP,Transaction related to Shopping
+2024-01-03 23:26:55,4366.76,Expense,Rent,Debt Payments,GBP,Transaction related to Rent
+2023-07-21 04:07:33,4228.44,Expense,Utilities,Entertainment,GBP,Transaction related to Utilities
+2024-03-25 19:24:08,3798.74,Expense,Transportation,Miscellaneous,USD,Transaction related to Transportation
+2023-08-02 07:37:48,2506.01,Income,Bonus,Freelance Income,EUR,Transaction related to Bonus
+2024-02-27 06:19:51,588.57,Expense,Rent,Miscellaneous,EUR,Transaction related to Rent
+2023-11-14 18:15:30,1737.28,Expense,Transportation,Subscriptions,JPY,Transaction related to Transportation
+2024-06-30 15:16:22,2916.42,Expense,Entertainment,Personal Care,USD,Transaction related to Entertainment
+2023-11-23 22:35:31,4803.85,Expense,Education,Travel,EUR,Transaction related to Education
+2023-12-03 20:03:59,368.48,Expense,Travel,Debt Payments,INR,Transaction related to Travel
+2024-04-27 14:00:40,2490.33,Income,Freelance,Salary,USD,Transaction related to Freelance
+2023-07-31 15:48:31,3669.41,Expense,Shopping,Travel,INR,Transaction related to Shopping
+2023-09-03 04:15:45,157.79,Expense,Food,Miscellaneous,INR,Transaction related to Food
+2024-02-08 22:43:01,2996.85,Expense,Travel,Dining Out,EUR,Transaction related to Travel
+2024-02-05 18:43:30,2665.28,Expense,Entertainment,Clothing,JPY,Transaction related to Entertainment
+2023-11-20 02:33:49,3838.01,Expense,Utilities,Debt Payments,GBP,Transaction related to Utilities
+2024-04-02 05:05:28,3936.94,Expense,Shopping,Rent,USD,Transaction related to Shopping
+2023-11-19 17:37:48,2810.46,Expense,Food,Insurance,EUR,Transaction related to Food
+2024-05-19 13:10:35,3039.68,Expense,Entertainment,Dining Out,INR,Transaction related to Entertainment
+2023-12-27 18:32:35,551.54,Expense,Food,Subscriptions,INR,Transaction related to Food
+2024-05-04 10:39:37,3188.18,Expense,Education,Debt Payments,EUR,Transaction related to Education
+2024-07-12 10:52:34,1152.19,Expense,Shopping,Fitness,USD,Transaction related to Shopping
+2024-06-08 11:57:45,184.4,Expense,Shopping,Entertainment,GBP,Transaction related to Shopping
+2024-03-27 02:16:11,4857.18,Expense,Transportation,Utilities,INR,Transaction related to Transportation
+2024-04-02 00:55:46,4177.34,Expense,Food,Healthcare,USD,Transaction related to Food
+2023-10-20 06:59:31,3149.56,Expense,Healthcare,Education,USD,Transaction related to Healthcare
+2023-11-13 19:45:10,461.59,Income,Bonus,Dividends,JPY,Transaction related to Bonus
+2023-12-19 04:18:34,942.26,Expense,Utilities,Childcare,INR,Transaction related to Utilities
+2024-05-24 15:27:04,2933.19,Expense,Entertainment,Groceries,JPY,Transaction related to Entertainment
+2023-10-15 11:15:53,3201.16,Expense,Travel,Debt Payments,GBP,Transaction related to Travel
+2024-03-27 10:13:42,3859.76,Expense,Travel,Gifts,JPY,Transaction related to Travel
+2023-08-31 10:41:35,1134.48,Expense,Entertainment,Insurance,USD,Transaction related to Entertainment
+2024-04-29 15:20:23,1550.88,Expense,Healthcare,Education,USD,Transaction related to Healthcare
+2023-12-09 15:34:28,1497.31,Expense,Travel,Insurance,JPY,Transaction related to Travel
+2023-10-30 21:38:28,3368.24,Expense,Entertainment,Rent,USD,Transaction related to Entertainment
+2024-01-28 18:20:43,769.38,Expense,Food,Subscriptions,EUR,Transaction related to Food
+2023-08-16 04:33:38,1915.33,Expense,Rent,Pet Care,GBP,Transaction related to Rent
+2024-03-31 17:35:28,3572.28,Expense,Rent,Insurance,JPY,Transaction related to Rent
+2024-06-22 01:07:16,2933.41,Income,Gift,Social Security,INR,Transaction related to Gift
+2023-12-10 11:28:09,1560.51,Expense,Rent,Dining Out,INR,Transaction related to Rent
+2024-06-07 08:31:25,1210.36,Income,Freelance,Capital Gains,JPY,Transaction related to Freelance
+2023-08-01 21:47:08,4629.82,Expense,Rent,Utilities,GBP,Transaction related to Rent
+2023-12-07 01:40:29,1019.96,Expense,Healthcare,Subscriptions,USD,Transaction related to Healthcare
+2023-11-02 20:03:53,3038.9,Expense,Food,Subscriptions,EUR,Transaction related to Food
+2024-05-06 15:49:37,349.54,Expense,Transportation,Healthcare,INR,Transaction related to Transportation
+2024-01-03 16:15:02,3582.59,Expense,Shopping,Rent,EUR,Transaction related to Shopping
+2023-08-22 07:44:55,3988.55,Expense,Healthcare,Personal Care,EUR,Transaction related to Healthcare
+2024-05-02 21:57:22,609.4,Expense,Rent,Dining Out,EUR,Transaction related to Rent
+2024-07-01 09:17:30,2195.55,Expense,Rent,Childcare,GBP,Transaction related to Rent
+2023-08-24 02:01:37,3683.45,Expense,Utilities,Miscellaneous,USD,Transaction related to Utilities
+2024-07-09 06:26:08,4019.19,Expense,Rent,Entertainment,GBP,Transaction related to Rent
+2023-08-28 02:15:13,3456.12,Expense,Shopping,Gifts,GBP,Transaction related to Shopping
+2023-09-15 17:46:45,985.46,Expense,Utilities,Debt Payments,GBP,Transaction related to Utilities
+2024-07-16 22:15:11,300.71,Income,Gift,Freelance Income,JPY,Transaction related to Gift
+2024-02-21 16:28:02,4754.66,Expense,Food,Rent,USD,Transaction related to Food
+2023-08-07 13:38:34,4698.69,Expense,Education,Groceries,EUR,Transaction related to Education
+2023-07-28 04:05:13,3016.03,Income,Salary,Salary,JPY,Transaction related to Salary
+2024-07-12 12:40:01,2152.4,Expense,Healthcare,Miscellaneous,INR,Transaction related to Healthcare
+2024-02-02 01:54:11,843.73,Expense,Utilities,Dining Out,GBP,Transaction related to Utilities
+2023-09-16 15:11:48,3008.52,Expense,Education,Rent,EUR,Transaction related to Education
+2024-01-30 11:27:58,683.46,Expense,Travel,Healthcare,JPY,Transaction related to Travel
+2023-08-06 22:01:03,427.29,Expense,Education,Miscellaneous,USD,Transaction related to Education
+2024-04-04 15:42:41,2576.37,Expense,Rent,Subscriptions,USD,Transaction related to Rent
+2023-08-09 04:38:11,247.11,Expense,Food,Pet Care,GBP,Transaction related to Food
+2023-09-11 12:59:03,3111.76,Expense,Transportation,Clothing,GBP,Transaction related to Transportation
+2024-03-17 12:44:20,1298.57,Expense,Education,Groceries,EUR,Transaction related to Education
+2024-03-26 12:12:18,1856.77,Expense,Transportation,Fitness,JPY,Transaction related to Transportation
+2023-08-24 23:20:40,1917.29,Expense,Shopping,Personal Care,EUR,Transaction related to Shopping
+2023-10-19 05:36:29,2886.4,Income,Freelance,Business Income,INR,Transaction related to Freelance
+2024-03-07 20:51:50,3381.3,Expense,Transportation,Gifts,EUR,Transaction related to Transportation
+2024-04-20 18:44:41,270.35,Expense,Travel,Pet Care,JPY,Transaction related to Travel
+2024-06-27 05:33:25,1667.14,Expense,Rent,Pet Care,USD,Transaction related to Rent
+2023-09-19 05:29:10,4024.73,Income,Bonus,Freelance Income,JPY,Transaction related to Bonus
+2024-03-30 02:40:13,3658.96,Expense,Travel,Household Supplies,INR,Transaction related to Travel
+2024-07-04 17:46:52,73.63,Expense,Shopping,Healthcare,GBP,Transaction related to Shopping
+2023-10-31 08:52:48,4609.92,Expense,Rent,Education,EUR,Transaction related to Rent
+2023-07-21 00:04:50,544.86,Expense,Entertainment,Groceries,USD,Transaction related to Entertainment
+2023-11-26 21:07:06,308.86,Expense,Travel,Healthcare,USD,Transaction related to Travel
+2024-01-24 22:12:47,659.03,Expense,Shopping,Entertainment,INR,Transaction related to Shopping
+2024-03-30 01:27:06,1473.7,Expense,Transportation,Childcare,JPY,Transaction related to Transportation
+2024-04-26 00:43:29,2266.43,Expense,Rent,Gifts,JPY,Transaction related to Rent
+2024-01-31 06:14:47,24.03,Expense,Shopping,Clothing,USD,Transaction related to Shopping
+2024-03-02 23:41:11,67.46,Expense,Travel,Education,EUR,Transaction related to Travel
+2024-07-07 19:34:26,1893.29,Expense,Food,Clothing,INR,Transaction related to Food
+2024-06-16 13:31:06,4137.26,Expense,Shopping,Insurance,USD,Transaction related to Shopping
+2024-04-04 05:03:28,2748.88,Expense,Utilities,Groceries,INR,Transaction related to Utilities
+2023-11-02 11:44:10,3871.32,Expense,Utilities,Insurance,EUR,Transaction related to Utilities
+2024-02-09 21:00:29,4715.87,Expense,Education,Healthcare,USD,Transaction related to Education
+2023-08-27 16:46:27,3567.23,Expense,Healthcare,Healthcare,GBP,Transaction related to Healthcare
+2023-08-22 14:33:19,2617.18,Expense,Utilities,Entertainment,JPY,Transaction related to Utilities
+2023-12-15 22:14:00,4643.8,Expense,Utilities,Education,GBP,Transaction related to Utilities
+2024-01-08 17:07:33,910.3,Expense,Entertainment,Groceries,USD,Transaction related to Entertainment
+2024-03-29 04:12:49,3565.76,Expense,Entertainment,Travel,JPY,Transaction related to Entertainment
+2023-10-23 09:48:51,2042.42,Expense,Travel,Pet Care,USD,Transaction related to Travel
+2024-04-28 19:51:27,3982.32,Expense,Utilities,Household Supplies,INR,Transaction related to Utilities
+2024-06-24 21:22:43,1341.8,Expense,Entertainment,Education,INR,Transaction related to Entertainment
+2024-03-18 04:58:57,4484.2,Expense,Rent,Fitness,INR,Transaction related to Rent
+2024-04-04 16:09:33,456.94,Expense,Food,Fitness,INR,Transaction related to Food
+2023-11-29 09:31:23,1737.77,Income,Freelance,Salary,EUR,Transaction related to Freelance
+2024-02-29 00:52:28,1485.25,Expense,Entertainment,Entertainment,USD,Transaction related to Entertainment
+2023-10-06 14:25:55,3451.7,Expense,Education,Dining Out,EUR,Transaction related to Education
+2023-08-12 02:13:23,2097.01,Expense,Shopping,Subscriptions,GBP,Transaction related to Shopping
+2024-03-27 07:57:04,3957.83,Expense,Travel,Childcare,JPY,Transaction related to Travel
+2023-12-14 23:33:36,4486.35,Income,Salary,Bonuses,JPY,Transaction related to Salary
+2023-11-18 15:11:29,2585.1,Expense,Entertainment,Travel,GBP,Transaction related to Entertainment
+2023-07-21 02:58:23,1590.19,Expense,Entertainment,Debt Payments,JPY,Transaction related to Entertainment
+2024-04-17 19:36:56,2509.67,Expense,Transportation,Utilities,USD,Transaction related to Transportation
+2024-02-04 17:22:17,1277.34,Expense,Transportation,Clothing,EUR,Transaction related to Transportation
+2023-12-22 15:52:12,2808.49,Expense,Rent,Household Supplies,INR,Transaction related to Rent
+2024-02-27 09:24:44,1787.48,Expense,Education,Insurance,INR,Transaction related to Education
+2024-06-17 05:16:18,2632.1,Expense,Shopping,Healthcare,INR,Transaction related to Shopping
+2024-03-13 15:21:01,2726.17,Expense,Shopping,Clothing,INR,Transaction related to Shopping
+2024-02-21 02:13:03,4692.17,Income,Freelance,Capital Gains,INR,Transaction related to Freelance
+2024-01-08 20:58:55,307,Expense,Transportation,Subscriptions,USD,Transaction related to Transportation
+2024-05-01 10:37:55,3609.79,Expense,Shopping,Childcare,EUR,Transaction related to Shopping
+2023-08-14 18:02:21,891.94,Expense,Utilities,Rent,USD,Transaction related to Utilities
+2023-11-20 08:12:17,4102.52,Income,Freelance,Freelance Income,INR,Transaction related to Freelance
+2024-04-25 04:24:57,110.11,Expense,Healthcare,Rent,EUR,Transaction related to Healthcare
+2024-05-25 16:35:10,673.15,Expense,Education,Rent,JPY,Transaction related to Education
+2024-07-14 17:35:47,2283.8,Income,Bonus,Business Income,EUR,Transaction related to Bonus
+2024-07-12 02:06:24,403,Expense,Food,Entertainment,JPY,Transaction related to Food
+2024-04-10 11:03:37,2644.95,Expense,Shopping,Insurance,INR,Transaction related to Shopping
+2024-03-09 11:20:19,4072.81,Expense,Utilities,Miscellaneous,GBP,Transaction related to Utilities
+2023-12-08 02:46:59,664.12,Expense,Utilities,Household Supplies,GBP,Transaction related to Utilities
+2024-01-11 20:53:11,4097.81,Expense,Transportation,Rent,USD,Transaction related to Transportation
+2023-10-23 07:22:56,4890.14,Expense,Healthcare,Insurance,GBP,Transaction related to Healthcare
+2024-02-23 00:03:27,2807,Expense,Education,Insurance,EUR,Transaction related to Education
+2023-09-25 21:45:13,2704.4,Expense,Travel,Insurance,GBP,Transaction related to Travel
+2024-03-16 03:33:22,906.95,Expense,Shopping,Utilities,EUR,Transaction related to Shopping
+2023-10-01 15:31:36,2453.46,Expense,Utilities,Fitness,USD,Transaction related to Utilities
+2024-05-05 03:33:44,4269.22,Income,Bonus,Capital Gains,JPY,Transaction related to Bonus
+2024-02-15 19:19:26,1267.54,Expense,Utilities,Transportation,JPY,Transaction related to Utilities
+2023-08-16 02:07:34,4056.5,Expense,Travel,Gifts,USD,Transaction related to Travel
+2024-01-06 15:14:54,4754.48,Expense,Entertainment,Healthcare,GBP,Transaction related to Entertainment
+2024-03-20 16:28:00,2311.59,Income,Salary,Social Security,JPY,Transaction related to Salary
+2024-01-12 05:23:25,2033.59,Expense,Rent,Insurance,EUR,Transaction related to Rent
+2023-12-23 20:10:50,1357.19,Expense,Food,Miscellaneous,EUR,Transaction related to Food
+2023-09-12 08:10:40,273.06,Expense,Travel,Transportation,GBP,Transaction related to Travel
+2023-07-25 04:32:39,585.18,Expense,Education,Subscriptions,EUR,Transaction related to Education
+2023-07-27 22:01:25,4093.75,Expense,Transportation,Personal Care,INR,Transaction related to Transportation
+2024-03-01 15:07:23,2491.14,Expense,Rent,Insurance,JPY,Transaction related to Rent
+2024-02-10 05:06:25,4139.55,Expense,Food,Entertainment,INR,Transaction related to Food
+2023-09-25 04:47:50,1768.16,Income,Bonus,Rental Income,EUR,Transaction related to Bonus
+2024-04-23 21:32:48,3348.27,Expense,Food,Entertainment,EUR,Transaction related to Food
+2024-06-10 03:22:16,1887.79,Expense,Transportation,Clothing,INR,Transaction related to Transportation
+2023-11-20 01:09:51,732.19,Expense,Utilities,Transportation,GBP,Transaction related to Utilities
+2024-04-23 05:44:42,3196.74,Expense,Healthcare,Clothing,GBP,Transaction related to Healthcare
+2023-09-23 12:50:25,3196.42,Expense,Transportation,Clothing,JPY,Transaction related to Transportation
+2024-01-30 02:48:48,1216.35,Expense,Rent,Household Supplies,EUR,Transaction related to Rent
+2024-02-08 23:27:55,2363.47,Expense,Utilities,Gifts,GBP,Transaction related to Utilities
+2024-04-26 11:21:43,2585.27,Expense,Travel,Pet Care,INR,Transaction related to Travel
+2023-11-06 14:29:37,1492.9,Expense,Transportation,Subscriptions,GBP,Transaction related to Transportation
+2024-05-09 00:42:06,1643.69,Expense,Transportation,Rent,JPY,Transaction related to Transportation
+2023-07-25 16:14:57,4594.68,Income,Salary,Social Security,EUR,Transaction related to Salary
+2024-03-15 04:44:02,3212.9,Expense,Entertainment,Insurance,INR,Transaction related to Entertainment
+2023-08-25 16:07:41,3959.92,Expense,Education,Fitness,JPY,Transaction related to Education
+2024-06-11 01:09:42,1343.71,Income,Gift,Social Security,JPY,Transaction related to Gift
+2024-03-16 20:19:42,3286.3,Expense,Food,Groceries,INR,Transaction related to Food
+2024-06-22 10:11:16,4475.06,Expense,Education,Entertainment,USD,Transaction related to Education
+2024-05-30 03:06:37,125.76,Expense,Entertainment,Groceries,EUR,Transaction related to Entertainment
+2023-12-16 15:39:53,4777.71,Income,Freelance,Freelance Income,EUR,Transaction related to Freelance
+2024-05-26 10:30:29,4058.11,Income,Salary,Bonuses,INR,Transaction related to Salary
+2023-12-08 15:05:25,1252.83,Expense,Healthcare,Subscriptions,JPY,Transaction related to Healthcare
+2024-01-05 21:35:23,1849.98,Expense,Shopping,Household Supplies,INR,Transaction related to Shopping
+2024-07-02 00:37:16,1923.25,Expense,Shopping,Pet Care,USD,Transaction related to Shopping
+2024-07-08 21:43:22,1173.03,Expense,Healthcare,Pet Care,USD,Transaction related to Healthcare
+2024-06-10 20:32:35,2727.49,Expense,Healthcare,Childcare,INR,Transaction related to Healthcare
+2024-03-24 21:03:03,1728.91,Expense,Utilities,Subscriptions,INR,Transaction related to Utilities
+2024-06-17 17:23:14,1230.95,Expense,Food,Fitness,USD,Transaction related to Food
+2023-08-01 11:39:13,4724.46,Expense,Rent,Transportation,USD,Transaction related to Rent
+2023-11-04 22:29:25,1548.4,Expense,Travel,Household Supplies,GBP,Transaction related to Travel
+2024-04-10 04:50:08,4756.25,Expense,Healthcare,Utilities,USD,Transaction related to Healthcare
+2024-05-17 17:00:38,4906.9,Expense,Shopping,Utilities,EUR,Transaction related to Shopping
+2024-07-09 22:38:23,2851.68,Income,Investment,Bonuses,JPY,Transaction related to Investment
+2023-09-30 01:44:25,3229.25,Expense,Utilities,Clothing,EUR,Transaction related to Utilities
+2023-10-05 23:24:10,2411.56,Expense,Transportation,Miscellaneous,EUR,Transaction related to Transportation
+2023-10-14 19:06:57,3105.74,Expense,Entertainment,Childcare,USD,Transaction related to Entertainment
+2024-06-22 01:21:15,2745.61,Expense,Utilities,Groceries,INR,Transaction related to Utilities
+2024-05-06 12:14:20,4758.5,Expense,Rent,Miscellaneous,INR,Transaction related to Rent
+2024-06-19 15:59:56,4660.55,Expense,Shopping,Insurance,INR,Transaction related to Shopping
+2024-02-17 04:21:58,2286.12,Expense,Education,Debt Payments,USD,Transaction related to Education
+2024-05-31 09:27:22,4288.37,Expense,Utilities,Utilities,GBP,Transaction related to Utilities
+2024-04-09 08:06:17,4692.85,Expense,Shopping,Entertainment,USD,Transaction related to Shopping
+2024-04-02 15:41:02,4523.18,Income,Salary,Dividends,USD,Transaction related to Salary
+2024-04-20 00:37:40,3409.95,Expense,Food,Fitness,JPY,Transaction related to Food
+2024-04-04 01:41:31,2805.39,Expense,Healthcare,Fitness,JPY,Transaction related to Healthcare
+2024-01-17 18:16:26,1184.21,Expense,Entertainment,Insurance,JPY,Transaction related to Entertainment
+2023-10-17 19:49:52,4436.64,Expense,Travel,Personal Care,GBP,Transaction related to Travel
+2024-03-20 15:53:45,3802.59,Expense,Healthcare,Transportation,EUR,Transaction related to Healthcare
+2024-05-29 17:16:52,3220.81,Expense,Utilities,Miscellaneous,INR,Transaction related to Utilities
+2023-09-24 09:06:20,2934.35,Income,Investment,Dividends,JPY,Transaction related to Investment
+2024-01-06 23:31:24,3765.07,Expense,Travel,Gifts,JPY,Transaction related to Travel
+2024-02-04 08:27:55,4469.5,Expense,Transportation,Travel,INR,Transaction related to Transportation
+2024-05-18 16:40:41,1712.43,Expense,Shopping,Personal Care,INR,Transaction related to Shopping
+2023-10-26 23:00:22,2987.1,Expense,Education,Fitness,GBP,Transaction related to Education
+2024-04-29 09:05:44,1291.96,Expense,Travel,Utilities,JPY,Transaction related to Travel
+2024-03-17 15:16:34,465.86,Expense,Rent,Healthcare,EUR,Transaction related to Rent
+2023-08-06 10:35:21,2093.23,Expense,Transportation,Clothing,USD,Transaction related to Transportation
+2024-04-04 17:26:01,2691.62,Expense,Utilities,Education,EUR,Transaction related to Utilities
+2023-08-29 05:08:30,3625.16,Expense,Food,Subscriptions,GBP,Transaction related to Food
+2024-04-30 07:27:50,3455.32,Expense,Utilities,Transportation,USD,Transaction related to Utilities
+2024-03-15 23:10:34,4695.74,Expense,Rent,Education,USD,Transaction related to Rent
+2024-03-04 16:48:29,4550.66,Expense,Travel,Fitness,EUR,Transaction related to Travel
+2024-07-06 07:53:41,1342.6,Expense,Education,Childcare,GBP,Transaction related to Education
+2024-05-10 18:25:17,3747.59,Expense,Transportation,Miscellaneous,JPY,Transaction related to Transportation
+2024-05-23 22:35:44,2218.88,Expense,Travel,Pet Care,INR,Transaction related to Travel
+2023-10-15 10:35:19,1417.46,Expense,Rent,Rent,EUR,Transaction related to Rent
+2024-03-25 02:18:24,2460.99,Expense,Shopping,Utilities,INR,Transaction related to Shopping
+2024-04-26 03:20:24,1317.24,Expense,Education,Dining Out,GBP,Transaction related to Education
+2023-08-14 04:34:12,155.13,Expense,Transportation,Transportation,GBP,Transaction related to Transportation
+2023-09-05 13:31:10,992.87,Expense,Food,Transportation,EUR,Transaction related to Food
+2023-12-03 23:13:03,4377.9,Income,Bonus,Capital Gains,JPY,Transaction related to Bonus
+2024-02-14 18:31:53,4193.43,Expense,Utilities,Utilities,USD,Transaction related to Utilities
+2023-12-31 20:55:25,1669.41,Expense,Education,Debt Payments,JPY,Transaction related to Education
+2024-04-09 15:43:56,2802.32,Expense,Entertainment,Fitness,USD,Transaction related to Entertainment
+2023-10-23 06:56:44,76.04,Expense,Utilities,Pet Care,USD,Transaction related to Utilities
+2024-03-23 00:14:43,3895.69,Expense,Education,Personal Care,EUR,Transaction related to Education
+2023-07-23 10:41:34,31.61,Expense,Food,Household Supplies,EUR,Transaction related to Food
+2023-11-22 21:26:30,75.54,Expense,Travel,Insurance,INR,Transaction related to Travel
+2024-02-05 14:08:19,2491.59,Expense,Entertainment,Travel,JPY,Transaction related to Entertainment
+2024-03-23 19:32:19,4334.19,Expense,Travel,Miscellaneous,INR,Transaction related to Travel
+2023-08-31 12:49:12,4728.32,Expense,Utilities,Entertainment,INR,Transaction related to Utilities
+2024-06-28 11:00:44,4783.87,Income,Bonus,Business Income,EUR,Transaction related to Bonus
+2023-10-05 14:03:08,1018.36,Expense,Transportation,Subscriptions,JPY,Transaction related to Transportation
+2024-02-11 09:13:12,1449,Expense,Entertainment,Personal Care,INR,Transaction related to Entertainment
+2024-02-16 17:13:40,3906.11,Expense,Shopping,Insurance,GBP,Transaction related to Shopping
+2023-08-08 10:11:25,4241.52,Expense,Food,Gifts,INR,Transaction related to Food
+2024-03-07 07:31:32,4173.73,Expense,Healthcare,Education,GBP,Transaction related to Healthcare
+2023-12-04 18:19:00,3776.38,Expense,Shopping,Healthcare,INR,Transaction related to Shopping
+2024-01-02 00:38:45,1789.19,Expense,Food,Miscellaneous,USD,Transaction related to Food
+2024-04-30 13:39:04,1065.18,Expense,Healthcare,Dining Out,GBP,Transaction related to Healthcare
+2023-10-15 20:17:07,1229.49,Expense,Transportation,Education,EUR,Transaction related to Transportation
+2024-01-05 00:29:20,17.35,Income,Freelance,Salary,EUR,Transaction related to Freelance
+2024-04-13 11:07:05,4966.35,Expense,Shopping,Rent,INR,Transaction related to Shopping
+2024-06-27 23:44:48,4461.31,Expense,Travel,Childcare,EUR,Transaction related to Travel
+2023-08-19 07:33:22,2119.13,Expense,Travel,Groceries,USD,Transaction related to Travel
+2023-12-18 16:23:15,2548.28,Expense,Shopping,Entertainment,EUR,Transaction related to Shopping
+2024-05-30 03:07:10,3305.51,Expense,Travel,Insurance,GBP,Transaction related to Travel
+2024-02-10 21:49:56,3685.98,Expense,Entertainment,Clothing,INR,Transaction related to Entertainment
+2024-06-16 17:34:25,2752.63,Expense,Healthcare,Transportation,JPY,Transaction related to Healthcare
+2024-07-18 09:09:47,1749.13,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-01-08 09:12:54,2394.9,Expense,Transportation,Insurance,INR,Transaction related to Transportation
+2023-08-20 19:54:04,1591.54,Expense,Utilities,Fitness,INR,Transaction related to Utilities
+2024-03-01 01:24:37,64.87,Expense,Healthcare,Gifts,GBP,Transaction related to Healthcare
+2023-09-05 04:13:00,22.68,Expense,Transportation,Miscellaneous,GBP,Transaction related to Transportation
+2024-01-24 05:07:44,4423.83,Expense,Healthcare,Childcare,JPY,Transaction related to Healthcare
+2024-01-06 13:51:30,241.7,Expense,Food,Entertainment,GBP,Transaction related to Food
+2023-08-18 17:37:09,4700.67,Expense,Travel,Gifts,GBP,Transaction related to Travel
+2023-08-23 17:14:37,1613.68,Income,Bonus,Interest Income,GBP,Transaction related to Bonus
+2024-06-05 10:11:45,3502.62,Expense,Food,Education,INR,Transaction related to Food
+2023-10-17 10:55:42,2723.95,Expense,Food,Gifts,EUR,Transaction related to Food
+2023-12-01 18:18:06,3157.32,Income,Salary,Business Income,GBP,Transaction related to Salary
+2023-09-22 04:30:58,1480.32,Expense,Travel,Pet Care,EUR,Transaction related to Travel
+2024-05-09 10:29:45,2601.36,Expense,Food,Rent,JPY,Transaction related to Food
+2024-03-20 19:54:41,2439.13,Expense,Education,Fitness,GBP,Transaction related to Education
+2023-12-12 23:58:56,3438.4,Expense,Rent,Dining Out,USD,Transaction related to Rent
+2024-02-04 09:26:23,1043.58,Expense,Utilities,Insurance,JPY,Transaction related to Utilities
+2023-11-13 04:02:12,501.03,Expense,Healthcare,Debt Payments,INR,Transaction related to Healthcare
+2024-05-01 14:37:17,1587.68,Expense,Rent,Clothing,USD,Transaction related to Rent
+2024-03-28 01:06:12,3001.57,Expense,Shopping,Utilities,EUR,Transaction related to Shopping
+2023-11-29 07:05:27,3042.6,Expense,Healthcare,Rent,USD,Transaction related to Healthcare
+2024-04-01 09:28:33,3778.86,Expense,Shopping,Insurance,USD,Transaction related to Shopping
+2024-05-20 17:16:15,1957.94,Income,Freelance,Dividends,GBP,Transaction related to Freelance
+2024-05-31 01:41:34,2980.41,Expense,Food,Groceries,GBP,Transaction related to Food
+2024-02-14 12:54:34,1034.27,Expense,Shopping,Miscellaneous,JPY,Transaction related to Shopping
+2023-12-19 02:45:50,1760.89,Expense,Utilities,Utilities,JPY,Transaction related to Utilities
+2024-04-17 01:58:34,3618.17,Expense,Food,Education,JPY,Transaction related to Food
+2024-03-12 22:00:57,1878.16,Expense,Utilities,Pet Care,INR,Transaction related to Utilities
+2023-09-11 08:16:51,2268.17,Income,Gift,Pension,EUR,Transaction related to Gift
+2023-11-27 07:50:06,2249.8,Expense,Rent,Fitness,JPY,Transaction related to Rent
+2023-12-22 11:03:52,4395.16,Expense,Travel,Personal Care,INR,Transaction related to Travel
+2024-07-13 15:55:03,320.84,Expense,Education,Clothing,INR,Transaction related to Education
+2024-06-24 13:13:49,1618.5,Expense,Education,Entertainment,GBP,Transaction related to Education
+2023-07-25 04:14:26,2257.53,Expense,Rent,Transportation,USD,Transaction related to Rent
+2024-04-04 20:56:24,669.44,Expense,Entertainment,Subscriptions,GBP,Transaction related to Entertainment
+2023-12-15 15:02:32,2345.01,Expense,Entertainment,Clothing,EUR,Transaction related to Entertainment
+2023-11-24 10:52:46,2168.45,Expense,Entertainment,Personal Care,GBP,Transaction related to Entertainment
+2023-08-13 18:41:28,549.37,Expense,Rent,Travel,USD,Transaction related to Rent
+2023-08-11 14:34:13,1080.38,Expense,Food,Household Supplies,USD,Transaction related to Food
+2023-08-22 06:56:42,3063.61,Expense,Healthcare,Education,USD,Transaction related to Healthcare
+2023-09-07 19:57:46,1849.64,Expense,Transportation,Insurance,JPY,Transaction related to Transportation
+2024-04-08 20:15:22,1763.5,Expense,Healthcare,Subscriptions,JPY,Transaction related to Healthcare
+2024-06-24 15:18:01,3162.51,Expense,Rent,Dining Out,USD,Transaction related to Rent
+2024-02-22 14:18:38,3328.75,Expense,Healthcare,Utilities,JPY,Transaction related to Healthcare
+2024-06-16 21:29:14,1315.44,Income,Investment,Rental Income,JPY,Transaction related to Investment
+2023-08-07 11:41:14,4744.99,Expense,Education,Healthcare,INR,Transaction related to Education
+2023-08-24 18:16:42,4331.92,Expense,Entertainment,Debt Payments,EUR,Transaction related to Entertainment
+2024-02-21 21:41:26,541.76,Expense,Shopping,Education,USD,Transaction related to Shopping
+2024-02-21 20:02:58,4098.61,Expense,Transportation,Utilities,JPY,Transaction related to Transportation
+2024-01-15 16:38:04,556.44,Expense,Food,Healthcare,INR,Transaction related to Food
+2024-07-07 20:28:11,4075.52,Expense,Transportation,Gifts,INR,Transaction related to Transportation
+2024-03-11 05:10:43,4167.17,Expense,Entertainment,Subscriptions,JPY,Transaction related to Entertainment
+2023-09-14 04:56:11,2459.29,Expense,Education,Utilities,USD,Transaction related to Education
+2024-01-22 12:20:19,2033.58,Expense,Shopping,Gifts,EUR,Transaction related to Shopping
+2023-10-22 12:40:21,547.26,Expense,Travel,Gifts,INR,Transaction related to Travel
+2024-02-07 02:39:00,1306.23,Expense,Education,Education,INR,Transaction related to Education
+2024-06-12 05:44:46,2263.25,Expense,Healthcare,Household Supplies,USD,Transaction related to Healthcare
+2024-03-29 06:27:58,1911.99,Expense,Utilities,Transportation,USD,Transaction related to Utilities
+2024-03-15 16:16:16,577.78,Expense,Education,Fitness,EUR,Transaction related to Education
+2023-12-31 15:37:30,3065.39,Expense,Education,Miscellaneous,EUR,Transaction related to Education
+2024-02-25 17:16:16,1658.81,Expense,Food,Dining Out,INR,Transaction related to Food
+2023-08-11 17:05:41,3537.78,Expense,Transportation,Subscriptions,EUR,Transaction related to Transportation
+2023-08-24 05:46:50,377.9,Expense,Education,Dining Out,INR,Transaction related to Education
+2023-10-04 03:04:55,864.03,Expense,Healthcare,Travel,EUR,Transaction related to Healthcare
+2023-12-11 13:09:23,781.8,Expense,Shopping,Entertainment,INR,Transaction related to Shopping
+2024-05-01 16:55:32,1754.02,Expense,Rent,Fitness,INR,Transaction related to Rent
+2024-03-05 19:15:45,4532.69,Expense,Food,Utilities,EUR,Transaction related to Food
+2023-11-23 19:20:03,490.78,Expense,Utilities,Gifts,USD,Transaction related to Utilities
+2024-01-07 21:19:45,674.45,Expense,Entertainment,Debt Payments,INR,Transaction related to Entertainment
+2024-02-25 21:15:27,4941.83,Expense,Healthcare,Childcare,EUR,Transaction related to Healthcare
+2023-10-09 05:37:12,3359.14,Expense,Rent,Insurance,USD,Transaction related to Rent
+2024-06-28 07:49:58,3419.47,Expense,Shopping,Childcare,USD,Transaction related to Shopping
+2024-07-19 02:22:36,4658.22,Expense,Entertainment,Pet Care,USD,Transaction related to Entertainment
+2023-12-09 08:36:10,2242.87,Income,Freelance,Rental Income,INR,Transaction related to Freelance
+2024-04-13 09:25:46,4110.02,Expense,Transportation,Insurance,GBP,Transaction related to Transportation
+2023-10-10 11:29:34,3059.71,Expense,Food,Dining Out,USD,Transaction related to Food
+2023-09-03 20:08:22,2006.8,Expense,Healthcare,Travel,INR,Transaction related to Healthcare
+2024-05-18 05:26:21,2659.4,Expense,Healthcare,Transportation,EUR,Transaction related to Healthcare
+2023-10-17 04:25:37,3991.6,Expense,Entertainment,Household Supplies,INR,Transaction related to Entertainment
+2024-01-09 08:39:37,2957.8,Expense,Travel,Clothing,USD,Transaction related to Travel
+2024-03-11 21:05:03,1704.92,Expense,Education,Personal Care,EUR,Transaction related to Education
+2024-03-31 21:32:02,2584.12,Expense,Utilities,Travel,EUR,Transaction related to Utilities
+2024-06-27 03:33:15,4305.74,Expense,Rent,Household Supplies,GBP,Transaction related to Rent
+2024-05-08 23:35:40,3798.9,Expense,Food,Travel,USD,Transaction related to Food
+2023-09-13 14:09:02,3944.02,Expense,Shopping,Gifts,GBP,Transaction related to Shopping
+2023-10-21 17:42:07,2688.04,Expense,Entertainment,Dining Out,GBP,Transaction related to Entertainment
+2023-08-21 14:45:51,3268.4,Expense,Education,Utilities,JPY,Transaction related to Education
+2023-08-09 23:29:17,4001.56,Expense,Education,Household Supplies,INR,Transaction related to Education
+2024-01-06 02:05:00,705.04,Expense,Travel,Healthcare,USD,Transaction related to Travel
+2024-05-14 09:20:30,563.98,Expense,Transportation,Dining Out,EUR,Transaction related to Transportation
+2024-05-09 07:08:28,3354.84,Income,Gift,Interest Income,USD,Transaction related to Gift
+2024-06-01 03:25:45,1941.97,Expense,Entertainment,Subscriptions,USD,Transaction related to Entertainment
+2024-02-24 00:32:11,565.29,Expense,Utilities,Fitness,GBP,Transaction related to Utilities
+2024-06-24 13:55:34,1264.78,Expense,Shopping,Travel,JPY,Transaction related to Shopping
+2023-09-24 08:24:31,1529.23,Expense,Utilities,Subscriptions,USD,Transaction related to Utilities
+2023-08-14 01:12:48,3506.32,Expense,Rent,Miscellaneous,JPY,Transaction related to Rent
+2024-04-13 19:47:53,4866.58,Expense,Travel,Gifts,JPY,Transaction related to Travel
+2024-06-18 13:54:34,4628.92,Expense,Shopping,Subscriptions,EUR,Transaction related to Shopping
+2024-05-16 02:19:41,2352.73,Income,Bonus,Interest Income,INR,Transaction related to Bonus
+2023-12-12 06:26:26,954.2,Expense,Healthcare,Dining Out,GBP,Transaction related to Healthcare
+2023-12-16 17:03:16,3819.49,Expense,Food,Entertainment,INR,Transaction related to Food
+2024-02-07 03:03:03,398.08,Income,Gift,Pension,INR,Transaction related to Gift
+2024-03-28 18:08:41,2465.46,Expense,Entertainment,Utilities,JPY,Transaction related to Entertainment
+2023-08-01 07:11:53,4362.79,Expense,Transportation,Pet Care,USD,Transaction related to Transportation
+2024-04-15 08:42:56,3982.53,Expense,Education,Healthcare,USD,Transaction related to Education
+2024-03-28 01:11:47,3984.99,Expense,Rent,Pet Care,EUR,Transaction related to Rent
+2024-02-20 15:43:22,3459.43,Expense,Utilities,Insurance,GBP,Transaction related to Utilities
+2024-06-21 04:17:20,2969.49,Expense,Food,Travel,GBP,Transaction related to Food
+2023-07-29 10:17:54,2925.16,Expense,Entertainment,Debt Payments,USD,Transaction related to Entertainment
+2024-04-27 00:05:31,1216.8,Expense,Transportation,Healthcare,GBP,Transaction related to Transportation
+2024-01-27 07:35:50,254.48,Expense,Travel,Insurance,EUR,Transaction related to Travel
+2024-02-14 11:47:40,1903.46,Expense,Rent,Childcare,USD,Transaction related to Rent
+2023-08-04 00:46:09,1503.6,Income,Freelance,Pension,INR,Transaction related to Freelance
+2024-05-21 06:11:07,4603.12,Expense,Shopping,Rent,USD,Transaction related to Shopping
+2023-08-15 01:04:18,4924.95,Expense,Utilities,Subscriptions,USD,Transaction related to Utilities
+2023-11-07 22:58:32,1907.34,Income,Salary,Capital Gains,INR,Transaction related to Salary
+2024-03-27 11:54:42,1055.76,Expense,Transportation,Transportation,JPY,Transaction related to Transportation
+2024-05-31 09:15:59,876.95,Expense,Healthcare,Clothing,EUR,Transaction related to Healthcare
+2023-12-26 06:52:06,2078.45,Expense,Healthcare,Groceries,INR,Transaction related to Healthcare
+2023-12-27 23:29:10,2020.07,Expense,Rent,Dining Out,JPY,Transaction related to Rent
+2023-12-16 09:33:21,4982.23,Expense,Rent,Education,EUR,Transaction related to Rent
+2024-05-10 09:31:13,803.2,Expense,Healthcare,Clothing,GBP,Transaction related to Healthcare
+2023-08-31 10:23:08,852.5,Expense,Travel,Utilities,GBP,Transaction related to Travel
+2024-01-13 15:45:57,4017.65,Expense,Rent,Education,USD,Transaction related to Rent
+2023-11-01 19:56:21,2139.1,Expense,Shopping,Subscriptions,JPY,Transaction related to Shopping
+2023-10-21 04:59:27,4149.04,Expense,Transportation,Travel,INR,Transaction related to Transportation
+2024-06-30 08:12:10,853.58,Expense,Utilities,Rent,INR,Transaction related to Utilities
+2023-12-12 07:50:27,946.26,Expense,Entertainment,Entertainment,GBP,Transaction related to Entertainment
+2024-05-19 06:31:04,3286.24,Expense,Shopping,Utilities,INR,Transaction related to Shopping
+2023-07-27 17:22:52,3339.63,Expense,Food,Education,EUR,Transaction related to Food
+2024-01-04 12:57:07,2838.73,Income,Salary,Freelance Income,GBP,Transaction related to Salary
+2024-06-17 23:59:17,4081.58,Expense,Rent,Clothing,INR,Transaction related to Rent
+2023-12-02 08:01:35,3528.82,Expense,Education,Utilities,INR,Transaction related to Education
+2024-07-11 18:59:17,3328.33,Expense,Travel,Debt Payments,INR,Transaction related to Travel
+2024-04-10 22:15:33,1056.58,Expense,Utilities,Household Supplies,INR,Transaction related to Utilities
+2024-05-10 18:35:12,223.07,Income,Investment,Bonuses,JPY,Transaction related to Investment
+2023-09-11 22:19:36,4828.7,Expense,Food,Miscellaneous,JPY,Transaction related to Food
+2024-06-04 21:39:41,3299.99,Expense,Rent,Insurance,USD,Transaction related to Rent
+2023-09-29 17:47:01,3400.67,Expense,Healthcare,Debt Payments,EUR,Transaction related to Healthcare
+2024-03-30 22:25:18,2054.63,Expense,Shopping,Debt Payments,GBP,Transaction related to Shopping
+2023-12-05 22:02:08,1078.86,Expense,Food,Debt Payments,GBP,Transaction related to Food
+2023-08-07 03:42:16,4719.02,Expense,Entertainment,Pet Care,GBP,Transaction related to Entertainment
+2024-01-08 20:34:06,169.52,Expense,Education,Utilities,USD,Transaction related to Education
+2024-01-05 22:48:54,576.7,Expense,Travel,Subscriptions,GBP,Transaction related to Travel
+2024-07-14 22:42:28,3400.95,Expense,Healthcare,Personal Care,GBP,Transaction related to Healthcare
+2024-04-23 19:09:58,616.06,Expense,Education,Entertainment,EUR,Transaction related to Education
+2023-10-24 21:08:15,943.93,Expense,Food,Travel,JPY,Transaction related to Food
+2023-12-09 21:35:57,3394.39,Income,Freelance,Dividends,USD,Transaction related to Freelance
+2024-03-14 22:03:20,1222.97,Expense,Travel,Travel,INR,Transaction related to Travel
+2023-12-15 20:14:08,60.09,Expense,Shopping,Dining Out,EUR,Transaction related to Shopping
+2023-07-24 18:10:56,1131.41,Expense,Travel,Dining Out,EUR,Transaction related to Travel
+2023-09-27 18:44:41,172.54,Expense,Transportation,Clothing,USD,Transaction related to Transportation
