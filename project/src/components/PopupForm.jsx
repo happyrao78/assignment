@@ -8,7 +8,7 @@ function PopupForm({ togglePopup }) {
     category: 'Salary',
     title: 'June Month Salary',
     notes: 'This Transaction is regarding the Salary which I received on June 10th 2024.',
-    type: 'income',
+    type: 'Income',
   });
 
   const handleChange = (e) => {
@@ -41,14 +41,14 @@ function PopupForm({ togglePopup }) {
         </button>
         <div className="flex justify-between mb-4">
           <button
-            className={`px-4 py-2 ${formData.type === 'income' ? 'bg-blue-500 dark:bg-black dark:transition ease-in-out duration-500 text-white' : 'bg-gray-200 text-gray-700'}`}
-            onClick={() => setFormData({ ...formData, type: 'income' })}
+            className={`px-4 py-2 ${formData.type === 'Income' ? 'bg-blue-500 dark:bg-black dark:transition ease-in-out duration-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+            onClick={() => setFormData({ ...formData, type: 'Income' })}
           >
             Income
           </button>
           <button
             className={`px-4 py-2 ${formData.type === 'expense' ? 'bg-red-500 text-white' : 'bg-gray-200 text-gray-700'}`}
-            onClick={() => setFormData({ ...formData, type: 'expense' })}
+            onClick={() => setFormData({ ...formData, type: 'Expense' })}
           >
             Expense
           </button>

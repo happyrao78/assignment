@@ -38,7 +38,6 @@ app.post('/add-entry', (req, res) => {
         return res.status(400).json({ error: 'All fields are required' });
     }
     const formattedDate = moment(date).format('YYYY-MM-DD HH:mm:ss');
-    console.log(formattedDate)
     const newEntry = {
         dateTime: formattedDate,  // Assuming the date should be in a datetime format
         amount,

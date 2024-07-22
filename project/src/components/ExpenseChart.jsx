@@ -3,10 +3,11 @@ import axios from 'axios';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Title, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import moment from 'moment';
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
-const ExpenseChart = () => {
+const ExpenseChart = ({selectedMonth}) => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalExpense, setTotalExpense] = useState(0);
@@ -16,16 +17,19 @@ const ExpenseChart = () => {
       .then(response => {
         const data = response.data;
 
-        console.log("Fetched data:", data);
-
         if (!Array.isArray(data)) {
           console.error('Data format is incorrect:', data);
           setLoading(false);
           return;
         }
 
-        const expenseData = data.filter(item => item.type === 'Expense');
-
+        const formattedSelectedMonth = moment(selectedMonth, 'MMMM YYYY').format('YYYY-MM');
+        const expenseData = data.filter(item => {
+          const itemMonth = moment(item.dateTime).format('YYYY-MM');
+          return item.type === 'Expense' && itemMonth === formattedSelectedMonth;
+        });
+        // const expenseData = data.filter(item => item.type === 'Expense' && moment(item.dateTime).format('YYYY-MM') === formattedSelectedMonth);
+        // console.log("Data: ",expenseData);
         const aggregatedExpenseData = expenseData.reduce((acc, item) => {
           const category = item.category;
           const amount = parseFloat(item.amount);
@@ -69,7 +73,7 @@ const ExpenseChart = () => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-  }, []);
+  }, [selectedMonth]);
 
   if (loading) {
     return <div className="text-center text-lg">Loading...</div>;

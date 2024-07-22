@@ -999,6 +999,10 @@ dateTime,amount,type,category,title,currency,note
 2023-12-15 20:14:08,60.09,Expense,Shopping,Dining Out,EUR,Transaction related to Shopping
 2023-07-24 18:10:56,1131.41,Expense,Travel,Dining Out,EUR,Transaction related to Travel
 2023-09-27 18:44:41,172.54,Expense,Transportation,Clothing,USD,Transaction related to Transportation
-2024-12-17 00:00:00,2500,income,Rent,december rent,INR,rent payed
-2024-10-23 00:00:00,2500,income,Salary,Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
-2024-10-23 00:00:00,2200,expense,Rent,Rent,INR,rent
+2024-12-17 00:00:00,2500,Income,Rent,december rent,INR,rent payed
+2024-10-23 00:00:00,2500,Income,Salary,Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
+2024-10-23 00:00:00,2200,Expense,Rent,Rent,INR,rent
+2023-01-02 00:00:00,20000,Income,Salary,income,INR,income
+2023-01-25 00:00:00,2500,Expense,Rent,home rent,INR,transaction
+2023-01-10 00:00:00,2500,Income,Rent,Freelance,INR,freelancing income
+2023-01-23 00:00:00,2500,Expense,Salary,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.

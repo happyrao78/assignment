@@ -3,10 +3,11 @@ import axios from 'axios';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Title, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import moment from "moment"
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
-const IncomeChart = () => {
+const IncomeChart = ({selectedMonth}) => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalIncome, setTotalIncome] = useState(0);
@@ -24,7 +25,12 @@ const IncomeChart = () => {
           return;
         }
 
-        const incomeData = data.filter(item => item.type === 'Income');
+        const formattedSelectedMonth = moment(selectedMonth, 'MMMM YYYY').format('YYYY-MM');
+
+        const incomeData = data.filter(item => {
+          const itemMonth = moment(item.dateTime).format('YYYY-MM');
+          return item.type === 'Income' && itemMonth === formattedSelectedMonth;
+        });
 
         const aggregatedIncomeData = incomeData.reduce((acc, item) => {
           const category = item.category;
