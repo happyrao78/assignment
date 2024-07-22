@@ -999,3 +999,4 @@ dateTime,amount,type,category,title,currency,note
 2023-12-15 20:14:08,60.09,Expense,Shopping,Dining Out,EUR,Transaction related to Shopping
 2023-07-24 18:10:56,1131.41,Expense,Travel,Dining Out,EUR,Transaction related to Travel
 2023-09-27 18:44:41,172.54,Expense,Transportation,Clothing,USD,Transaction related to Transportation
+,2500,expense,Salary,June Month Salary,,

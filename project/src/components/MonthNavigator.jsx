@@ -19,7 +19,7 @@ const MonthNavigator = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-4 mx-auto dark:bg-black dark:transition ease-in-out duration-500 bg-gray-100 rounded-lg shadow-md mt-10 max-w-4xl">
+    <div className="flex items-center justify-center p-4 mx-auto dark:bg-black dark:transition ease-in-out duration-500 bg-gray-100 rounded-lg shadow-md mt-10 max-w-full sm:max-w-md md:max-w-lg lg:max-w-4xl">
       <button 
         onClick={handlePrev} 
         disabled={monthIndex === 0}

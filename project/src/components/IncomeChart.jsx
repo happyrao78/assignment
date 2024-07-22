@@ -87,7 +87,7 @@ const IncomeChart = () => {
                 display: false, // Hides the legend
               },
               datalabels: {
-                color: '#fff', // Text color inside the pie chart
+                color: 'black', // Text color inside the pie chart
                 display: true,
                 formatter: (value, context) => {
                   const dataset = context.chart.data.datasets[context.datasetIndex];

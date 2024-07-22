@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function PopupForm({ togglePopup }) {
   const [formData, setFormData] = useState({
@@ -15,11 +16,18 @@ function PopupForm({ togglePopup }) {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-    togglePopup();
+    try {
+      // Make a POST request to add a new entry
+      await axios.post('http://localhost:3000/add-entry', formData);
+      // Optionally handle success or display a message
+      console.log('Entry added successfully');
+      togglePopup();
+    } catch (error) {
+      console.error('Error adding entry:', error);
+      // Optionally handle error or display a message
+    }
   };
 
   return (
