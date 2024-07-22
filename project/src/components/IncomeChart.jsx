@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, ArcElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Title, Tooltip, Legend } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-ChartJS.register(CategoryScale, LinearScale, ArcElement, Title, Tooltip, Legend);
+ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
 const IncomeChart = () => {
   const [chartData, setChartData] = useState({});
@@ -71,24 +72,43 @@ const IncomeChart = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="text-center text-lg">Loading...</div>;
   }
 
   return (
-    <div>
-      {/* <h2 className='text-3xl font-bold'>Income</h2> */}
-      
-      <div style={{ width: '100%', height: '300px' }} className='mb-10'>
+    <div className="flex flex-col items-center p-4 md:p-8">
+      <div className="w-full max-w-lg h-64 md:h-80 mb-10">
         <Pie 
           data={chartData} 
           options={{
             maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false, // Hides the legend
+              },
+              datalabels: {
+                color: '#fff', // Text color inside the pie chart
+                display: true,
+                formatter: (value, context) => {
+                  const dataset = context.chart.data.datasets[context.datasetIndex];
+                  const total = dataset.data.reduce((acc, val) => acc + val, 0);
+                  const percentage = (value / total * 100).toFixed(2);
+                  return `${context.chart.data.labels[context.dataIndex]}\n${percentage}%`;
+                },
+                anchor: 'center', // Center the labels inside the pie slices
+                align: 'center',
+                font: {
+                  weight: 'bold',
+                  size: 12,
+                  color: 'black'
+                },
+              },
+            },
           }} 
         />
       </div>
-      <div className="card bg-green-200 flex items-center  justify-center mx-auto" style={{width:'450px', marginBottom: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
-        <h3 className='text-2xl text-green-800 font-bold '>INCOME: ${totalIncome.toFixed(2)}</h3>
-        {/* <p className='text-xl'>${totalIncome.toFixed(2)}</p> */}
+      <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+        <h3 className="text-xl font-bold">INCOME: ${totalIncome.toFixed(2)}</h3>
       </div>
     </div>
   );

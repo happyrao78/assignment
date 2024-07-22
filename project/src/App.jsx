@@ -134,39 +134,26 @@ const App = ({ selectedMonth }) => {
       <Authentication onAuthStateChanged={handleAuthStateChanged} />
       {user && (
         <>
-          <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginRight: '30px' }}>
-              <MonthNavigator />
-
-
-              <ThemeBtn />
-            </div>
-            <div style={{ display: 'flex', marginTop: "200px" }}>
-              <div className="expense" style={{ width: "50%" }}>
-                <ExpenseChart />
-              </div>
-              <div className="income" style={{ width: "50%" }}>
-                <IncomeChart />
-              </div>
-            </div>
-            <SearchBar />
-            {Object.keys(expenses).length > 0 ? (
-              Object.keys(expenses).map(date => (
-                <ExpenseCard
-                  key={date}
-                  date={new Date(date)}
-                  totalIncome={expenses[date].totalIncome}
-                  totalExpense={expenses[date].totalExpense}
-                  expenses={expenses[date].expenses}
-                />
-              ))
-            ) : (
-              <p>No expenses to display.</p> // Handle case with no expenses
-            )}
-            <PlusIcon onClick={togglePopup} />
-            {isPopupOpen && <PopupForm togglePopup={togglePopup} />}
-          </ThemeProvider>
-        </>
+        <ThemeProvider value={{themeMode, lightTheme,  darkTheme}}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px',marginRight:'30px',marginTop:'30px' }}>
+        <MonthNavigator />
+        
+        
+        <ThemeBtn />
+        </div>
+      <div style={{ display: 'flex',marginTop:"200px"}}>
+        <div className="expense" style={{width: "50%"}}>
+          <ExpenseChart />
+        </div>
+        <div className="income" style={{width: "50%"}}>
+          <IncomeChart />
+        </div>
+      </div>
+      <SearchBar />
+      <PlusIcon onClick={togglePopup} />
+      {isPopupOpen && <PopupForm togglePopup={togglePopup} />}
+      </ThemeProvider>
+      </>
       )}
     </>
   )
