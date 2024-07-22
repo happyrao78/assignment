@@ -71,9 +71,17 @@ const App = () => {
   const lightTheme = () => setThemeMode('light');
   const darkTheme = () => setThemeMode('dark');
 
+  
+  useEffect(() => {
+    axios.get("http://localhost:3000/read-csv")
+    .then(response => setData(response.data))
+    .catch(error => console.error('Error fetching data:', error))
+    .finally(() => setLoading(false));
+  }, []);
+  
   useEffect(() => {
     const filterAndGroupData = () => {
-      const filteredData = rawData.filter(expense => {
+      const filteredData = data.filter(expense => {
         const expenseDate = new Date(expense.dateTime);
         const month = expenseDate.toLocaleString('default', { month: 'long' }) + ' ' + expenseDate.getFullYear();
         return month === selectedMonth;
@@ -97,14 +105,6 @@ const App = () => {
 
     filterAndGroupData();
   }, [selectedMonth]);
-
-  useEffect(() => {
-    axios.get("http://localhost:3000/read-csv")
-      .then(response => setData(response.data))
-      .catch(error => console.error('Error fetching data:', error))
-      .finally(() => setLoading(false));
-  }, []);
-
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark");
     document.querySelector('html').classList.add(themeMode);

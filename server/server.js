@@ -5,6 +5,7 @@ const fastCsv = require('fast-csv');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const moment = require("moment");
 
 const app = express();
 const PORT = 3000;
@@ -36,9 +37,18 @@ app.post('/add-entry', (req, res) => {
     if (!date || !amount || !category || !title || !notes || !type) {
         return res.status(400).json({ error: 'All fields are required' });
     }
+    const formattedDate = moment(date).format('YYYY-MM-DD HH:mm:ss');
+    console.log(formattedDate)
+    const newEntry = {
+        dateTime: formattedDate,  // Assuming the date should be in a datetime format
+        amount,
+        type,
+        category,
+        title,
+        currency: 'INR',    // Default empty value for currency
+        note: notes       // Using 'note' instead of 'notes' to match the CSV column header
+    };
 
-    const newEntry = { date, amount, category, title, notes, type };
-    
     const entries = [];
     fs.createReadStream(CSV_FILE_PATH)
         .pipe(csvParser())
