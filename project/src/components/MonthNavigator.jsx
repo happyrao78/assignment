@@ -19,7 +19,7 @@ const MonthNavigator = () => {
   };
 
   return (
-    <div className="flex justify-center w-1/2 items-center p-6 m-10 mt-10 mx-auto bg-gray-100 rounded-lg shadow-md">
+    <div className="flex justify-center w-1/2 items-center p-6 m-10 mt-10 mx-auto dark:bg-black dark:transition ease-in-out duration-500  bg-gray-100 rounded-lg shadow-md">
       <button 
         onClick={handlePrev} 
         disabled={monthIndex === 0}
@@ -27,7 +27,7 @@ const MonthNavigator = () => {
       >
         {'<'}
       </button>
-      <span className="text-xl font-bold">{months[monthIndex]}</span>
+      <span className="text-xl font-bold dark:text-white">{months[monthIndex]}</span>
       <button 
         onClick={handleNext} 
         disabled={monthIndex === months.length - 1}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function PopupForm({ togglePopup }) {
   const [formData, setFormData] = useState({
-    date: '2024-07-10',
+    date: '',
     amount: 2500,
     category: 'Salary',
     title: 'June Month Salary',
@@ -33,7 +33,7 @@ function PopupForm({ togglePopup }) {
         </button>
         <div className="flex justify-between mb-4">
           <button
-            className={`px-4 py-2 ${formData.type === 'income' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+            className={`px-4 py-2 ${formData.type === 'income' ? 'bg-blue-500 dark:bg-black dark:transition ease-in-out duration-500 text-white' : 'bg-gray-200 text-gray-700'}`}
             onClick={() => setFormData({ ...formData, type: 'income' })}
           >
             Income
