@@ -72,6 +72,8 @@ const ExpenseChart = () => {
               borderColor: colors.map(color => color.replace('0.4', '1')),
               borderWidth: 1,
               fill: false,
+              
+              
             },
           ],
         });
@@ -91,19 +93,25 @@ const ExpenseChart = () => {
   return (
     <div>
       <h2>Expense Chart</h2>
-      <div style={{ width: '100%', height: '600px' }}>
+      <div style={{ width: '100%', height: '300px' }}>
         <Pie 
           data={chartData} 
           options={{
             maintainAspectRatio: false,
-            scales: {
-              x: { 
-                beginAtZero: true 
-              },
-              y: { 
-                beginAtZero: true 
-              }
-            }
+            // scales: {
+            //   x: { 
+            //     grid:{ 
+            //       display: false
+            //     },
+            //     beginAtZero: true 
+            //   },
+            //   y: { 
+            //     grid:{
+            //       display:false
+            //     },
+            //     beginAtZero: true
+            //   }
+            // }
           }} 
         />
       </div>

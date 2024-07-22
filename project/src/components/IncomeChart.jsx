@@ -76,19 +76,19 @@ const IncomeChart = () => {
   return (
     <div>
       <h2>Income Chart</h2>
-      <div style={{ width: '100%', height: '600px' }}>
+      <div style={{ width: '100%', height: '300px' }}>
         <Pie 
           data={chartData} 
           options={{
             maintainAspectRatio: false,
-            scales: {
-              x: { 
-                beginAtZero: true 
-              },
-              y: { 
-                beginAtZero: true 
-              }
-            }
+            // scales: {
+            //   x: { 
+            //     beginAtZero: true 
+            //   },
+            //   y: { 
+            //     beginAtZero: true 
+            //   }
+            // }
           }} 
         />
       </div>
