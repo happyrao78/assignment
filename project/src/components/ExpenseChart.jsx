@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Line, Bar, Pie, Doughnut, Radar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
+import { Pie } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Title, Tooltip, Legend } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, ArcElement, LineElement, Title, Tooltip, Legend);
+ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
 const ExpenseChart = () => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalExpense, setTotalExpense] = useState(0);
-
 
   useEffect(() => {
     axios.get('http://localhost:3000/read-csv/')
@@ -39,24 +38,9 @@ const ExpenseChart = () => {
           return acc;
         }, {});
 
-        const aggregatedData = data.reduce((acc, item) => {
-          const label = item.type;
-          const value = parseFloat(item.amount);
-
-          if (acc[label]) {
-            acc[label] += value;
-          } else {
-            acc[label] = value;
-          }
-          return acc;
-        }, {});
-
         const total = Object.values(aggregatedExpenseData).reduce((sum, value) => sum + value, 0);
         setTotalExpense(total);
 
-        // const labels = data.map(item => item.type);
-        // const labels = ["Expenses", "Income"];
-        // const values = data.map(item => item.amount);
         const labels = Object.keys(aggregatedExpenseData);
         const values = Object.values(aggregatedExpenseData);
 
@@ -69,16 +53,12 @@ const ExpenseChart = () => {
           labels: labels,
           datasets: [
             {
-              label: 'Your Data Label',
+              label: 'Expense',
               data: values,
-              // backgroundColor: 'rgba(75,192,192,0.4)',
               backgroundColor: colors,
-              // borderColor: 'rgba(75,192,192,1)',
               borderColor: colors.map(color => color.replace('0.4', '1')),
               borderWidth: 1,
               fill: false,
-              
-              
             },
           ],
         });
@@ -92,38 +72,42 @@ const ExpenseChart = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="text-center text-lg">Loading...</div>;
   }
 
   return (
-    <div>
-      {/* <h2>Expense Chart</h2> */}
-      
-      <div style={{ width: '100%', height: '300px' }} className='mb-10 mt-0'>
+    <div className="flex flex-col items-center p-4 md:p-8">
+      <div className="w-full max-w-lg h-64 md:h-80 mb-10">
         <Pie 
           data={chartData} 
           options={{
             maintainAspectRatio: false,
-            // scales: {
-            //   x: { 
-            //     grid:{ 
-            //       display: false
-            //     },
-            //     beginAtZero: true 
-            //   },
-            //   y: { 
-            //     grid:{
-            //       display:false
-            //     },
-            //     beginAtZero: true
-            //   }
-            // }
+            plugins: {
+              legend: {
+                display: false, // Hides the legend
+              },
+              datalabels: {
+                color: '#fff', // Text color inside the pie chart
+                display: true,
+                formatter: (value, context) => {
+                  const dataset = context.chart.data.datasets[context.datasetIndex];
+                  const total = dataset.data.reduce((acc, val) => acc + val, 0);
+                  const percentage = (value / total * 100).toFixed(2);
+                  return `${context.chart.data.labels[context.dataIndex]}\n${percentage}%`;
+                },
+                anchor: 'center', // Center the labels inside the pie slices
+                align: 'center',
+                font: {
+                  weight: 'bold',
+                  size: 10
+                },
+              },
+            },
           }} 
         />
       </div>
-      <div className="card bg-red-200 flex items-center  justify-center mx-auto" style={{width:'450px', marginBottom: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
-        <h3 className='text-2xl text-red-800 font-bold '>EXPENSE: ${totalExpense.toFixed(2)}</h3>
-        {/* <p className='text-xl'>${totalIncome.toFixed(2)}</p> */}
+      <div className="bg-red-200 text-red-800 border border-red-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+        <h3 className="text-xl font-bold">EXPENSE: ${totalExpense.toFixed(2)}</h3>
       </div>
     </div>
   );

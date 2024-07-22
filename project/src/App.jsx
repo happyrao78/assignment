@@ -35,7 +35,7 @@ const App = () => {
       {user &&(
         <>
         <ThemeProvider value={{themeMode, lightTheme,  darkTheme}}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px',marginRight:'30px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px',marginRight:'30px',marginTop:'30px' }}>
         <MonthNavigator />
         
         
