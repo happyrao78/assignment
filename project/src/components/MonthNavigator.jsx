@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const MonthNavigator = () => {
+const MonthNavigator = ({ onMonthChange }) => {
   const [monthIndex, setMonthIndex] = useState(0);
 
   const months = [
@@ -11,12 +11,18 @@ const MonthNavigator = () => {
   ];
 
   const handlePrev = () => {
-    setMonthIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    setMonthIndex(prevIndex => Math.max(prevIndex - 1, 0));
   };
 
   const handleNext = () => {
-    setMonthIndex((prevIndex) => Math.min(prevIndex + 1, months.length - 1));
+    setMonthIndex(prevIndex => Math.min(prevIndex + 1, months.length - 1));
   };
+
+  useEffect(() => {
+    if (onMonthChange) {
+      onMonthChange(months[monthIndex]);
+    }
+  }, [monthIndex, onMonthChange, months]);
 
   return (
     <div className="flex items-center justify-center p-4 mx-auto dark:bg-black dark:transition ease-in-out duration-500 bg-gray-100 rounded-lg shadow-md mt-10 max-w-full sm:max-w-md md:max-w-lg lg:max-w-4xl">
