@@ -19,19 +19,19 @@ const MonthNavigator = () => {
   };
 
   return (
-    <div className="flex justify-center w-1/2 items-center p-6 m-10 mt-10 mx-auto dark:bg-black dark:transition ease-in-out duration-500  bg-gray-100 rounded-lg shadow-md">
+    <div className="flex justify-center w-1/2 items-center p-1 m-10 mx-auto dark:bg-black dark:transition ease-in-out duration-500  bg-gray-100 rounded-lg shadow-md mt-28">
       <button 
         onClick={handlePrev} 
         disabled={monthIndex === 0}
-        className="bg-blue-500 text-white px-4 py-2 rounded mr-10 disabled:bg-gray-300"
+        className="bg-blue-500 text-white px-4 py-2 rounded  disabled:bg-gray-300"
       >
         {'<'}
       </button>
-      <span className="text-xl font-bold dark:text-white">{months[monthIndex]}</span>
+      <span className="text-xl font-bold mx-auto dark:text-white">{months[monthIndex]}</span>
       <button 
         onClick={handleNext} 
         disabled={monthIndex === months.length - 1}
-        className="bg-blue-500 text-white px-4 py-2 rounded ml-10 disabled:bg-gray-300"
+        className="bg-blue-500 text-white px-4 py-2 rounded  disabled:bg-gray-300"
       >
         {'>'}
       </button>

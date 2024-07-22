@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Line, Bar, Pie, Doughnut, Radar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
+import { Pie } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, ArcElement, Title, Tooltip, Legend } from 'chart.js';
 
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, ArcElement, LineElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, ArcElement, Title, Tooltip, Legend);
 
 const IncomeChart = () => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
+  const [totalIncome, setTotalIncome] = useState(0);
 
   useEffect(() => {
     axios.get('http://localhost:3000/read-csv/')
@@ -37,6 +37,9 @@ const IncomeChart = () => {
           return acc;
         }, {});
 
+        const total = Object.values(aggregatedIncomeData).reduce((sum, value) => sum + value, 0);
+        setTotalIncome(total);
+
         const labels = Object.keys(aggregatedIncomeData);
         const values = Object.values(aggregatedIncomeData);
 
@@ -49,11 +52,9 @@ const IncomeChart = () => {
           labels: labels,
           datasets: [
             {
-              label: 'Your Data Label',
+              label: 'Income',
               data: values,
-              // backgroundColor: 'rgba(75,192,192,0.4)',
               backgroundColor: colors,
-              // borderColor: 'rgba(75,192,192,1)',
               borderColor: colors.map(color => color.replace('0.4', '1')),
               borderWidth: 1,
               fill: false,
@@ -75,22 +76,19 @@ const IncomeChart = () => {
 
   return (
     <div>
-      <h2>Income Chart</h2>
-      <div style={{ width: '100%', height: '300px' }}>
+      {/* <h2 className='text-3xl font-bold'>Income</h2> */}
+      
+      <div style={{ width: '100%', height: '300px' }} className='mb-10'>
         <Pie 
           data={chartData} 
           options={{
             maintainAspectRatio: false,
-            // scales: {
-            //   x: { 
-            //     beginAtZero: true 
-            //   },
-            //   y: { 
-            //     beginAtZero: true 
-            //   }
-            // }
           }} 
         />
+      </div>
+      <div className="card bg-green-200 flex items-center  justify-center mx-auto" style={{width:'450px', marginBottom: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
+        <h3 className='text-2xl text-green-800 font-bold '>INCOME: ${totalIncome.toFixed(2)}</h3>
+        {/* <p className='text-xl'>${totalIncome.toFixed(2)}</p> */}
       </div>
     </div>
   );

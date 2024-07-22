@@ -9,6 +9,8 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, ArcElemen
 const ExpenseChart = () => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
+  const [totalExpense, setTotalExpense] = useState(0);
+
 
   useEffect(() => {
     axios.get('http://localhost:3000/read-csv/')
@@ -48,6 +50,9 @@ const ExpenseChart = () => {
           }
           return acc;
         }, {});
+
+        const total = Object.values(aggregatedExpenseData).reduce((sum, value) => sum + value, 0);
+        setTotalExpense(total);
 
         // const labels = data.map(item => item.type);
         // const labels = ["Expenses", "Income"];
@@ -92,8 +97,9 @@ const ExpenseChart = () => {
 
   return (
     <div>
-      <h2>Expense Chart</h2>
-      <div style={{ width: '100%', height: '300px' }}>
+      {/* <h2>Expense Chart</h2> */}
+      
+      <div style={{ width: '100%', height: '300px' }} className='mb-10 mt-0'>
         <Pie 
           data={chartData} 
           options={{
@@ -114,6 +120,10 @@ const ExpenseChart = () => {
             // }
           }} 
         />
+      </div>
+      <div className="card bg-red-200 flex items-center  justify-center mx-auto" style={{width:'450px', marginBottom: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
+        <h3 className='text-2xl text-red-800 font-bold '>EXPENSE: ${totalExpense.toFixed(2)}</h3>
+        {/* <p className='text-xl'>${totalIncome.toFixed(2)}</p> */}
       </div>
     </div>
   );
