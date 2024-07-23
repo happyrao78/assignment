@@ -80,11 +80,13 @@ const App = () => {
       {user && (
         <>
           <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginRight: '30px', marginTop: '30px' }}>
-              <MonthNavigator onMonthChange={handleMonthChange} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginRight: '30px', marginTop: '0px' }}>
+              
               <ThemeBtn />
+
             </div>
-            <div style={{ display: 'flex', marginTop: "200px" }}>
+            <MonthNavigator onMonthChange={handleMonthChange} />
+            <div style={{ display: 'flex', marginTop: "0px" }} >
               <div className="expense" style={{ width: "50%" }}>
                 <ExpenseChart selectedMonth={selectedMonth} />
               </div>
