@@ -36,12 +36,12 @@ function Authentication({onAuthStateChanged}) {
       ) : (
         <div className=" flex top-0 right-0 items-center absolute p-4 space-x-4">
           <div className="mb-4">
-            <h3 className="text-xl">Hello, {user.displayName}!</h3>
+            <h3 className="mt-5 text-xl dark:text-blue-900 font-bold dark:transition ease-linear duration-500">Hello, {user.displayName}!</h3>
           </div>
           
           <button
             onClick={handleSignOut}
-            className="bg-red-500 text-white px-4 py-2 rounded"
+            className="bg-red-500 text-white px-4 py-2 rounded dark:bg-blue-500 dark:transition ease-linear duration-500 "
           >
             Sign Out
           </button>

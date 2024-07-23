@@ -25,19 +25,19 @@ const MonthNavigator = ({ onMonthChange }) => {
   }, [monthIndex, onMonthChange, months]);
 
   return (
-    <div className="flex items-center justify-center p-4 mx-auto dark:bg-black dark:transition ease-in-out duration-500 bg-gray-100 rounded-lg shadow-md mt-10 max-w-full sm:max-w-md md:max-w-lg lg:max-w-4xl">
+    <div className="flex items-center justify-center p-4 mx-auto dark:bg-blue-900 dark:transition ease-in-out duration-500 bg-gray-100 rounded-lg shadow-md mt-10 max-w-full sm:max-w-md md:max-w-lg lg:max-w-4xl">
       <button 
         onClick={handlePrev} 
         disabled={monthIndex === 0}
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg disabled:bg-gray-300 transition-colors duration-300 hover:bg-blue-600"
+        className="bg-blue-500 text-white px-4 py-2 rounded-lg disabled:bg-gray-300 transition-colors duration-300 hover:bg-blue-600 dark:bg-white dark:text-black font-bold text-2xl"
       >
         {'<'}
       </button>
-      <span className="text-xl font-bold mx-4 dark:text-white">{months[monthIndex]}</span>
+      <span className="text-xl font-bold mx-4 dark:text-green-300">{months[monthIndex]}</span>
       <button 
         onClick={handleNext} 
         disabled={monthIndex === months.length - 1}
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg disabled:bg-gray-300 transition-colors duration-300 hover:bg-blue-600"
+        className="bg-blue-500 text-white px-4 py-2 rounded-lg disabled:bg-gray-300 transition-colors duration-300 hover:bg-blue-600  dark:bg-white dark:text-black font-bold text-2xl"
       >
         {'>'}
       </button>

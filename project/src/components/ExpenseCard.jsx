@@ -21,17 +21,17 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
+    <div className="max-w-xs sm:max-w-sm sm-custom:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto bg-white dark:bg-blue-900 dark:transition ease-linear duration-500 rounded-xl shadow-md overflow-hidden my-4">
       <div className="">
         <div className="p-4">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-black">{date.getDate()}</div>
-              <div className="text-sm text-gray-500">{dayOfWeek}</div>
+              <div className="text-2xl font-bold text-black dark:text-white dark:transition ease-linear duration-500 ">{date.getDate()}</div>
+              <div className="text-sm text-gray-500 dark:text-gray-200 dark:transition ease-linear duration-500">{dayOfWeek}</div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="text-green-500">{totalIncome}</div>
-              <div className="text-red-500">{totalExpense}</div>
+              {/* <div className="text-green-500">{totalIncome}</div> */}
+              {/* <div className="text-red-500">{totalExpense}</div> */}
             </div>
           </div>
           <hr className='pb-1' />
@@ -39,16 +39,15 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
             <div key={index} className="mb-2">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <span className={`bg-${expense.categoryColor}-100 text-${expense.categoryColor}-800 text-xs font-semibold px-2 py-0.5 rounded`}>
+                  <span className={`bg-${expense.categoryColor}-100 text-${expense.categoryColor}-800 text-xs font-semibold px-2 py-0.5 rounded dark:text-green-200 dark:transition ease-linear duration-500`}>
                     {expense.category}
                   </span>
-                  <span className="text-sm font-medium">{expense.title}</span>
+                  <span className="text-sm font-medium dark:text-white dark:transition ease-linear duration-500">{expense.title}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-red-500 font-semibold">{expense.amount}</span>
                   <button className="text-red-700 hover:text-red-500" onClick={() => handleDelete(expense.dateTime)}>
-                  <MdDelete />
-                   
+                    <MdDelete />
                   </button>
                 </div>
               </div>

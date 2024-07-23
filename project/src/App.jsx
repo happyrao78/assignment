@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Authentication from './components/authentication/Auth';
@@ -21,6 +20,9 @@ const App = () => {
   const [selectedMonth, setSelectedMonth] = useState('January 2023');
   const [expenses, setExpenses] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedType, setSelectedType] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCurrency, setSelectedCurrency] = useState('');
 
   const lightTheme = () => setThemeMode('light');
   const darkTheme = () => setThemeMode('dark');
@@ -31,13 +33,23 @@ const App = () => {
       .catch(error => console.error('Error fetching data:', error))
       .finally(() => setLoading(false));
   }, []);
-  
+
   useEffect(() => {
     const filterAndGroupData = () => {
       const filteredData = data.filter(expense => {
         const expenseDate = new Date(expense.dateTime);
         const month = expenseDate.toLocaleString('default', { month: 'long' }) + ' ' + expenseDate.getFullYear();
         return month === selectedMonth;
+      }).filter(expense => {
+        // Filter by type
+        if (selectedType && expense.type !== selectedType) return false;
+        // Filter by category
+        if (selectedCategory && expense.category !== selectedCategory) return false;
+        // Filter by currency
+        if (selectedCurrency && expense.currency !== selectedCurrency) return false;
+        // Filter by search query
+        if (searchQuery && !expense.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+        return true;
       });
 
       const groupedData = filteredData.reduce((acc, expense) => {
@@ -54,19 +66,10 @@ const App = () => {
         return acc;
       }, {});
 
-      // Sort and filter based on search query
       const sortedExpenses = Object.keys(groupedData)
         .sort((a, b) => new Date(b) - new Date(a))
         .reduce((acc, date) => {
-          const dateExpenses = groupedData[date].expenses.filter(expense =>
-            expense.title.toLowerCase().includes(searchQuery.toLowerCase())
-          );
-          if (dateExpenses.length > 0) {
-            acc[date] = {
-              ...groupedData[date],
-              expenses: dateExpenses
-            };
-          }
+          acc[date] = groupedData[date];
           return acc;
         }, {});
 
@@ -74,7 +77,7 @@ const App = () => {
     };
 
     filterAndGroupData();
-  }, [data, selectedMonth, searchQuery]);
+  }, [data, selectedMonth, searchQuery, selectedType, selectedCategory, selectedCurrency]);
 
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark");
@@ -89,6 +92,18 @@ const App = () => {
     setSearchQuery(query);
   };
 
+  const handleTypeChange = (type) => {
+    setSelectedType(type);
+  };
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const handleCurrencyChange = (currency) => {
+    setSelectedCurrency(currency);
+  };
+
   const handleDelete = (dateTime) => {
     const updatedExpenses = { ...expenses };
     Object.keys(updatedExpenses).forEach(date => {
@@ -101,24 +116,29 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className='dark:bg-blue-200 dark:transition ease-linear duration-500'>
       <Authentication onAuthStateChanged={handleAuthStateChanged} />
       {user && (
         <>
           <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginRight: '30px', marginTop: '0px' }}>
+            <div className="flex justify-between items-center mt-5 md:ml-10 ">
               <ThemeBtn />
             </div>
             <MonthNavigator onMonthChange={handleMonthChange} />
-            <div style={{ display: 'flex', marginTop: "0px" }} className='grid grid-flow-col'>
-              <div className="expense" style={{ width: "50%" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+              <div className="md:w-full">
                 <ExpenseChart selectedMonth={selectedMonth} />
               </div>
-              <div className="income" style={{ width: "50%" }}>
+              <div className="md:w-full">
                 <IncomeChart selectedMonth={selectedMonth} />
               </div>
             </div>
-            <SearchBar onSearch={handleSearch} />
+            <SearchBar 
+              onSearch={handleSearch} 
+              onTypeChange={handleTypeChange} 
+              onCategoryChange={handleCategoryChange}
+              onCurrencyChange={handleCurrencyChange} 
+            />
             {Object.keys(expenses).length > 0 ? (
               Object.keys(expenses).map(date => (
                 <ExpenseCard
@@ -138,7 +158,7 @@ const App = () => {
           </ThemeProvider>
         </>
       )}
-    </>
+    </div>
   );
 }
 
