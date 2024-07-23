@@ -1006,3 +1006,5 @@ dateTime,amount,type,category,title,currency,note
 2023-01-25 00:00:00,2500,Expense,Rent,home rent,INR,transaction
 2023-01-10 00:00:00,2500,Income,Rent,Freelance,INR,freelancing income
 2023-01-23 00:00:00,2500,Expense,Salary,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
+2024-06-24 00:00:00,2500,Income,Groceries,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
+2024-07-23 00:00:00,2500,Income,Salary,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.

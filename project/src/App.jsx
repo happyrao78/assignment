@@ -53,11 +53,18 @@ const App = () => {
         }
         return acc;
       }, {});
-      setExpenses(groupedData);
+      const sortedExpenses = Object.keys(groupedData)
+      .sort((a,b)=> new Date(b) - new Date(a))
+      .reduce((acc,date)=>{
+        acc[date]= groupedData[date];
+        return acc;
+      },{})
+      setExpenses(sortedExpenses);
     };
 
     filterAndGroupData();
-  }, [selectedMonth]);
+  }, [data,selectedMonth]);
+
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark");
     document.querySelector('html').classList.add(themeMode);
