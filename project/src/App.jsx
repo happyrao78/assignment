@@ -10,6 +10,7 @@ import SearchBar from './components/SearchBar';
 import ThemeBtn from './components/ThemeBtn';
 import { ThemeProvider } from './components/Context';
 import ExpenseCard from './components/ExpenseCard';
+import EditExpensePopup from './components/EditExpensePopup'; // Import EditExpensePopup component
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -23,6 +24,8 @@ const App = () => {
   const [selectedType, setSelectedType] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedCurrency, setSelectedCurrency] = useState('');
+  const [editPopupOpen, setEditPopupOpen] = useState(false);
+  const [selectedExpense, setSelectedExpense] = useState(null);
 
   const lightTheme = () => setThemeMode('light');
   const darkTheme = () => setThemeMode('dark');
@@ -115,6 +118,29 @@ const App = () => {
     setExpenses(updatedExpenses);
   };
 
+  const handleEdit = (updatedExpense) => {
+    const updatedExpenses = { ...expenses };
+    const date = new Date(updatedExpense.dateTime).toDateString();
+    if (updatedExpenses[date]) {
+      updatedExpenses[date].expenses = updatedExpenses[date].expenses.map(exp => 
+        exp.dateTime === updatedExpense.dateTime ? updatedExpense : exp
+      );
+      updatedExpenses[date].totalIncome = updatedExpenses[date].expenses.reduce((acc, exp) => exp.amount > 0 ? acc + parseFloat(exp.amount) : acc, 0);
+      updatedExpenses[date].totalExpense = updatedExpenses[date].expenses.reduce((acc, exp) => exp.amount < 0 ? acc + Math.abs(parseFloat(exp.amount)) : acc, 0);
+    }
+    setExpenses(updatedExpenses);
+  };
+
+  const openEditPopup = (expense) => {
+    setSelectedExpense(expense);
+    setEditPopupOpen(true);
+  };
+
+  const closeEditPopup = () => {
+    setEditPopupOpen(false);
+    setSelectedExpense(null);
+  };
+
   return (
     <div className='dark:bg-blue-200 dark:transition ease-linear duration-500'>
       <Authentication onAuthStateChanged={handleAuthStateChanged} />
@@ -148,6 +174,7 @@ const App = () => {
                   totalExpense={expenses[date].totalExpense}
                   expenses={expenses[date].expenses}
                   onDelete={handleDelete}
+                  onEdit={openEditPopup} // Pass the openEditPopup function
                 />
               ))
             ) : (
@@ -155,6 +182,13 @@ const App = () => {
             )}
             <PlusIcon onClick={togglePopup} />
             {isPopupOpen && <PopupForm togglePopup={togglePopup} />}
+            {editPopupOpen && selectedExpense && (
+              <EditExpensePopup 
+                expense={selectedExpense} 
+                onClose={closeEditPopup} 
+                onEdit={handleEdit}
+              />
+            )}
           </ThemeProvider>
         </>
       )}

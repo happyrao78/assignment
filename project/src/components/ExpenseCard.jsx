@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import { MdDelete } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
+import EditExpensePopup from './EditExpensePopup'; // Import the EditExpensePopup component
 
-const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) => {
+const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete, onEdit }) => {
   // Define the days of the week
   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   // Calculate the day of the week from the date
   const dayOfWeek = daysOfWeek[date.getDay()];
+
+  const [editPopupOpen, setEditPopupOpen] = useState(false);
+  const [selectedExpense, setSelectedExpense] = useState(null);
 
   const handleDelete = (dateTime) => {
     axios.delete('http://localhost:3000/delete-entry', { data: { dateTime } })
@@ -20,6 +24,16 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
       });
   };
 
+  const handleEdit = (expense) => {
+    setSelectedExpense(expense);
+    setEditPopupOpen(true);
+  };
+
+  const closeEditPopup = () => {
+    setEditPopupOpen(false);
+    setSelectedExpense(null);
+  };
+
   return (
     <div className="max-w-xs sm:max-w-sm sm-custom:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto bg-white dark:bg-blue-900 dark:transition ease-linear duration-500 rounded-xl shadow-md overflow-hidden my-4">
       <div className="">
@@ -29,10 +43,10 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
               <div className="text-2xl font-bold text-black dark:text-white dark:transition ease-linear duration-500 ">{date.getDate()}</div>
               <div className="text-sm text-gray-500 dark:text-gray-200 dark:transition ease-linear duration-500">{dayOfWeek}</div>
             </div>
-            <div className="flex items-center space-x-4">
-              {/* <div className="text-green-500">{totalIncome}</div> */}
-              {/* <div className="text-red-500">{totalExpense}</div> */}
-            </div>
+            {/* <div className="flex items-center space-x-4">
+              <div className="text-green-500">{totalIncome}</div>
+              <div className="text-red-500">{totalExpense}</div>
+            </div> */}
           </div>
           <hr className='pb-1' />
           {expenses.map((expense, index) => (
@@ -46,6 +60,9 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-red-500 font-semibold">{expense.amount}</span>
+                  <button className="text-blue-700 hover:text-blue-500" onClick={() => handleEdit(expense)}>
+                    <MdEdit />
+                  </button>
                   <button className="text-red-700 hover:text-red-500" onClick={() => handleDelete(expense.dateTime)}>
                     <MdDelete />
                   </button>
@@ -55,6 +72,13 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) =>
           ))}
         </div>
       </div>
+      {editPopupOpen && selectedExpense && (
+        <EditExpensePopup 
+          expense={selectedExpense} 
+          onClose={closeEditPopup} 
+          onEdit={onEdit}
+        />
+      )}
     </div>
   );
 };
