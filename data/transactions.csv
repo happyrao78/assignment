@@ -454,7 +454,6 @@ dateTime,amount,type,category,title,currency,note
 2024-02-13 16:50:53,186.3,Expense,Entertainment,Household Supplies,GBP,Transaction related to Entertainment
 2023-11-10 05:39:23,4943.76,Expense,Shopping,Pet Care,USD,Transaction related to Shopping
 2023-12-08 20:11:08,3947.6,Income,Investment,Social Security,GBP,Transaction related to Investment
-2023-07-29 08:21:14,1625.92,Expense,Shopping,Household Supplies,USD,Transaction related to Shopping
 2024-01-20 19:25:13,2779.69,Expense,Education,Personal Care,USD,Transaction related to Education
 2024-05-05 06:39:32,4003.13,Expense,Utilities,Personal Care,GBP,Transaction related to Utilities
 2023-11-30 10:39:52,4983.39,Expense,Rent,Pet Care,INR,Transaction related to Rent
@@ -683,7 +682,6 @@ dateTime,amount,type,category,title,currency,note
 2024-03-30 02:40:13,3658.96,Expense,Travel,Household Supplies,INR,Transaction related to Travel
 2024-07-04 17:46:52,73.63,Expense,Shopping,Healthcare,GBP,Transaction related to Shopping
 2023-10-31 08:52:48,4609.92,Expense,Rent,Education,EUR,Transaction related to Rent
-2023-07-21 00:04:50,544.86,Expense,Entertainment,Groceries,USD,Transaction related to Entertainment
 2023-11-26 21:07:06,308.86,Expense,Travel,Healthcare,USD,Transaction related to Travel
 2024-01-24 22:12:47,659.03,Expense,Shopping,Entertainment,INR,Transaction related to Shopping
 2024-03-30 01:27:06,1473.7,Expense,Transportation,Childcare,JPY,Transaction related to Transportation
@@ -712,7 +710,6 @@ dateTime,amount,type,category,title,currency,note
 2024-03-27 07:57:04,3957.83,Expense,Travel,Childcare,JPY,Transaction related to Travel
 2023-12-14 23:33:36,4486.35,Income,Salary,Bonuses,JPY,Transaction related to Salary
 2023-11-18 15:11:29,2585.1,Expense,Entertainment,Travel,GBP,Transaction related to Entertainment
-2023-07-21 02:58:23,1590.19,Expense,Entertainment,Debt Payments,JPY,Transaction related to Entertainment
 2024-04-17 19:36:56,2509.67,Expense,Transportation,Utilities,USD,Transaction related to Transportation
 2024-02-04 17:22:17,1277.34,Expense,Transportation,Clothing,EUR,Transaction related to Transportation
 2023-12-22 15:52:12,2808.49,Expense,Rent,Household Supplies,INR,Transaction related to Rent
