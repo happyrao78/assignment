@@ -77,14 +77,14 @@ const SearchBar = ({ onSearch, onTypeChange, onCategoryChange }) => {
           ))}
         </select>
       </div>
-      <div className="bg-white dark:bg-green-200 dark:transition ease-linear duration-500 rounded-md shadow-sm border border-gray-300 flex-shrink-0 w-full md:w-auto">
+      {/* <div className="bg-white dark:bg-green-200 dark:transition ease-linear duration-500 rounded-md shadow-sm border border-gray-300 flex-shrink-0 w-full md:w-auto">
         <select className="p-2 bg-transparent focus:outline-none w-full">
           <option>Currency</option>
           {currencies.map((currency, index) => (
             <option key={index} value={currency}>{currency}</option>
           ))}
         </select>
-      </div>
+      </div> */}
     </div>
   );
 };
