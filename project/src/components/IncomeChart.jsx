@@ -7,7 +7,7 @@ import moment from 'moment';
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
-const IncomeChart = ({ selectedMonth }) => {
+const IncomeChart = ({ selectedMonth, conversionRates }) => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalIncome, setTotalIncome] = useState(0);
@@ -35,11 +35,26 @@ const IncomeChart = ({ selectedMonth }) => {
         const aggregatedIncomeData = incomeData.reduce((acc, item) => {
           const category = item.category;
           const amount = parseFloat(item.amount);
+          const currency = item.currency;
+
+          let amountInINR;
+
+          if (currency === 'INR') {
+            amountInINR = amount;
+          } else {
+            const rate = conversionRates[currency];
+            if (rate) {
+              amountInINR = (amount * (1 / rate)).toFixed(2); // Convert to INR
+            } else {
+              console.warn(`Conversion rate for ${currency} not found.`);
+              amountInINR = amount; // Fallback
+            }
+          }
 
           if (acc[category]) {
-            acc[category] += amount;
+            acc[category] += parseFloat(amountInINR);
           } else {
-            acc[category] = amount;
+            acc[category] = parseFloat(amountInINR);
           }
           return acc;
         }, {});
@@ -75,7 +90,7 @@ const IncomeChart = ({ selectedMonth }) => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-  }, [selectedMonth]);
+  }, [selectedMonth, conversionRates]);
 
   if (loading) {
     return <div className="text-center text-lg">Loading...</div>;
@@ -83,52 +98,51 @@ const IncomeChart = ({ selectedMonth }) => {
 
   return (
     <div className="flex flex-col items-center p-4 md:p-8">
-     {Object.keys(chartData).length > 0 && chartData.labels && chartData.labels.length > 0 ? (
-      <>
-      <div className="w-full max-w-lg mb-4">
-        <ul className="flex flex-wrap font-bold justify-center space-x-2">
-          {chartData.labels.map((label, index) => (
-            <li key={index} className="flex items-center space-x-1">
-              <span
-                className="inline-block w-3 h-3 rounded-full"
-                style={{ backgroundColor: chartData.datasets[0].backgroundColor[index] }}
-              ></span>
-              <span className="text-sm">{label}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="w-full max-w-lg h-64 md:h-80 mb-10">
-        <Pie
-          data={chartData}
-          options={{
-            maintainAspectRatio: false,
-            plugins: {
-              legend: {
-                display: false,
-              },
-              datalabels: {
-                display: false,
-              },
-            },
-          }}
-        />
-      </div>
-      <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
-        <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
-      </div>
-      </>
-     ):(
-      <div className="text-center text-lg font-bold justify-center mx-auto mt-8">Oops !!! You had no income this month
-      <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
-        <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
-      </div>
-      </div>
-     )}
+      {Object.keys(chartData).length > 0 && chartData.labels && chartData.labels.length > 0 ? (
+        <>
+          <div className="w-full max-w-lg mb-4">
+            <ul className="flex flex-wrap font-bold justify-center space-x-2">
+              {chartData.labels.map((label, index) => (
+                <li key={index} className="flex items-center space-x-1">
+                  <span
+                    className="inline-block w-3 h-3 rounded-full"
+                    style={{ backgroundColor: chartData.datasets[0].backgroundColor[index] }}
+                  ></span>
+                  <span className="text-sm">{label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-full max-w-lg h-64 md:h-80 mb-10">
+            <Pie
+              data={chartData}
+              options={{
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false,
+                  },
+                  datalabels: {
+                    display: false,
+                  },
+                },
+              }}
+            />
+          </div>
+          <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+            <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
+          </div>
+        </>
+      ) : (
+        <div className="text-center text-lg font-bold justify-center mx-auto mt-8">
+          Oops !!! You had no income this month
+          <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+            <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
+          </div>
+        </div>
+      )}
     </div>
   );
-   
-  
 };
 
 export default IncomeChart;

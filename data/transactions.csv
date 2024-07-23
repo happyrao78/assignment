@@ -999,3 +999,4 @@ dateTime,amount,type,category,title,currency,note
 2023-01-02 00:00:00,20000,Income,Salary,income,INR,income
 2024-06-24 00:00:00,2500,Income,Groceries,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
 2024-07-23 00:00:00,25000,Expense,Salary,July,INR,This Transaction is regarding the Salary which I received in July
+2023-01-02 00:00:00,200,Income,Salary,income,USD,income

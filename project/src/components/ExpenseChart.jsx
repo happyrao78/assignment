@@ -7,7 +7,7 @@ import moment from 'moment';
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
-const ExpenseChart = ({ selectedMonth }) => {
+const ExpenseChart = ({ selectedMonth, conversionRates }) => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalExpense, setTotalExpense] = useState(0);
@@ -29,7 +29,28 @@ const ExpenseChart = ({ selectedMonth }) => {
           return item.type === 'Expense' && itemMonth === formattedSelectedMonth;
         });
 
-        const aggregatedExpenseData = expenseData.reduce((acc, item) => {
+        // Convert expenses to INR
+        const convertedExpenseData = expenseData.map(expense => {
+          const { currency, amount } = expense;
+          let amountInINR;
+
+          if (currency === 'INR') {
+            amountInINR = parseFloat(amount);
+          } else {
+            const rate = conversionRates[currency];
+            if (rate) {
+              amountInINR = parseFloat(amount) * (1 / rate); // Convert to INR
+            } else {
+              console.warn(`Conversion rate for ${currency} not found.`);
+              amountInINR = parseFloat(amount); // Fallback
+            }
+          }
+
+          return { ...expense, amount: amountInINR, currency: 'INR' };
+        });
+
+        // Aggregate expense data
+        const aggregatedExpenseData = convertedExpenseData.reduce((acc, item) => {
           const category = item.category;
           const amount = parseFloat(item.amount);
 
@@ -46,9 +67,6 @@ const ExpenseChart = ({ selectedMonth }) => {
 
         const labels = Object.keys(aggregatedExpenseData);
         const values = Object.values(aggregatedExpenseData);
-
-        console.log('Processed labels:', labels);
-        console.log('Processed values:', values);
 
         const colors = labels.map((_, index) => `hsl(${index * 360 / labels.length}, 70%, 70%)`);
 
@@ -72,7 +90,7 @@ const ExpenseChart = ({ selectedMonth }) => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-  }, [selectedMonth]);
+  }, [selectedMonth, conversionRates]);
 
   if (loading) {
     return <div className="text-center text-lg">Loading...</div>;
@@ -121,7 +139,6 @@ const ExpenseChart = ({ selectedMonth }) => {
             <h3 className="text-xl font-bold">EXPENSE: ₹{totalExpense.toFixed(2)}</h3>
           </div>
         </div>
-        
       )}
     </div>
   );

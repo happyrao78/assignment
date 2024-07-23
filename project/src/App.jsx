@@ -10,7 +10,7 @@ import SearchBar from './components/SearchBar';
 import ThemeBtn from './components/ThemeBtn';
 import { ThemeProvider } from './components/Context';
 import ExpenseCard from './components/ExpenseCard';
-import EditExpensePopup from './components/EditExpensePopup'; // Import EditExpensePopup component
+import EditExpensePopup from './components/EditExpensePopup';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -19,17 +19,28 @@ const App = () => {
   const [user, setUser] = useState(null);
   const [themeMode, setThemeMode] = useState("light");
   const [selectedMonth, setSelectedMonth] = useState('January 2023');
-  const [expenses, setExpenses] = useState([]);
+  const [expenses, setExpenses] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedCurrency, setSelectedCurrency] = useState('');
   const [editPopupOpen, setEditPopupOpen] = useState(false);
   const [selectedExpense, setSelectedExpense] = useState(null);
+  const [conversionRates, setConversionRates] = useState({});
 
   const lightTheme = () => setThemeMode('light');
   const darkTheme = () => setThemeMode('dark');
 
+  // Fetch conversion rates when component mounts
+  useEffect(() => {
+    axios.get('https://api.exchangerate-api.com/v4/latest/INR')
+      .then(response => {
+        console.log("Fetched conversion rates:", response.data.rates);
+        setConversionRates(response.data.rates);
+      })
+      .catch(error => console.error('Error fetching conversion rates:', error));
+  }, []);
+  
+  // Fetch CSV data when component mounts
   useEffect(() => {
     axios.get("http://localhost:3000/read-csv")
       .then(response => setData(response.data))
@@ -37,6 +48,7 @@ const App = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  // Filter and group data
   useEffect(() => {
     const filterAndGroupData = () => {
       const filteredData = data.filter(expense => {
@@ -48,40 +60,69 @@ const App = () => {
         if (selectedType && expense.type !== selectedType) return false;
         // Filter by category
         if (selectedCategory && expense.category !== selectedCategory) return false;
-        // Filter by currency
-        if (selectedCurrency && expense.currency !== selectedCurrency) return false;
         // Filter by search query
         if (searchQuery && !expense.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
         return true;
       });
-
-      const groupedData = filteredData.reduce((acc, expense) => {
+    
+      const convertedData = filteredData.map(expense => {
+        const { currency, amount } = expense;
+        let amountInINR;
+    
+        console.log(`Currency: ${currency}, Amount: ${amount}`);
+    
+        if (currency === 'INR') {
+          amountInINR = parseFloat(amount);
+        } else {
+          const rate = conversionRates[currency];
+          console.log(`Rate for ${currency}: ${rate}`);
+          if (rate) {
+            amountInINR = (parseFloat(amount) * (1 / rate)).toFixed(2); // Convert to INR
+          } else {
+            console.warn(`Conversion rate for ${currency} not found.`);
+            amountInINR = parseFloat(amount); // Fallback
+          }
+        }
+    
+        console.log(`Converted Amount in INR: ${amountInINR}`);
+    
+        return { ...expense, amount: amountInINR, currency: 'INR' };
+      });
+    
+      console.log("Converted Data:", convertedData);
+    
+      const groupedData = convertedData.reduce((acc, expense) => {
         const date = new Date(expense.dateTime).toDateString();
         if (!acc[date]) {
           acc[date] = { expenses: [], totalIncome: 0, totalExpense: 0 };
         }
         acc[date].expenses.push(expense);
-        if (expense.amount > 0) {
+      
+        if (expense.type === 'Income') {
           acc[date].totalIncome += parseFloat(expense.amount);
         } else {
-          acc[date].totalExpense += Math.abs(parseFloat(expense.amount));
+          acc[date].totalExpense += parseFloat(expense.amount);
         }
+      
         return acc;
       }, {});
-
+    
+      console.log("Grouped Data:", groupedData);
+    
       const sortedExpenses = Object.keys(groupedData)
         .sort((a, b) => new Date(b) - new Date(a))
         .reduce((acc, date) => {
           acc[date] = groupedData[date];
           return acc;
         }, {});
-
+    
       setExpenses(sortedExpenses);
     };
-
+    
     filterAndGroupData();
-  }, [data, selectedMonth, searchQuery, selectedType, selectedCategory, selectedCurrency]);
+  }, [data, selectedMonth, searchQuery, selectedType, selectedCategory, conversionRates]);
 
+  // Handle theme changes
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark");
     document.querySelector('html').classList.add(themeMode);
@@ -103,10 +144,6 @@ const App = () => {
     setSelectedCategory(category);
   };
 
-  const handleCurrencyChange = (currency) => {
-    setSelectedCurrency(currency);
-  };
-
   const handleDelete = (dateTime) => {
     const updatedExpenses = { ...expenses };
     Object.keys(updatedExpenses).forEach(date => {
@@ -122,7 +159,7 @@ const App = () => {
     const updatedExpenses = { ...expenses };
     const date = new Date(updatedExpense.dateTime).toDateString();
     if (updatedExpenses[date]) {
-      updatedExpenses[date].expenses = updatedExpenses[date].expenses.map(exp => 
+      updatedExpenses[date].expenses = updatedExpenses[date].expenses.map(exp =>
         exp.dateTime === updatedExpense.dateTime ? updatedExpense : exp
       );
       updatedExpenses[date].totalIncome = updatedExpenses[date].expenses.reduce((acc, exp) => exp.amount > 0 ? acc + parseFloat(exp.amount) : acc, 0);
@@ -153,17 +190,16 @@ const App = () => {
             <MonthNavigator onMonthChange={handleMonthChange} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
               <div className="md:w-full">
-                <ExpenseChart selectedMonth={selectedMonth} />
+                <ExpenseChart selectedMonth={selectedMonth} conversionRates={conversionRates} />
               </div>
               <div className="md:w-full">
-                <IncomeChart selectedMonth={selectedMonth} />
+                <IncomeChart selectedMonth={selectedMonth} conversionRates={conversionRates} />
               </div>
             </div>
             <SearchBar 
               onSearch={handleSearch} 
               onTypeChange={handleTypeChange} 
               onCategoryChange={handleCategoryChange}
-              onCurrencyChange={handleCurrencyChange} 
             />
             {Object.keys(expenses).length > 0 ? (
               Object.keys(expenses).map(date => (
