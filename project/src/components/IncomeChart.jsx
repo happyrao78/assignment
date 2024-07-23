@@ -75,7 +75,7 @@ const IncomeChart = ({selectedMonth}) => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-  }, []);
+  }, [selectedMonth]);
 
   if (loading) {
     return <div className="text-center text-lg">Loading...</div>;
