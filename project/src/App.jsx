@@ -73,6 +73,23 @@ const App = () => {
   const togglePopup = () => setIsPopupOpen(!isPopupOpen);
   const handleAuthStateChanged = (user) => setUser(user);
   const handleMonthChange = (month) => setSelectedMonth(month);
+  
+  const handleDelete = (dateTime) => {
+    // Create a new object based on the current expenses state
+    const updatedExpenses = { ...expenses };
+  
+    // Iterate through each date to find and remove the expense
+    Object.keys(updatedExpenses).forEach(date => {
+      updatedExpenses[date].expenses = updatedExpenses[date].expenses.filter(expense => expense.dateTime !== dateTime);
+      // Remove the date entry if no expenses remain for that date
+      if (updatedExpenses[date].expenses.length === 0) {
+        delete updatedExpenses[date];
+      }
+    });
+  
+    // Update the state with the new expenses object
+    setExpenses(updatedExpenses);
+  };
 
   return (
     <>
@@ -101,6 +118,7 @@ const App = () => {
                   totalIncome={expenses[date].totalIncome}
                   totalExpense={expenses[date].totalExpense}
                   expenses={expenses[date].expenses}
+                  onDelete={handleDelete}
                 />
               ))
             ) : (

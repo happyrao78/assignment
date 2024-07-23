@@ -1,11 +1,23 @@
 import React from 'react';
+import axios from 'axios';
 
-const ExpenseCard = ({ date, totalIncome, totalExpense, expenses }) => {
+const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete }) => {
   // Define the days of the week
   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   // Calculate the day of the week from the date
   const dayOfWeek = daysOfWeek[date.getDay()];
+
+  const handleDelete = (dateTime) => {
+    axios.delete('http://localhost:3000/delete-entry', { data: { dateTime } })
+      .then(response => {
+        console.log('Deleted successfully:', response.data);
+        onDelete(dateTime); // Call the onDelete callback to update the UI
+      })
+      .catch(error => {
+        console.error('Error deleting entry:', error);
+      });
+  };
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
@@ -33,7 +45,7 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses }) => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-red-500 font-semibold">{expense.amount}</span>
-                  <button className="text-red-500 hover:text-red-700">
+                  <button className="text-red-500 hover:text-red-700" onClick={() => handleDelete(expense.dateTime)}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2-10a1 1 0 00-1 1v4a1 1 0 102 0v-4a1 1 0 00-1-1zm4 0a1 1 0 00-1 1v4a1 1 0 102 0v-4a1 1 0 00-1-1z" clipRule="evenodd" />
                     </svg>
