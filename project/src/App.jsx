@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Authentication from './components/authentication/Auth';
@@ -12,24 +13,23 @@ import { ThemeProvider } from './components/Context';
 import ExpenseCard from './components/ExpenseCard';
 
 const App = () => {
-
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [user, setUser] = useState(null);
   const [themeMode, setThemeMode] = useState("light");
-  const [selectedMonth, setSelectedMonth] = useState('January 2023'); // Default value
+  const [selectedMonth, setSelectedMonth] = useState('January 2023');
   const [expenses, setExpenses] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const lightTheme = () => setThemeMode('light');
   const darkTheme = () => setThemeMode('dark');
 
-  
   useEffect(() => {
     axios.get("http://localhost:3000/read-csv")
-    .then(response => setData(response.data))
-    .catch(error => console.error('Error fetching data:', error))
-    .finally(() => setLoading(false));
+      .then(response => setData(response.data))
+      .catch(error => console.error('Error fetching data:', error))
+      .finally(() => setLoading(false));
   }, []);
   
   useEffect(() => {
@@ -53,17 +53,28 @@ const App = () => {
         }
         return acc;
       }, {});
+
+      // Sort and filter based on search query
       const sortedExpenses = Object.keys(groupedData)
-      .sort((a,b)=> new Date(b) - new Date(a))
-      .reduce((acc,date)=>{
-        acc[date]= groupedData[date];
-        return acc;
-      },{})
+        .sort((a, b) => new Date(b) - new Date(a))
+        .reduce((acc, date) => {
+          const dateExpenses = groupedData[date].expenses.filter(expense =>
+            expense.title.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+          if (dateExpenses.length > 0) {
+            acc[date] = {
+              ...groupedData[date],
+              expenses: dateExpenses
+            };
+          }
+          return acc;
+        }, {});
+
       setExpenses(sortedExpenses);
     };
 
     filterAndGroupData();
-  }, [data,selectedMonth]);
+  }, [data, selectedMonth, searchQuery]);
 
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark");
@@ -73,21 +84,19 @@ const App = () => {
   const togglePopup = () => setIsPopupOpen(!isPopupOpen);
   const handleAuthStateChanged = (user) => setUser(user);
   const handleMonthChange = (month) => setSelectedMonth(month);
-  
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
   const handleDelete = (dateTime) => {
-    // Create a new object based on the current expenses state
     const updatedExpenses = { ...expenses };
-  
-    // Iterate through each date to find and remove the expense
     Object.keys(updatedExpenses).forEach(date => {
       updatedExpenses[date].expenses = updatedExpenses[date].expenses.filter(expense => expense.dateTime !== dateTime);
-      // Remove the date entry if no expenses remain for that date
       if (updatedExpenses[date].expenses.length === 0) {
         delete updatedExpenses[date];
       }
     });
-  
-    // Update the state with the new expenses object
     setExpenses(updatedExpenses);
   };
 
@@ -98,12 +107,10 @@ const App = () => {
         <>
           <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginRight: '30px', marginTop: '0px' }}>
-              
               <ThemeBtn />
-
             </div>
             <MonthNavigator onMonthChange={handleMonthChange} />
-            <div style={{ display: 'flex', marginTop: "0px" }} >
+            <div style={{ display: 'flex', marginTop: "0px" }} className='grid grid-flow-col'>
               <div className="expense" style={{ width: "50%" }}>
                 <ExpenseChart selectedMonth={selectedMonth} />
               </div>
@@ -111,7 +118,7 @@ const App = () => {
                 <IncomeChart selectedMonth={selectedMonth} />
               </div>
             </div>
-            <SearchBar />
+            <SearchBar onSearch={handleSearch} />
             {Object.keys(expenses).length > 0 ? (
               Object.keys(expenses).map(date => (
                 <ExpenseCard
@@ -124,7 +131,7 @@ const App = () => {
                 />
               ))
             ) : (
-              <div>No expenses to display</div>
+              <div className='flex m-10 mx-auto items-center justify-center text-3xl font-bold'>No transactions to Display</div>
             )}
             <PlusIcon onClick={togglePopup} />
             {isPopupOpen && <PopupForm togglePopup={togglePopup} />}

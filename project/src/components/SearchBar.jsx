@@ -1,23 +1,22 @@
-import React, { useEffect, useState } from 'react';
+// components/SearchBar.js
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
   const [categories, setCategories] = useState([]);
   const [currencies, setCurrencies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchTitle, setSearchTitle] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch data from the backend
         const response = await axios.get('http://localhost:3000/read-csv');
         const data = response.data;
 
-        // Extract unique categories and currencies
         const uniqueCategories = Array.from(new Set(data.map(item => item.category)));
         const uniqueCurrencies = Array.from(new Set(data.map(item => item.currency)));
 
-        // Update state
         setCategories(uniqueCategories);
         setCurrencies(uniqueCurrencies);
         setLoading(false);
@@ -30,6 +29,10 @@ const SearchBar = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    onSearch(searchTitle);
+  }, [searchTitle, onSearch]);
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -41,13 +44,9 @@ const SearchBar = () => {
           type="text" 
           placeholder="Search by Title" 
           className="p-2 w-full rounded-l-md focus:outline-none"
+          value={searchTitle}
+          onChange={(e) => setSearchTitle(e.target.value)}
         />
-        {/* Optional button (commented out) */}
-        {/* <button className="p-2 bg-white rounded-r-md focus:outline-none">
-          <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2H3m12 0a9 9 0 11-2-7.453m2 7.453V19.5a2.5 2.5 0 01-5 0V9.7a2.5 2.5 0 014 0" />
-          </svg>
-        </button> */}
       </div>
       <div className="bg-white rounded-md shadow-sm border border-gray-300 flex-shrink-0 w-full md:w-auto">
         <select className="p-2 bg-transparent focus:outline-none w-full">

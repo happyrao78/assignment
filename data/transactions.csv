@@ -71,7 +71,6 @@ dateTime,amount,type,category,title,currency,note
 2023-08-04 03:40:53,809.19,Expense,Food,Groceries,GBP,Transaction related to Food
 2024-06-15 09:53:32,4900.21,Expense,Healthcare,Fitness,JPY,Transaction related to Healthcare
 2023-09-25 11:39:37,4021.62,Expense,Transportation,Subscriptions,JPY,Transaction related to Transportation
-2023-07-29 17:41:45,1989.89,Expense,Utilities,Rent,EUR,Transaction related to Utilities
 2024-03-31 19:09:50,2060.83,Expense,Education,Groceries,JPY,Transaction related to Education
 2024-01-02 04:12:42,1583.47,Expense,Shopping,Gifts,JPY,Transaction related to Shopping
 2023-09-24 23:37:11,3244.93,Expense,Utilities,Subscriptions,GBP,Transaction related to Utilities
@@ -413,7 +412,6 @@ dateTime,amount,type,category,title,currency,note
 2023-09-13 00:04:06,574.16,Expense,Food,Pet Care,JPY,Transaction related to Food
 2023-10-19 18:01:14,3551.41,Expense,Rent,Travel,USD,Transaction related to Rent
 2023-08-04 05:25:33,3998.56,Expense,Transportation,Childcare,EUR,Transaction related to Transportation
-2023-07-30 06:14:37,3480.61,Expense,Education,Healthcare,USD,Transaction related to Education
 2023-12-08 04:32:14,2834.06,Expense,Utilities,Travel,EUR,Transaction related to Utilities
 2024-04-07 11:48:23,2822.5,Expense,Entertainment,Childcare,GBP,Transaction related to Entertainment
 2024-05-13 14:20:36,3174.78,Expense,Rent,Insurance,GBP,Transaction related to Rent
@@ -617,7 +615,6 @@ dateTime,amount,type,category,title,currency,note
 2023-11-23 22:35:31,4803.85,Expense,Education,Travel,EUR,Transaction related to Education
 2023-12-03 20:03:59,368.48,Expense,Travel,Debt Payments,INR,Transaction related to Travel
 2024-04-27 14:00:40,2490.33,Income,Freelance,Salary,USD,Transaction related to Freelance
-2023-07-31 15:48:31,3669.41,Expense,Shopping,Travel,INR,Transaction related to Shopping
 2023-09-03 04:15:45,157.79,Expense,Food,Miscellaneous,INR,Transaction related to Food
 2024-02-08 22:43:01,2996.85,Expense,Travel,Dining Out,EUR,Transaction related to Travel
 2024-02-05 18:43:30,2665.28,Expense,Entertainment,Clothing,JPY,Transaction related to Entertainment
@@ -1000,8 +997,5 @@ dateTime,amount,type,category,title,currency,note
 2024-10-23 00:00:00,2500,Income,Salary,Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
 2024-10-23 00:00:00,2200,Expense,Rent,Rent,INR,rent
 2023-01-02 00:00:00,20000,Income,Salary,income,INR,income
-2023-01-10 00:00:00,2500,Income,Rent,Freelance,INR,freelancing income
 2024-06-24 00:00:00,2500,Income,Groceries,June Month Salary,INR,This Transaction is regarding the Salary which I received on June 10th 2024.
 2024-07-23 00:00:00,2500,Expense,Salary,July Month Salary,INR,This Transaction is regarding the Salary which I received in July
-2023-01-11 12:00:00,2500,Expense,Salary,Clothes,INR,clothes
-2023-01-11 12:00:00,2500,Expense,Travel,Travelling,INR,Travelling
