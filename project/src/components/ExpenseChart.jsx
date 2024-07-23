@@ -80,38 +80,49 @@ const ExpenseChart = ({ selectedMonth }) => {
 
   return (
     <div className="flex flex-col items-center p-4 md:p-8">
-      <div className="w-full max-w-lg mb-4">
-        <ul className="flex flex-wrap font-bold justify-center space-x-2">
-          {chartData.labels.map((label, index) => (
-            <li key={index} className="flex items-center space-x-1">
-              <span
-                className="inline-block w-3 h-3 rounded-full"
-                style={{ backgroundColor: chartData.datasets[0].backgroundColor[index] }}
-              ></span>
-              <span className="text-sm">{label}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="w-full max-w-lg h-64 md:h-80 mb-10">
-        <Pie
-          data={chartData}
-          options={{
-            maintainAspectRatio: false,
-            plugins: {
-              legend: {
-                display: false,
-              },
-              datalabels: {
-                display: false,
-              },
-            },
-          }}
-        />
-      </div>
-      <div className="bg-red-200 text-red-800 border border-red-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
-        <h3 className="text-xl font-bold">EXPENSE: ₹{totalExpense.toFixed(2)}</h3>
-      </div>
+      {Object.keys(chartData).length > 0 && chartData.labels && chartData.labels.length > 0 ? (
+        <>
+          <div className="w-full max-w-lg mb-4">
+            <ul className="flex flex-wrap font-bold justify-center space-x-2">
+              {chartData.labels.map((label, index) => (
+                <li key={index} className="flex items-center space-x-1">
+                  <span
+                    className="inline-block w-3 h-3 rounded-full"
+                    style={{ backgroundColor: chartData.datasets[0].backgroundColor[index] }}
+                  ></span>
+                  <span className="text-sm">{label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-full max-w-lg h-64 md:h-80 mb-10">
+            <Pie
+              data={chartData}
+              options={{
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false,
+                  },
+                  datalabels: {
+                    display: false,
+                  },
+                },
+              }}
+            />
+          </div>
+          <div className="bg-red-200 text-red-800 border border-red-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+            <h3 className="text-xl font-bold">EXPENSE: ₹{totalExpense.toFixed(2)}</h3>
+          </div>
+        </>
+      ) : (
+        <div className="text-center text-lg font-bold justify-center mx-auto mt-8">Hurray!!! You had no expense this month
+        <div className="bg-red-200 text-red-800 border border-red-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+            <h3 className="text-xl font-bold">EXPENSE: ₹{totalExpense.toFixed(2)}</h3>
+          </div>
+        </div>
+        
+      )}
     </div>
   );
 };

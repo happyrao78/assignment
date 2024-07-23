@@ -83,6 +83,8 @@ const IncomeChart = ({ selectedMonth }) => {
 
   return (
     <div className="flex flex-col items-center p-4 md:p-8">
+     {Object.keys(chartData).length > 0 && chartData.labels && chartData.labels.length > 0 ? (
+      <>
       <div className="w-full max-w-lg mb-4">
         <ul className="flex flex-wrap font-bold justify-center space-x-2">
           {chartData.labels.map((label, index) => (
@@ -115,8 +117,18 @@ const IncomeChart = ({ selectedMonth }) => {
       <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
         <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
       </div>
+      </>
+     ):(
+      <div className="text-center text-lg font-bold justify-center mx-auto mt-8">Oops !!! You had no income this month
+      <div className="bg-green-200 text-green-800 border border-green-300 rounded-lg shadow-lg p-4 w-full max-w-sm text-center">
+        <h3 className="text-xl font-bold">INCOME: ₹{totalIncome.toFixed(2)}</h3>
+      </div>
+      </div>
+     )}
     </div>
   );
+   
+  
 };
 
 export default IncomeChart;
