@@ -32,7 +32,7 @@ Make sure you have [Bun](https://bun.sh/) installed on your machine.
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/happyrao78/fintrack.git](https://github.com/happyrao78/assignment.git)
+   git clone https://github.com/happyrao78/assignment.git
    ```
 
 2. **Navigate to the frontend directory**:
