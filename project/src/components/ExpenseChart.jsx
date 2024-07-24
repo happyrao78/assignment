@@ -7,7 +7,7 @@ import moment from 'moment';
 
 ChartJS.register(ArcElement, Title, Tooltip, Legend, ChartDataLabels);
 
-const ExpenseChart = ({ selectedMonth, conversionRates }) => {
+const ExpenseChart = ({ selectedMonth, conversionRates,expenses }) => {
   const [chartData, setChartData] = useState({});
   const [loading, setLoading] = useState(true);
   const [totalExpense, setTotalExpense] = useState(0);
@@ -90,7 +90,7 @@ const ExpenseChart = ({ selectedMonth, conversionRates }) => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-  }, [selectedMonth, conversionRates]);
+  }, [selectedMonth, conversionRates,expenses]);
 
   if (loading) {
     return <div className="text-center text-lg">Loading...</div>;

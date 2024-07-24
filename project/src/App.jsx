@@ -20,6 +20,7 @@ const App = () => {
   const [themeMode, setThemeMode] = useState("light");
   const [selectedMonth, setSelectedMonth] = useState('January 2023');
   const [expenses, setExpenses] = useState({});
+  const [incomes, setIncomes] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -51,22 +52,22 @@ const App = () => {
   // Filter and group data
   useEffect(() => {
     const filterAndGroupData = () => {
-      const filteredData = data.filter(expense => {
-        const expenseDate = new Date(expense.dateTime);
-        const month = expenseDate.toLocaleString('default', { month: 'long' }) + ' ' + expenseDate.getFullYear();
+      const filteredData = data.filter(item => {
+        const itemDate = new Date(item.dateTime);
+        const month = itemDate.toLocaleString('default', { month: 'long' }) + ' ' + itemDate.getFullYear();
         return month === selectedMonth;
-      }).filter(expense => {
+      }).filter(item => {
         // Filter by type
-        if (selectedType && expense.type !== selectedType) return false;
+        if (selectedType && item.type !== selectedType) return false;
         // Filter by category
-        if (selectedCategory && expense.category !== selectedCategory) return false;
+        if (selectedCategory && item.category !== selectedCategory) return false;
         // Filter by search query
-        if (searchQuery && !expense.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+        if (searchQuery && !item.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
         return true;
       });
     
-      const convertedData = filteredData.map(expense => {
-        const { currency, amount } = expense;
+      const convertedData = filteredData.map(item => {
+        const { currency, amount } = item;
         let amountInINR;
     
         console.log(`Currency: ${currency}, Amount: ${amount}`);
@@ -86,22 +87,22 @@ const App = () => {
     
         console.log(`Converted Amount in INR: ${amountInINR}`);
     
-        return { ...expense, amount: amountInINR, currency: 'INR' };
+        return { ...item, amount: amountInINR, currency: 'INR' };
       });
     
       console.log("Converted Data:", convertedData);
     
-      const groupedData = convertedData.reduce((acc, expense) => {
-        const date = new Date(expense.dateTime).toDateString();
+      const groupedData = convertedData.reduce((acc, item) => {
+        const date = new Date(item.dateTime).toDateString();
         if (!acc[date]) {
-          acc[date] = { expenses: [], totalIncome: 0, totalExpense: 0 };
+          acc[date] = { items: [], totalIncome: 0, totalExpense: 0 };
         }
-        acc[date].expenses.push(expense);
+        acc[date].items.push(item);
       
-        if (expense.type === 'Income') {
-          acc[date].totalIncome += parseFloat(expense.amount);
+        if (item.type === 'Income') {
+          acc[date].totalIncome += parseFloat(item.amount);
         } else {
-          acc[date].totalExpense += parseFloat(expense.amount);
+          acc[date].totalExpense += parseFloat(item.amount);
         }
       
         return acc;
@@ -117,6 +118,7 @@ const App = () => {
         }, {});
     
       setExpenses(sortedExpenses);
+      setIncomes(sortedExpenses); // Assuming incomes are also part of the same structure
     };
     
     filterAndGroupData();
@@ -147,29 +149,31 @@ const App = () => {
   const handleDelete = (dateTime) => {
     const updatedExpenses = { ...expenses };
     Object.keys(updatedExpenses).forEach(date => {
-      updatedExpenses[date].expenses = updatedExpenses[date].expenses.filter(expense => expense.dateTime !== dateTime);
-      if (updatedExpenses[date].expenses.length === 0) {
+      updatedExpenses[date].items = updatedExpenses[date].items.filter(item => item.dateTime !== dateTime);
+      if (updatedExpenses[date].items.length === 0) {
         delete updatedExpenses[date];
       }
     });
     setExpenses(updatedExpenses);
+    setIncomes(updatedExpenses); // Assuming incomes are also part of the same structure
   };
 
-  const handleEdit = (updatedExpense) => {
+  const handleEdit = (updatedItem) => {
     const updatedExpenses = { ...expenses };
-    const date = new Date(updatedExpense.dateTime).toDateString();
+    const date = new Date(updatedItem.dateTime).toDateString();
     if (updatedExpenses[date]) {
-      updatedExpenses[date].expenses = updatedExpenses[date].expenses.map(exp =>
-        exp.dateTime === updatedExpense.dateTime ? updatedExpense : exp
+      updatedExpenses[date].items = updatedExpenses[date].items.map(item =>
+        item.dateTime === updatedItem.dateTime ? updatedItem : item
       );
-      updatedExpenses[date].totalIncome = updatedExpenses[date].expenses.reduce((acc, exp) => exp.amount > 0 ? acc + parseFloat(exp.amount) : acc, 0);
-      updatedExpenses[date].totalExpense = updatedExpenses[date].expenses.reduce((acc, exp) => exp.amount < 0 ? acc + Math.abs(parseFloat(exp.amount)) : acc, 0);
+      updatedExpenses[date].totalIncome = updatedExpenses[date].items.reduce((acc, item) => item.amount > 0 ? acc + parseFloat(item.amount) : acc, 0);
+      updatedExpenses[date].totalExpense = updatedExpenses[date].items.reduce((acc, item) => item.amount < 0 ? acc + Math.abs(parseFloat(item.amount)) : acc, 0);
     }
     setExpenses(updatedExpenses);
+    setIncomes(updatedExpenses); // Assuming incomes are also part of the same structure
   };
 
-  const openEditPopup = (expense) => {
-    setSelectedExpense(expense);
+  const openEditPopup = (item) => {
+    setSelectedExpense(item);
     setEditPopupOpen(true);
   };
 
@@ -190,10 +194,10 @@ const App = () => {
             <MonthNavigator onMonthChange={handleMonthChange} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
               <div className="md:w-full">
-                <ExpenseChart selectedMonth={selectedMonth} conversionRates={conversionRates} />
+                <ExpenseChart selectedMonth={selectedMonth} conversionRates={conversionRates} expenses={expenses}/>
               </div>
               <div className="md:w-full">
-                <IncomeChart selectedMonth={selectedMonth} conversionRates={conversionRates} />
+                <IncomeChart selectedMonth={selectedMonth} conversionRates={conversionRates} incomes={incomes} />
               </div>
             </div>
             <SearchBar 
@@ -208,7 +212,7 @@ const App = () => {
                   date={new Date(date)}
                   totalIncome={expenses[date].totalIncome}
                   totalExpense={expenses[date].totalExpense}
-                  expenses={expenses[date].expenses}
+                  expenses={expenses[date].items}
                   onDelete={handleDelete}
                   onEdit={openEditPopup} // Pass the openEditPopup function
                 />
