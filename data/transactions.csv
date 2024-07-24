@@ -357,7 +357,6 @@ dateTime,amount,type,category,title,currency,note
 2023-12-14 18:24:25,3302.34,Expense,Travel,Clothing,GBP,Transaction related to Travel
 2024-05-01 16:53:48,769.54,Expense,Education,Clothing,INR,Transaction related to Education
 2024-03-11 00:17:08,1156.03,Expense,Healthcare,Education,EUR,Transaction related to Healthcare
-2023-07-25 13:21:59,75.63,Expense,Rent,Healthcare,EUR,Transaction related to Rent
 2024-04-07 05:44:10,3262.77,Expense,Utilities,Education,JPY,Transaction related to Utilities
 2024-03-27 18:52:11,2003.17,Expense,Transportation,Debt Payments,GBP,Transaction related to Transportation
 2024-07-13 10:38:58,1596.08,Expense,Shopping,Rent,INR,Transaction related to Shopping
@@ -959,7 +958,7 @@ dateTime,amount,type,category,title,currency,note
 2024-06-30 08:12:10,853.58,Expense,Utilities,Rent,INR,Transaction related to Utilities
 2023-12-12 07:50:27,946.26,Expense,Entertainment,Entertainment,GBP,Transaction related to Entertainment
 2024-05-19 06:31:04,3286.24,Expense,Shopping,Utilities,INR,Transaction related to Shopping
-2023-07-27 17:22:52,3339.63,Expense,Food,Education,EUR,Transaction related to Food
+2023-07-27 17:22:52,30000.73,Expense,Food,Education,INR,Transaction related to Food
 2024-01-04 12:57:07,2838.73,Income,Salary,Freelance Income,GBP,Transaction related to Salary
 2024-06-17 23:59:17,4081.58,Expense,Rent,Clothing,INR,Transaction related to Rent
 2023-12-02 08:01:35,3528.82,Expense,Education,Utilities,INR,Transaction related to Education
