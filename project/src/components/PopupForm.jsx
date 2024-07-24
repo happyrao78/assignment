@@ -20,7 +20,7 @@ function PopupForm({ togglePopup }) {
     e.preventDefault();
     try {
       // Make a POST request to add a new entry
-      await axios.post('http://localhost:3000/add-entry', formData);
+      await axios.post('http://localhost:3001/add-entry', formData);
       // Optionally handle success or display a message
       console.log('Entry added successfully');
       togglePopup();

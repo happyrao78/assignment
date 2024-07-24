@@ -13,7 +13,7 @@ const ExpenseChart = ({ selectedMonth, conversionRates,expenses }) => {
   const [totalExpense, setTotalExpense] = useState(0);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/read-csv/')
+    axios.get('http://localhost:3001/read-csv/')
       .then(response => {
         const data = response.data;
 

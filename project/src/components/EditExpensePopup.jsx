@@ -15,7 +15,7 @@ const EditExpensePopup = ({ expense, onClose, onEdit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put('http://localhost:3000/edit-entry', { dateTime: expense.dateTime, updatedEntry: formData })
+    axios.put('http://localhost:3001/edit-entry', { dateTime: expense.dateTime, updatedEntry: formData })
       .then(response => {
         console.log('Edited successfully:', response.data);
         onEdit(formData); // Call the onEdit callback to update the UI

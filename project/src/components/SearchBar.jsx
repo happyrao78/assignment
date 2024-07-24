@@ -13,7 +13,7 @@ const SearchBar = ({ onSearch, onTypeChange, onCategoryChange }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/read-csv');
+        const response = await axios.get('http://localhost:3001/read-csv');
         const data = response.data;
 
         const uniqueCategories = Array.from(new Set(data.map(item => item.category)));

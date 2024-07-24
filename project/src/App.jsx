@@ -43,7 +43,7 @@ const App = () => {
   
   // Fetch CSV data when component mounts
   useEffect(() => {
-    axios.get("http://localhost:3000/read-csv")
+    axios.get("http://localhost:3001/read-csv")
       .then(response => setData(response.data))
       .catch(error => console.error('Error fetching data:', error))
       .finally(() => setLoading(false));

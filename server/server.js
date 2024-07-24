@@ -8,8 +8,8 @@ const bodyParser = require('body-parser');
 const moment = require("moment");
 
 const app = express();
-const PORT = 3000;
-const CSV_FILE_PATH = path.join(__dirname, '../data/transactions.csv');
+const PORT = 3001;
+const CSV_FILE_PATH = path.join(__dirname, '/data/transactions.csv');
 
 app.use(cors());
 app.use(express.json());
