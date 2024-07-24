@@ -13,7 +13,7 @@ const IncomeChart = ({ selectedMonth, conversionRates,incomes }) => {
   const [totalIncome, setTotalIncome] = useState(0);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/read-csv/')
+    axios.get('https://backend-production-51d4.up.railway.app/read-csv/')
       .then(response => {
         const data = response.data;
 

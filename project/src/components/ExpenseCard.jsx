@@ -12,7 +12,7 @@ const ExpenseCard = ({ date, totalIncome, totalExpense, expenses, onDelete, onEd
   const [selectedExpense, setSelectedExpense] = useState(null);
 
   const handleDelete = (dateTime) => {
-    axios.delete('http://localhost:3001/delete-entry', { data: { dateTime } })
+    axios.delete('https://backend-production-51d4.up.railway.app/delete-entry', { data: { dateTime } })
       .then(response => {
         console.log('Deleted successfully:', response.data);
         onDelete(dateTime); // Call the onDelete callback to update the UI
