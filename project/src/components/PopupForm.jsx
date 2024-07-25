@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function PopupForm({ togglePopup }) {
@@ -10,6 +10,7 @@ function PopupForm({ togglePopup }) {
     notes: 'This Transaction is regarding the Salary which I received on June 10th 2024.',
     type: 'Income',
   });
+  const [categories, setCategories] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,24 +31,40 @@ function PopupForm({ togglePopup }) {
     }
   };
 
+  useEffect(()=>{
+    const fetchData = async () =>{
+      try {
+        const response = await axios.get('https://backend-production-51d4.up.railway.app/read-csv');
+        const data = response.data;
+        const uniqueCategories  = Array.from(new Set(data.map(item => item.category)))
+        
+        setCategories(uniqueCategories);
+        
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    fetchData();
+  },[]);
+
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-      <div className="bg-white p-6 rounded shadow-md w-96 relative">
+      <div className="bg-white p-12 rounded-xl shadow-md w-96 relative">
         <button
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          className="absolute top-1 right-2 text-gray-600 hover:text-gray-900 text-2xl bg-red-500 p-2  rounded transition ease-in-out duration-300"
           onClick={togglePopup}
         >
           &times;
         </button>
         <div className="flex justify-between mb-4">
           <button
-            className={`px-4 py-2 ${formData.type === 'Income' ? 'bg-blue-500 dark:bg-black dark:transition ease-in-out duration-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+            className={`px-4 py-2 rounded-xl ${formData.type === 'Income' ? 'bg-blue-500 dark:bg-black dark:transition ease-in-out duration-500 text-white' : 'bg-gray-200 text-gray-700'}`}
             onClick={() => setFormData({ ...formData, type: 'Income' })}
           >
             Income
           </button>
           <button
-            className={`px-4 py-2 ${formData.type === 'expense' ? 'bg-red-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+            className={`px-4 py-2 rounded-xl transition ease-linear duration-300 ${formData.type === 'Expense' ? 'bg-red-700 text-white ' : 'bg-gray-200 text-gray-700'}`}
             onClick={() => setFormData({ ...formData, type: 'Expense' })}
           >
             Expense
@@ -83,12 +100,16 @@ function PopupForm({ togglePopup }) {
               onChange={handleChange}
               className="p-2 border rounded flex-1"
             >
-              <option value="Salary">Salary</option>
+              <option value="">Select Category</option>
+              {categories.map((category,index)=>(
+                <option key={index} value={category}>{category}</option>
+              ))}
+              {/* <option value="Salary">Salary</option>
               <option value="Rent">Rent</option>
               <option value="Groceries">Groceries</option>
               <option value="Utilities">Utilities</option>
               <option value="Entertainment">Entertainment</option>
-              <option value="Other">Other</option>
+              <option value="Other">Other</option> */}
             </select>
           </div>
           <div className="flex items-center">
@@ -112,7 +133,7 @@ function PopupForm({ togglePopup }) {
           </div>
           <button 
             type="submit" 
-            className="w-full p-2 bg-green-500 text-white rounded mt-4"
+            className="w-full p-2 bg-green-500 text-white rounded mt-4 hover:bg-red-500 transition ease-in-out duration-300"
           >
             Save
           </button>
